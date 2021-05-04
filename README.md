@@ -1,2 +1,3 @@
-# the-tipsy-quiz
-Interactive online pub quiz.
+# The Tipsy Quiz  - Ruairidh MacArthur
+## Code Institute - Milestone Project 2
+### 
