@@ -57,7 +57,7 @@ With the design of 'The Tipsy Quiz' aiming to be fun and interactive, I have pic
 ### Languages
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
-- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Other Technologies
