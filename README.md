@@ -11,8 +11,8 @@
 
 ## Table of Contents:
 
-    1. [Project Goals](#project-goals)
-    2. [User Experience](#user-experience)
+1. [Project Goals](#project-goals)
+2. [User Experience](#user-experience)
 
 ## Project Goals
 
