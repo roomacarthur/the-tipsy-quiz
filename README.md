@@ -34,14 +34,14 @@ Links to wireframe images.
 
 colours used for the site are listed below, there will be two sets of colours, one for generic styling purposes and another for the question subjects and answers.
 
-<strong>Styling Colours:</strong>
+1. Styling Colours:
 
-#fc5185 - Pink
-#364f6b - Grey/Blue
-#43dde6 - Light blue
-#f0f0f0 - light grey.
+   - #fc5185 - Pink
+   - #364f6b - Grey/Blue
+   - #43dde6 - Light blue
+   - #f0f0f0 - light grey.
 
-<strong>Other Colours:</strong>
+2. Other Colours:
 
 #### Typography
 
