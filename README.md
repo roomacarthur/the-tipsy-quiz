@@ -93,6 +93,8 @@ The steps to deploy via GitHub pages are as follows:
 
 When the above steps have been completed, it can sometimes take a little while for the deployed URL to update, So just keep checking back and refreshing the page until your site is visible.
 
+<hr>
+
 ### Forking The GitHub Repository
 
 To use this code and make changes without effecting the original code you can do what is called 'Forking the repository'. By forking this repository you are given a copy of the code at that moment in time that you can use freely. To fork this repository you need to follow the following few steps:
@@ -105,6 +107,7 @@ To use this code and make changes without effecting the original code you can do
 You will now have a copy of the code available to clone and work on without effecting the original code.
 
 <hr>
+
 ### Cloning the Project.
 
 To make a local clone of the project follow these steps:
@@ -120,5 +123,6 @@ To make a local clone of the project follow these steps:
 9. Enter 'git clone SSH_ADDRESS'
 10. GitBash will clone the repository into this directory.
 11. enter 'code .' and this will open VSCODE and happy coding.
+<hr>
 
 ## Credits
