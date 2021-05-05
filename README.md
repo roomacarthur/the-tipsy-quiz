@@ -54,6 +54,25 @@ With the design of 'The Tipsy Quiz' aiming to be fun and interactive, I have pic
 
 ## Technologies
 
+### Languages
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+### Other Technologies
+
+- [Google Fonts](https://fonts.google.com/)
+  - Used for importing fonts to allow for the font's to be available for all users.
+- [Font Awesome](https://fontawesome.com/)
+  - Font Awesome provides all the icons used for the site.
+- [Visual Studio Code](https://code.visualstudio.com/)
+  - My personal preference for IDE(Integrated Development Environment).
+- [Git GitBash](https://gitforwindows.org/)
+  - Git for windows provides a BASH emulation which allows for git to be used straight from the command line.
+- [GitHub](https://github.com/)
+  - Provided a Remote repository for the application. Allowing for my coding to be backed up online as I go.
+
 ## Deployment
 
 ### GitHub pages
