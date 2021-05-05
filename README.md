@@ -4,7 +4,7 @@
 
 ### Presentation of interactive data using a font-end site
 
-![Example of the site on multiple devices.](/assets/images/...)
+![Example of the application on multiple devices.](/assets/images/...)
 
 [Click here to view Site.](https://roomacarthur.github.io/the-tipsy-quiz/)
 [Click here to view Repository.]()
@@ -26,18 +26,22 @@ To provide a fun environment for people to partake in a pub-style quiz on their 
 
 ### Design
 
+#### Wire Frames
+
+Links to wireframe images.
+
 #### Colors
 
 colours used for the site are listed below, there will be two sets of colours, one for generic styling purposes and another for the question subjects and answers.
 
-##### Styling Colours:
+<strong>Styling Colours:</strong>
 
 #fc5185 - Pink
 #364f6b - Grey/Blue
 #43dde6 - Light blue
 #f0f0f0 - light grey.
 
-##### Other Colours:
+<strong>Other Colours:</strong>
 
 #### Typography
 
