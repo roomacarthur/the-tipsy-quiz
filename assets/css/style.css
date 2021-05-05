@@ -4,7 +4,15 @@ Implement Media Queries for Table, Laptop and Desktop Viewing.
 */
 
 /*Import google Fonts*/
-
+/*Main styling.*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: slateblue;
+}
 /*Styling - Main Navigation.*/
 
 /*Navigation Elements.*/
