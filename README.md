@@ -2,7 +2,7 @@
 
 ## Code Institute - Milestone Project 2
 
-###
+### Presentation of interactive data using a font-end site
 
 ![Example of site on multiple devices.](/assets/images/...)
 
@@ -16,7 +16,7 @@
 
 ## Project Goals
 
-To provide a fun environment for people to partake in a pub-style quiz on their phone or other devices.
+To provide a fun environment for people to partake in a pub-style quiz on their phone or other devices. Fun interactive Scoring system using local storage to keep track of peoples scores on a leader board.
 
 ## User Experience
 
