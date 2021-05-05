@@ -4,9 +4,9 @@
 
 ### Presentation of interactive data using a font-end site
 
-![Example of site on multiple devices.](/assets/images/...)
+![Example of the site on multiple devices.](/assets/images/...)
 
-[Click here to view live site.]()
+[Click here to view Site.]()
 [Click here to view Repository.]()
 
 ## Table of Contents:
