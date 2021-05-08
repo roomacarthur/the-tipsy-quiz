@@ -19,7 +19,7 @@
 
 ## Project Goals
 
-To provide a fun environment for people to partake in a pub-style quiz on their phone or other devices. Fun interactive Scoring system using local storage to keep track of peoples scores on a leader board.
+The Tipsy Quiz, is a fun interactive website where the user partakes in a pub like quiz, Questions covering multiple subjects including picture rounds. Take on the quiz solo or as a group and see how high you can score!
 
 ## User Experience
 
