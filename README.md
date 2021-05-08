@@ -13,6 +13,9 @@
 
 1. [Project Goals](#project-goals)
 2. [User Experience](#user-experience)
+3. [Features](#features)
+4. [Technologies](#technologies)
+5. [Deployment](#deployment.)
 
 ## Project Goals
 
@@ -26,9 +29,31 @@ To provide a fun environment for people to partake in a pub-style quiz on their 
 
 ### Design
 
-#### Wire Frames
+#### Wireframes
 
-Links to wireframe images.
+Desktop:
+
+- [Home](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/home-desktop.png)
+- [Quiz](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/quiz-desktop.png)
+- [Game Over](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/gameover-desktop.png)
+- [High Scores](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/highscores-desktop.png)
+- [Help](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/help-desktop.png)
+
+Tablet:
+
+- [Home](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/home-tablet.png)
+- [Quiz](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/quiz-tablet.png)
+- [Game Over](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/gameover-tablet.png)
+- [High Scores](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/highscores-tablet.png)
+- [Help](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/help-tablet.png)
+
+Mobile:
+
+- [Home](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/home-mobile.png)
+- [Quiz](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/quiz-mobile.png)
+- [Game Over](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/gameover-mobile.png)
+- [High Scores](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/highscores-mobile.png)
+- [Help](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/home-mobile.png)
 
 #### Colors
 
@@ -51,6 +76,11 @@ With the design of 'The Tipsy Quiz' aiming to be fun and interactive, I have pic
 2. [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab?preview.text=The%20Tipsy%20Quiz&preview.text_type=custom&query=roboto+s) - This font is an easier to read font and will be used for more in-depth blocks of text. Like on the 'Help?' page, which will require this.
 
 ## Features
+
+### Future Features:
+
+- Dark mode.
+- Random subject wheel.
 
 ## Technologies
 
