@@ -105,7 +105,7 @@ With the design of 'The Tipsy Quiz' aiming to be fun and interactive, I have pic
   - A counter to show what question you are on.
   - Your current score.
   - The Question itself.
-  - 4 answers of which only 1 is correct.
+  - 4 answers buttons of which only 1 is correct.
 
 - Game Over
 
