@@ -4,6 +4,7 @@ Implement Media Queries for Table, Laptop and Desktop Viewing.
 */
 
 /*Import google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto+Slab:wght@400;700&display=swap');
 /*Main styling.*/
 * {
     padding: 0;
@@ -12,9 +13,20 @@ Implement Media Queries for Table, Laptop and Desktop Viewing.
 }
 body {
     background-color: slateblue;
+    font-family: 'Pangolin', cursive;
 }
 /*Styling - Main Navigation.*/
-
+header {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+}
+.logo {
+    float: left;
+}
+nav {
+    float: right;
+}
 /*Navigation Elements.*/
 
 /*Tablet Sizing media Queries./ */
