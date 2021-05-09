@@ -23,9 +23,25 @@ The Tipsy Quiz, is a fun interactive website where the user partakes in a pub li
 
 ## User Experience
 
-### Audience
-
 ### User Stories
+
+- First time user:
+
+  1. Enjoy their experience whilst active on the site.
+  2. Enjoy their time partaking in the quiz.
+  3.
+
+- Returning User:
+
+  1. To know how to navigate the site well.
+  2. To want to take part in the quiz again.
+
+- As a site creator:
+  1. Make the site interactive and fun.
+  2. Ensure there are questions covering a wide variety of difficulties and subjects.
+  3. Make sure the user enjoys their time using the application.
+  4. Provide easy access to dev to submit questions.
+  5.
 
 ### Design
 
@@ -76,6 +92,40 @@ With the design of 'The Tipsy Quiz' aiming to be fun and interactive, I have pic
 2. [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab?preview.text=The%20Tipsy%20Quiz&preview.text_type=custom&query=roboto+s) - This font is an easier to read font and will be used for more in-depth blocks of text. Like on the 'Help?' page, which will require this.
 
 ## Features
+
+- Header
+
+  - The logo will act as a link back to the homepage.
+  - The small navigation will be the same on all pages allowing for quick movement and ease of navigation.
+
+- Quiz
+
+  - A counter to show what question you are on.
+  - Your current score.
+  - The Question itself.
+  - 4 answers of which only 1 is correct.
+
+- Game Over
+
+  - Text field to enter a name.
+  - Your score from that round.
+  - A submit button
+  - Play again button.
+  - HighScores button.
+
+- High Scores
+
+  - Rankings for peoples scores.
+  - Play button.
+
+- Help
+
+  - Quick and brief description on how to play the quiz.
+  - Contact Form.
+
+- Footer
+  - Small help button to link to the help page.
+  - Dev link / socials.
 
 ### Future Features:
 
