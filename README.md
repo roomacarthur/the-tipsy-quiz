@@ -15,7 +15,9 @@
 2. [User Experience](#user-experience)
 3. [Features](#features)
 4. [Technologies](#technologies)
-5. [Deployment](#deployment.)
+5. [Testing](#testing)
+6. [Deployment](#deployment.)
+7. [Credits](#credits)
 
 ## Project Goals
 
@@ -152,6 +154,8 @@ With the design of 'The Tipsy Quiz' aiming to be fun and interactive, I have pic
   - Git for windows provides a BASH emulation which allows for git to be used straight from the command line.
 - [GitHub](https://github.com/)
   - Provided a Remote repository for the application. Allowing for my coding to be backed up online as I go.
+
+## Testing
 
 ## Deployment
 
