@@ -26,6 +26,15 @@ body {
     font-family: 'poppins', cursive;
     font-size: 62.5%; /*This allows for 1rem=10px*/
 }
+h1, h2 {
+    font-family: 'Schoolbell', cursive;
+    letter-spacing: .3rem;
+}
+h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
 
 /*Styling - Main Navigation.*/
 header {
@@ -43,7 +52,6 @@ header {
   color: var(--lightgrey);
   letter-spacing: .1rem;
   font-size: 2rem;
-  font-family: 'Schoolbell', cursive;
 }
 .logo > h1:hover {
     animation: vibrate 1s;
@@ -76,6 +84,8 @@ nav > ul > li > a:hover {
     color: var(--dark);
     background-color: var(--pink);
     border-radius: .4rem;
+    cursor: pointer;
+
 }
 
 /*Page content styling.*/
@@ -110,16 +120,19 @@ nav > ul > li > a:hover {
 .btn:hover {
     cursor: pointer;
     box-shadow: 0 0.2rem 1rem 0 var(--lightgrey);
-    transition: transform 150ms;
-    transform: scale(1.04);
+    animation: wobble .5s;
+    /* transform: scale(1.04); */
 }
-
+@keyframes wobble {
+    0% {transform: rotate(2deg)}
+    20% {transform: rotate(-2deg)}
+    40% {transform: rotate(2deg)}
+    60% {transform: rotate(-2deg)}
+    80% {transform: rotate(2deg)}
+    100% {transform: rotate(-2deg)}
+}
 /*index.html Styling*/
 .container > h2{
-    font-family: 'Schoolbell', cursive;
-    text-transform: uppercase;
-    font-size: 2rem;
-    letter-spacing: .2rem;
     color: var(--lightgrey);
     text-align: center;
     align-self: flex-start;
@@ -127,7 +140,14 @@ nav > ul > li > a:hover {
     margin: 0 auto;
     margin-bottom: 2rem;
 }
+.fa-trophy {
+    margin-left: .5rem;
+    
+}
+/*high-scores.html styling*/
+#high-score-ranks {
 
+}
 /*footer Styling.*/
 footer {
     display: flex;
@@ -146,6 +166,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: .1rem;
     color: var(--dark);
+    padding-bottom: 1rem;
 }
 .fa-github {
     font-size: 1.5rem;
