@@ -12,7 +12,7 @@ Implement Media Queries for Table, Laptop and Desktop Viewing.
     --greyblue: #364f6b;
     --lightblue: #43dde6;
     --lightgrey: #dadada;
-    --background: #581b98;
+    --purple: #581b98;
     --dark: #3f3b3b;
 }
 /*Main styling.*/
@@ -38,7 +38,7 @@ h2 {
 
 /*Styling - Main Navigation.*/
 header {
-    min-height:10vh;
+    min-height:8vh;
     color: var(--lightgrey);
     background: var(--dark);
     margin-bottom: 1rem;
@@ -46,7 +46,7 @@ header {
 .logo {
     text-decoration: none;
     text-align: center;
-    padding: .5rem;
+    padding: .2rem;
 }
 .logo > h1 {
   color: var(--lightgrey);
@@ -62,7 +62,7 @@ nav{
     margin: 0 auto;
     text-align: center;
     font-size: 1rem;
-    padding-bottom: .5rem;
+    padding-bottom: .2rem;
     margin-bottom: 1rem;/*pushes container content down from header.*/
 }
 nav > ul {
@@ -92,7 +92,7 @@ nav > ul > li > a:hover {
 .container {
     background: var(--dark);
     width: 90vw;
-    height: 70vh;
+    height: 80vh;
     margin: 0 auto;
     padding: 1rem;
     display: flex;
@@ -147,6 +147,72 @@ nav > ul > li > a:hover {
 /*high-scores.html styling*/
 #high-score-ranks {
 
+}
+/*quiz.html styling.*/
+#quiz {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#quiz-top {
+    display: flex;
+    justify-content: space-between;
+}
+.quiz-item {
+    font-size: .8rem;
+    text-align: center;
+}
+#score-count {
+    text-align: center;
+}
+#progress {
+    border: .1rem solid var(--lightblue);
+    width: 8rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+
+}
+#question {
+    font-family: 'poppins', sans-serif;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    margin:1rem auto;
+    text-transform: none;
+    margin-bottom: 1rem;
+}
+.answer-container {
+    width: 80%;
+    max-width: 30rem;
+    background-color: var(--pink);
+    border-radius: .4rem;
+    margin: .2rem auto;
+    padding: .2rem;
+    color: var(--dark);
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    
+}
+.answer-container:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform .5s;
+    box-shadow: 0 0.2rem 1rem 0 var(--lightgrey);
+}
+.answer-num {
+    padding: .2rem;
+}
+.answer-text {
+    padding: .2rem;
+}
+/*Answer correct/incorrect colour change*/
+#correct-answer {
+    background-color: greenyellow;
+}
+#wrong-answer {
+    background-color: red;
 }
 /*footer Styling.*/
 footer {
