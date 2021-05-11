@@ -38,7 +38,8 @@ h2 {
 
 /*Styling - Main Navigation.*/
 header {
-    min-height:8vh;
+    height: 14vh;
+    min-height:10vh;
     color: var(--lightgrey);
     background: var(--dark);
     margin-bottom: 1rem;
@@ -46,7 +47,7 @@ header {
 .logo {
     text-decoration: none;
     text-align: center;
-    padding: .2rem;
+    /* padding: .1rem; */
 }
 .logo > h1 {
   color: var(--lightgrey);
@@ -62,7 +63,7 @@ nav{
     margin: 0 auto;
     text-align: center;
     font-size: 1rem;
-    padding-bottom: .2rem;
+    padding: .2rem;
     margin-bottom: 1rem;/*pushes container content down from header.*/
 }
 nav > ul {
@@ -177,7 +178,8 @@ nav > ul > li > a:hover {
 #question {
     font-family: 'poppins', sans-serif;
     font-size: 1rem;
-    letter-spacing: .1rem;
+    font-weight:lighter;
+    letter-spacing: normal;
     margin:1rem auto;
     text-transform: none;
     margin-bottom: 1rem;
@@ -186,7 +188,8 @@ nav > ul > li > a:hover {
     width: 80%;
     max-width: 30rem;
     background-color: var(--pink);
-    border-radius: .4rem;
+    border: 3px solid var(--lightgrey);
+    border-radius: .2rem;
     margin: .2rem auto;
     padding: .2rem;
     color: var(--dark);
@@ -221,9 +224,12 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 5rem;
+    height: 7rem;
     color: var(--lightgrey);
     font-size: 1rem;
+}
+.fa-question-circle {
+    margin: .5rem;
 }
 #dev-link{
     font-family: 'oswald', sans-serif;
@@ -266,6 +272,35 @@ footer > i {
 
 
 /*Tablet Sizing media Queries./ */
+@media screen and (min-height: 600px) {
+    .answer-container {
+        margin: .7rem auto;
+    }
+}
+@media screen and (min-width: 768px){
+    header {
+        height: 12vh;
+    }
+    .logo > h1{
+        font-size: 3rem;
+    }
+    nav {
+        margin-top: .5rem
+    }
+    #quiz {
+        width: 70%;
+        margin-top: 3rem;
+    }
+    #question {
+        font-size: 1.5rem;
+    }
+    .answer-container {
+        margin: 1rem auto;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+}
 @media screen and (min-width: 900px) {
     header {
         padding: 1rem;
