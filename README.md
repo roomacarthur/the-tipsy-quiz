@@ -75,23 +75,19 @@ Mobile:
 
 #### Colors
 
-colours used for the site are listed below, there will be two sets of colours, one for generic styling purposes and another for the question subjects and answers.
+The colours that will be used throughout the site for it's main styling as seen below,
 
-1. Styling Colours:
-
-   - #fc5185 - Pink
-   - #364f6b - Grey/Blue
-   - #43dde6 - Light blue
-   - #f0f0f0 - light grey.
-
-2. Other Colours:
+![Colours used for The Tipsy Quiz](/assets/images/readme-images/colours.png)
 
 #### Typography
 
 With the design of 'The Tipsy Quiz' aiming to be fun and interactive, I have picked two fonts that will have a continual use case throughout the design of the site.
 
-1. [Pangolin](https://fonts.google.com/specimen/Pangolin?preview.text=The%20Tipsy%20Quiz&preview.text_type=custom#standard-styles) - This font is fun and will be used for most of the styling around the site, Headings, Questions, and Answers.
-2. [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab?preview.text=The%20Tipsy%20Quiz&preview.text_type=custom&query=roboto+s) - This font is an easier to read font and will be used for more in-depth blocks of text. Like on the 'Help?' page, which will require this.
+The initial plan was to use [Pangolin](https://fonts.google.com/specimen/Pangolin?preview.text=The%20Tipsy%20Quiz&preview.text_type=custom#standard-styles) and [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab?preview.text=The%20Tipsy%20Quiz&preview.text_type=custom&query=roboto+s). After initial coding and live site viewing with early deployment via GitPages, I soon realized that the font's chosen would not work, so new fonts where needed. I have settled on the following fonts:
+
+1. [Schoolbell](https://fonts.google.com/specimen/Schoolbell?query=school) - A fun and stylish font that is easy to read and will be used for headings.
+2. [poppins](https://fonts.google.com/specimen/Poppins?query=poppins) - A very stylish and easy to read font. Will be used for the bulk of text.
+3. [Oswald](https://fonts.google.com/specimen/Oswald?query=oswal) - This bold and block style font will be used for links and navigation.
 
 ## Features
 
