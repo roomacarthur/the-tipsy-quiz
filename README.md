@@ -73,7 +73,7 @@ Mobile:
 - [High Scores](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/highscores-mobile.png)
 - [Help](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/home-mobile.png)
 
-#### Colors
+#### Colours
 
 The colours that will be used throughout the site for it's main styling as seen below,
 
@@ -86,7 +86,7 @@ With the design of 'The Tipsy Quiz' aiming to be fun and interactive, I have pic
 The initial plan was to use [Pangolin](https://fonts.google.com/specimen/Pangolin?preview.text=The%20Tipsy%20Quiz&preview.text_type=custom#standard-styles) and [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab?preview.text=The%20Tipsy%20Quiz&preview.text_type=custom&query=roboto+s). After initial coding and live site viewing with early deployment via GitPages, I soon realized that the font's chosen would not work, so new fonts where needed. I have settled on the following fonts:
 
 1. [Schoolbell](https://fonts.google.com/specimen/Schoolbell?query=school) - A fun and stylish font that is easy to read and will be used for headings.
-2. [poppins](https://fonts.google.com/specimen/Poppins?query=poppins) - A very stylish and easy to read font. Will be used for the bulk of text.
+2. [Poppins](https://fonts.google.com/specimen/Poppins?query=poppins) - A very stylish and easy to read font. Will be used for the bulk of text.
 3. [Oswald](https://fonts.google.com/specimen/Oswald?query=oswal) - This bold and block style font will be used for links and navigation.
 
 ## Features
