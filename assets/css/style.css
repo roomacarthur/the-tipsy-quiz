@@ -13,7 +13,7 @@ Implement Media Queries for Table, Laptop and Desktop Viewing.
     --lightblue: #43dde6;
     --lightgrey: #dadada;
     --purple: #581b98;
-    --dark: #3f3b3b;
+    --dark: #312d2d;
 }
 /*Main styling.*/
 * {
@@ -260,7 +260,7 @@ nav > ul > li > a:hover {
 form{
     display: grid;
     grid-template-columns:30% 70%;
-    grid-template-rows:1.6rem 1.6rem 5rem 1.2rem ;
+    grid-template-rows:1.6rem 1.6rem 5rem 2rem ;
 }
 label { 
     font-size: .8rem;
@@ -282,11 +282,30 @@ textarea{
     border-radius: .4rem;
     font-family: 'poppins', sans-serif;
 }
-.form-btns {
+.form-btns-container {
     grid-column-start: 1;
     grid-column-end: 3;
     width: 4rem;
     text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.form-btn {
+    margin: 0.2rem;
+    padding: 0.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--dark);
+    background-color: var(--pink);
+    border: 2px solid var(--lightgrey);
+    border-radius: .4rem;   
+}
+.form-btn:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform .5s;
+    box-shadow: 0 0.2rem 1rem 0 var(--lightgrey);
 }
 /*footer Styling.*/
 footer {
