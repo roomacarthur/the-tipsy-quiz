@@ -368,6 +368,9 @@ footer > i {
 
 /*Tablet Sizing media Queries./ */
 @media screen and (min-height: 600px) {
+    .logo > h1 {
+        font-size: 3.5rem;
+    }
     .answer-container {
         margin: .7rem auto;
     }
