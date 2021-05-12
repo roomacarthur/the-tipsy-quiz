@@ -217,6 +217,77 @@ nav > ul > li > a:hover {
 #wrong-answer {
     background-color: red;
 }
+/*help.html styling*/
+.help-container {
+    width: 100%;
+    max-width: 550px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+ }
+.help-container :is(h2, ol) {
+    margin: .5rem;
+}
+.help-container h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.help-container li {
+    line-height: 1.4rem;
+}
+.help-container :is(p, li) {
+    font-size: .8rem;
+    padding-bottom: .2rem;
+
+}
+.help-container a {
+    text-decoration: none;
+    background-color: var(--pink);
+    border: 1px solid var(--lightgrey);
+    border-radius: .4rem;
+    padding: 2px;
+    text-transform: uppercase;
+    color: var(--dark);
+    font-weight: bold;
+}
+.help-container a:hover {
+    cursor: pointer;
+    box-shadow: 0 0.2rem 1rem 0 var(--lightgrey);
+}
+form{
+    display: grid;
+    grid-template-columns:30% 70%;
+    grid-template-rows:1.6rem 1.6rem 5rem 1.2rem ;
+}
+label { 
+    font-size: .8rem;
+}
+/*help.html form styling.*/
+input[type=text], input[type=email] {
+    background-color: var(--pink);
+    color: black;
+    height: 1.5rem;
+    padding: .2rem;
+    border-radius: .4rem;
+    font-weight: bold;
+}
+textarea{
+    background-color: var(--pink);
+    color: black;
+    padding: .2rem;
+    margin: .1rem 0;
+    border-radius: .4rem;
+    font-family: 'poppins', sans-serif;
+}
+.form-btns {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 4rem;
+    text-align: center;
+}
 /*footer Styling.*/
 footer {
     display: flex;
@@ -230,6 +301,11 @@ footer {
 }
 .fa-question-circle {
     margin: .5rem;
+    color: var(--dark);
+    font-size: 2rem;
+}
+.fa-question-circle:hover {
+    color:#581b98;
 }
 #dev-link{
     font-family: 'oswald', sans-serif;

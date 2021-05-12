@@ -25,10 +25,53 @@
       </nav>
     </header>
     <main>
-      <div class="container"></div>
+      <div class="container">
+        <div class="help-container">
+          <h2>How to play</h2>
+          <ol>
+            <li>Click <a href="quiz.html">play</a></li>
+            <li>Answer as many questions as possible correctly.</li>
+            <li>
+              Once game is over, enter a username and log your score to the
+              <a href="high-scores.html">high scores</a>
+            </li>
+          </ol>
+          <h2>Need Help?</h2>
+          <p>Need extra help or have a question? Contact us!</p>
+          <form>
+            <label for="nameinput">Name</label>
+            <input
+              id="nameinput"
+              type="text"
+              name="name"
+              placeholder="Your name..."
+              required
+            />
+            <label for="emailinput">Email</label>
+            <input
+              id="emailinput"
+              type="email"
+              name="email"
+              placeholder="Your name..."
+              required
+            />
+
+            <label for="messageinput">message</label>
+            <textarea
+              id="messageinput"
+              placeholder="Write your message..."
+              required
+            ></textarea>
+            <div class="form-btns">
+              <input class="form-btn" type="submit" value="Send" />
+              <input class="form-btn" type="reset" value="Clear Form" />
+            </div>
+          </form>
+        </div>
+      </div>
     </main>
     <footer>
-      <i class="fas fa-question-circle"></i>
+      <a href="help.html"><i class="fas fa-question-circle"></i></a>
       <a
         id="dev-link"
         href="https://github.com/roomacarthur"
