@@ -1,0 +1,77 @@
+{
+    "questions": [
+        {
+        "subject":"General Knowledge",
+        "question":"What is the world’s largest land mammal?",
+        "answer1":"Colossal Squid",
+        "answer2":"Blue Whale",
+        "answer3":"Elephant",
+        "answer4":"Hippopotamus",
+        "correctAnswer":"3"
+
+        },
+        {
+        "subject":"General Knowledge",
+        "question":"Rio de Janeiro is a city in which South American country?",
+        "correctAnswer":"Brazil",
+        "possibleAnswers":["Peru", "colombia", "Argentina"]
+
+        },
+        {
+        "subject":"General Knowledge",
+        "question":"Which Middle Eastern city is also the name of a type of artichoke?",
+        "correctAnswer":"Jerusalem",
+        "possibleAnswers":["Yemen", "Cyprus", "Qatar"]
+
+        },
+        {
+        "subject":"General Knowledge",
+        "question":"With which sport is Silverstone most associated?",
+        "correctAnswer":"Motor Racing",
+        "possibleAnswers":["Triathlon", "Cycling", "Running"]
+
+        },
+        {
+        "subject":"General Knowledge",
+        "question":"Nostradamus was famous for making what?",
+        "correctAnswer":"Predictions",
+        "possibleAnswers":["Candles", "Poems", "Buildings"]
+
+        },
+        {
+        "subject":"General Knowledge",
+        "question":"In mythology, Romulus and Remus were brought up by which animal?",
+        "correctAnswer":"Wolf",
+        "possibleAnswers":["Bear", "Dog", "Ape"]
+
+        },
+        {
+        "subject":"General Knowledge",
+        "question":"What is the main source of vitamin C?",
+        "correctAnswer":"Fruits",
+        "possibleAnswers":["Sun light", "Vegetables", "Coffee"]
+
+        },
+        {
+        "subject":"General Knowledge",
+        "question":"Insulin is commonly used to treat which condition?",
+        "correctAnswer":"Diabetes",
+        "possibleAnswers":["Common Cold", "Chlamydia", "Flu"]
+
+        },
+        {
+        "subject":"General Knowledge",
+        "question":"The first atom bomb was dropped on which Japanese city?",
+        "correctAnswer":"Hiroshima",
+        "possibleAnswers":["Nagasaki", "Okinawa", "Fukuoka"]
+
+        },
+        {
+        "subject":"General Knowledge",
+        "question":"",
+        "correctAnswer":"",
+        "possibleAnswers":["", "", ""]
+
+        }
+    ]
+}
