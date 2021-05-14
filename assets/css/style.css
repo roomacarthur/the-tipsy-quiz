@@ -237,6 +237,7 @@ nav > ul > li > a:hover {
 }
 .help-container li {
     line-height: 1.4rem;
+    margin-left: 1rem;
 }
 .help-container :is(p, li) {
     font-size: .8rem;
@@ -245,17 +246,17 @@ nav > ul > li > a:hover {
 }
 .help-container a {
     text-decoration: none;
-    background-color: var(--pink);
-    border: 1px solid var(--lightgrey);
     border-radius: .4rem;
     padding: 2px;
     text-transform: uppercase;
-    color: var(--dark);
+    text-decoration: underline;
+    letter-spacing: .1rem;
+    color: var(--pink);
     font-weight: bold;
 }
 .help-container a:hover {
     cursor: pointer;
-    box-shadow: 0 0.2rem 1rem 0 var(--lightgrey);
+    animation: vibrate 1s;
 }
 form{
     display: grid;
