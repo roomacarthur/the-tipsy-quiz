@@ -11,9 +11,31 @@ questionAndAnswers.onreadystatechange = function() {
 questionAndAnswers.open("GET", "./assets/js/questions-answers/qa.JSON", true);
 questionAndAnswers.send();
 
+//fetch elements from quiz.html
+const questionCount = document.getElementById('question-count');
+const fullProgressBar = document.getElementById('progress-full');
+const scoreCount = document.getElementById('score-count');
 const questionText = document.getElementById('question');
+const answers = document.getElementsByClassName('answer-text');
 
-function getNewQuestion() {
+
+//set score and question count to 0
+let score = 0;
+let questionCount = 0;
+
+//set points for correct answer and max question count.
+const correctScore = 10;
+const maxQuestions = 20;
+
+//fetch new new question to display.
+function fetchNewQuestion() {
     
 }
+
 //Start new quiz game. 
+function startQuiz() {
+    score = 0;
+    questionCount = 0;
+    questionBank = questionAndAnswers;
+    fetchNewQuestion();
+}
