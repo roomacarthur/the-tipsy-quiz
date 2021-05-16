@@ -16,3 +16,4 @@ const questionText = document.getElementById('question');
 function getNewQuestion() {
     
 }
+//Start new quiz game. 
