@@ -211,12 +211,14 @@ nav > ul > li > a:hover {
     padding: .2rem;
 }
 /*Answer correct/incorrect colour change*/
-#correct-answer {
+.correct-answer {
     background-color: greenyellow;
 }
-#wrong-answer {
+.wrong-answer {
     background-color: red;
 }
+/*game-over.html styling*/
+
 /*help.html styling*/
 .help-container {
     width: 100%;

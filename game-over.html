@@ -25,7 +25,22 @@
       </nav>
     </header>
     <main>
-      <div class="container"></div>
+      <div class="container">
+        <h2>Game Over!</h2>
+        <p>You Scored: <span id="end-score">0</span></p>
+        <h3>Please ender your name to save your score:</h3>
+        <input
+          type="text"
+          name="name"
+          id="player-name"
+          placeholder="Enter your name..."
+        />
+        <button class="btn" id="submit-score" type="submit">Save Score</button>
+        <a href="quiz.html" class="btn" id="startNewQuiz">Play Again</a>
+        <a href="high-scores.html" class="btn hs-btn"
+          >High Scores<i class="fas fa-trophy"></i
+        ></a>
+      </div>
     </main>
     <footer>
       <a href="help.html"><i class="fas fa-question-circle"></i></a>
@@ -39,6 +54,6 @@
         <i class="fab fa-github"></i>
       </a>
     </footer>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/game-over.js"></script>
   </body>
 </html>
