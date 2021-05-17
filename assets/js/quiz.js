@@ -1,207 +1,189 @@
 const questionText = document.getElementById("question");
-const ScoreCount = document.getElementById("score-count");
+const scoreCount = document.getElementById("score-count");
 const answers = Array.from(document.getElementsByClassName("answer-text"));
+const progressCount = document.getElementById("question-count");
+const progressBarFull = document.getElementById("progress-full");
+
+
 let questionBank = [
     {
-        "question":"What is the world’s largest land mammal?",
-        "answer1":"Colossal Squid",
-        "answer2":"Blue Whale",
-        "answer3":"Elephant",
-        "answer4":"Hippopotamus",
-        "correctAnswer":"3"
+        question:"What is the world’s largest land mammal?",
+        answer1:"Colossal Squid",
+        answer2:"Blue Whale",
+        answer3:"Elephant",
+        answer4:"Hippopotamus",
+        correctAnswer:"3",
 
     },
     {
-        "question":"Rio de Janeiro is a city in which South American country",
-        "answer1":"Peru",
-        "answer2":"Brazil",
-        "answer3":"Argentina",
-        "answer4":"Colombia",
-        "correctAnswer":"2"
+        question:"Rio de Janeiro is a city in which South American country",
+        answer1:"Peru",
+        answer2:"Brazil",
+        answer3:"Argentina",
+        answer4:"Colombia",
+        correctAnswer:"2",
 
     },
     {
-        "question":"Which Middle Eastern city is also the name of a type of artichoke",
-        "answer1":"Cyprus",
-        "answer2":"Yemen",
-        "answer3":"Jerusalem",
-        "answer4":"Qatar",
-        "correctAnswer":"3"
+        question:"Which Middle Eastern city is also the name of a type of artichoke",
+        answer1:"Cyprus",
+        answer2:"Yemen",
+        answer3:"Jerusalem",
+        answer4:"Qatar",
+        correctAnswer:"3",
 
     },
     {
-        "question":"With which sport is Silverstone most associated?",
-        "answer1":"Running",
-        "answer2":"Cycling",
-        "answer3":"Horse Racing",
-        "answer4":"Motor Racing",
-        "correctAnswer":"4"
+        question:"Nostradamus was famous for making what?",
+        answer1:"Predictions",
+        answer2:"Candles",
+        answer3:"Poems",
+        answer4:"Boats",
+        correctAnswer:"1",
 
     },
     {
-        "question":"Nostradamus was famous for making what?",
-        "answer1":"Predictions",
-        "answer2":"Candles",
-        "answer3":"Poems",
-        "answer4":"Boats",
-        "correctAnswer":"1"
+        question:"In mythology, romulus and Remus were brought up by which animal?",
+        answer1:"Bear",
+        answer2:"Dog",
+        answer3:"Wolf",
+        answer4:"Ape",
+        correctAnswer:"3",
 
     },
     {
-        "question":"In mythology, romulus and Remus were brought up by which animal?",
-        "answer1":"Bear",
-        "answer2":"Dog",
-        "answer3":"Wolf",
-        "answer4":"Ape",
-        "correctAnswer":"3"
+        question:"What is the main source of vitamin C?",
+        answer1:"Fruit",
+        answer2:"Sun Light",
+        answer3:"Vegetables",
+        answer4:"Coffee",
+        correctAnswer:"1",
 
     },
     {
-        "question":"What is the main source of vitamin C?",
-        "answer1":"Fruit",
-        "answer2":"Sun Light",
-        "answer3":"Vegetables",
-        "answer4":"Coffee",
-        "correctAnswer":"1"
+        question:"The first atom bomb was dropped on which Japanese City?",
+        answer1:"Nagasaki",
+        answer2:"Okinawa",
+        answer3:"Fukuoka",
+        answer4:"Hiroshima",
+        correctAnswer:"4",
 
     },
     {
-        "question":"Insulin is commonly used to treat which condition?",
-        "answer1":"Common Cold",
-        "answer2":"Chlamydia",
-        "answer3":"Diabetes",
-        "answer4":"Flu",
-        "correctAnswer":"3"
+        question:"The Latin word 'Verbatim' means?",
+        answer1:"Talk",
+        answer2:"Word for word",
+        answer3:"Active",
+        answer4:"Overdue",
+        correctAnswer:"2",
 
     },
     {
-        "question":"The first atom bomb was dropped on which Japanese City?",
-        "answer1":"Nagasaki",
-        "answer2":"Okinawa",
-        "answer3":"Fukuoka",
-        "answer4":"Hiroshima",
-        "correctAnswer":"4"
+        question:"Who painted the ceiling of the Sistine Chapel?",
+        answer1:"Michelangelo",
+        answer2:"Leonardo da Vinci",
+        answer3:"Raphael",
+        answer4:"Vincent Van Gogh",
+        correctAnswer:"1",
 
     },
     {
-        "question":"The Latin word 'Verbatim' means?",
-        "answer1":"Talk",
-        "answer2":"Word for word",
-        "answer3":"Active",
-        "answer4":"Overdue",
-        "correctAnswer":"2"
+        question:"Who was 'The Iron Lady'?",
+        answer1:"Elizabeth II",
+        answer2:"Margaret Thatcher",
+        answer3:"Theresa May",
+        answer4:"Cristina Kirchner",
+        correctAnswer:"2",
 
     },
     {
-        "question":"Who painted the ceiling of the Sistine Chapel?",
-        "answer1":"Michelangelo",
-        "answer2":"Leonardo da Vinci",
-        "answer3":"Raphael",
-        "answer4":"Vincent Van Gogh",
-        "correctAnswer":"1"
+        question:"What colour are the seats in the House of Commons?",
+        answer1:"Green",
+        answer2:"Red",
+        answer3:"Blue",
+        answer4:"Brown",
+        correctAnswer:"1",
 
     },
     {
-        "question":"Who was 'The Iron Lady'?",
-        "answer1":"Elizabeth II",
-        "answer2":"Margaret Thatcher",
-        "answer3":"Theresa May",
-        "answer4":"Cristina Kirchner",
-        "correctAnswer":"2"
+        question:"What year did Elvis die?",
+        answer1:"1975",
+        answer2:"1969",
+        answer3:"1977",
+        answer4:"1979",
+        correctAnswer:"3",
 
     },
     {
-        "question":"What colour are the seats in the House of Commons?",
-        "answer1":"Green",
-        "answer2":"Red",
-        "answer3":"Blue",
-        "answer4":"Brown",
-        "correctAnswer":"1"
+        question:"What colour is found on 75% of the world's flags?",
+        answer1:"Green",
+        answer2:"White",
+        answer3:"Blue",
+        answer4:"Red",
+        correctAnswer:"4",
 
     },
     {
-        "question":"What year did Elvis die?",
-        "answer1":"1975",
-        "answer2":"1969",
-        "answer3":"1977",
-        "answer4":"1979",
-        "correctAnswer":"3"
+        question:"Which British military force was established in 1918?",
+        answer1:"SAS",
+        answer2:"RAF",
+        answer3:"SBS",
+        answer4:"No. 617 Squadron RAF",
+        correctAnswer:"2",
 
     },
     {
-        "question":"What colour is found on 75% of the world's flags?",
-        "answer1":"Green",
-        "answer2":"White",
-        "answer3":"Blue",
-        "answer4":"Red",
-        "correctAnswer":"4"
+        question:"What is the most spoken language in the world?",
+        answer1:"Mandarin",
+        answer2:"Spanish",
+        answer3:"English",
+        answer4:"Hindi",
+        correctAnswer:"1",
 
     },
-    {
-        "question":"Which British military force was established in 1918?",
-        "answer1":"SAS",
-        "answer2":"RAF",
-        "answer3":"SBS",
-        "answer4":"No. 617 Squadron RAF",
-        "correctAnswer":"2"
-
-    },
-    {
-        "question":"What is the most spoken language in the world?",
-        "answer1":"Mandarin",
-        "answer2":"Spanish",
-        "answer3":"English",
-        "answer4":"Hindi",
-        "correctAnswer":"1"
-
-    },
-    {
-        "question":"",
-        "answer1":"",
-        "answer2":"",
-        "answer3":"",
-        "answer4":"",
-        "correctAnswer":""
-    },
-]
+];
 //
-let questionCounter = 0; //questionCounter always starts at 0.
-let score = 0; //Score always starts at 0.
-let currentQuestion = {}; // <<< this needs to be understood better.
-let availableQuestions = [];
-let acceptingAnswers = true;
+let questionCounter = 0 //questionCounter always starts at 0.
+let score = 0 //Score always starts at 0.
+let currentQuestion = {} //Empty object to be populated with data from questionBank.
+let availableQuestions = []//equal to the number of objects in the questionBank array.
+let acceptingAnswers = true
 
 //Set score for correct answer and max number of questions.
-const correctScore = 10; //10 points for a correct answer.
-const maxQuestions = 2; //This is only set to 2 for testing purposes.
+const CORRECT_SCORE = 10 //10 points for a correct answer.
+const MAX_QUESTIONS = 2 //This is only set to 2 for testing purposes.
 
 
 //Function to start quiz game. makes sure counter and score is set to 0.
 function startQuiz() {
-    questionCounter = 0;
-    score = 0;
-    availableQuestions = [...questionBank];
-    getNewQuestion();
-}
+    questionCounter = 0
+    score = 0
+    availableQuestions = [...questionBank]
+    getNewQuestion()
+    console.log("Don't be trying to cheat now, I'm watching you.")
+};
 
 getNewQuestion = () => {
-    if(availableQuestions === 0 || questionCounter > maxQuestions) {
+    if(availableQuestions === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('currentRoundScore', score);
 
         return window.location.assign("../../game-over.html");
     }
     //Increase questionCounter by 1 for each iteration. 
-    questionCounter++;
+    questionCounter ++
     //Code here for progress text and bar. 
+    progressCount.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
+    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS)* 100}%`
+
     //Randomly select question from questionBank
     const questionPicker = Math.floor(Math.random() * availableQuestions.length);
     //set current question to the returned question from questionPicker.
     currentQuestion = availableQuestions[questionPicker];
     //set the inner text of question to 
-    question.innerText = currentQuestion.question;
+    questionText.innerText = currentQuestion.question;
 
     answers.forEach(answer => {
-        const number = answer.dataset["num"];
+        const number = answer.dataset["number"];
         answer.innerText = currentQuestion['answer' + number];
     });
 
@@ -212,28 +194,29 @@ getNewQuestion = () => {
 
 answers.forEach(answer => {
     answer.addEventListener("click", e => {
-        if(!acceptingAnswers) return;
+        if(!acceptingAnswers) return
 
-        acceptingAnswers = false;
-        const selectedOption = e.target;
-        const selectedAnswer = selectedOption.dataset["num"];
+        acceptingAnswers = false
+        const selectedOption = e.target
+        const selectedAnswer = selectedOption.dataset["number"]
 
-        let classToApply = selectedAnswer == currentQuestion.answer ? "correct-answer" : "incorrect-answer";
+        let classToApply = selectedAnswer == currentQuestion.correctAnswer ? "correct-answer" : "wrong-answer"
 
         if(classToApply === "correct-answer") {
-            increaseScore(correctScore)
-        };
-        selectedOption.parentElement.classList.add(classToApply);
+            increaseScore(CORRECT_SCORE)
+        }
+        selectedOption.parentElement.classList.add(classToApply)
+        
         setTimeout(() => {
-            selectedOption.parentElement.classList.remove(classToApply);
-            getNewQuestion();
-        }, 1000);
+            selectedOption.parentElement.classList.remove(classToApply)
+            getNewQuestion()
+        }, 1000)
     })
 })
 
 increaseScore = num => {
-    score +=num;
-    scoreCount.innerText = score;
+    score += num
+    scoreCount.innerText = score
 }
 
 startQuiz()

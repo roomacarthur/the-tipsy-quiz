@@ -170,10 +170,15 @@ nav > ul > li > a:hover {
 }
 #progress {
     border: .1rem solid var(--lightblue);
-    width: 8rem;
+    width: 100%;
     height: 1.5rem;
     border-radius: 1rem;
-
+}
+#progress-full {
+    height: 100%;
+    background-color: var(--lightblue);
+    width: 0%;
+    border-radius: 1rem;
 }
 #question {
     font-family: 'poppins', sans-serif;
@@ -208,6 +213,8 @@ nav > ul > li > a:hover {
     padding: .2rem;
 }
 .answer-text {
+    width: 100%;
+    height: 100%;
     padding: .2rem;
 }
 /*Answer correct/incorrect colour change*/
@@ -218,6 +225,17 @@ nav > ul > li > a:hover {
     background-color: red;
 }
 /*game-over.html styling*/
+#end-score-tag {
+    font-size: 1.5rem;
+}
+#end-score {
+    font-size: 2.5rem
+}
+#player-name {
+    margin: .2rem;
+    width: 12rem;
+    height: 2rem;
+}
 
 /*help.html styling*/
 .help-container {
