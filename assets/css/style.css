@@ -406,7 +406,7 @@ footer > i {
 }
 @media screen and (min-width: 768px){
     header {
-        height: 12vh;
+        height: 13vh;
     }
     .logo > h1{
         font-size: 3.5rem;
