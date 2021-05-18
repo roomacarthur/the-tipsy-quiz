@@ -151,7 +151,7 @@ let acceptingAnswers = true
 
 //Set score for correct answer and max number of questions.
 const CORRECT_SCORE = 10 //10 points for a correct answer.
-const MAX_QUESTIONS = 2 //This is only set to 2 for testing purposes.
+const MAX_QUESTIONS = 10 //This is only set to 2 for testing purposes.
 
 
 //Function to start quiz game. makes sure counter and score is set to 0.
