@@ -150,8 +150,8 @@ let availableQuestions = []//equal to the number of objects in the questionBank 
 let acceptingAnswers = true
 
 //Set score for correct answer and max number of questions.
-const CORRECT_SCORE = 10 //10 points for a correct answer.
-const MAX_QUESTIONS = 10 //This is only set to 2 for testing purposes.
+const correctScore = 10 //10 points for a correct answer.
+const maxQuestions = 2 //This is only set to 2 for testing purposes.
 
 
 //Function to start quiz game. makes sure counter and score is set to 0.
@@ -164,7 +164,7 @@ function startQuiz() {
 };
 
 getNewQuestion = () => {
-    if(availableQuestions === 0 || questionCounter >= MAX_QUESTIONS) {
+    if(availableQuestions === 0 || questionCounter >= maxQuestions) {
         localStorage.setItem('currentRoundScore', score);
 
         return window.location.assign("/game-over.html");
@@ -172,8 +172,8 @@ getNewQuestion = () => {
     //Increase questionCounter by 1 for each iteration. 
     questionCounter ++
     //Code here for progress text and bar. 
-    progressCount.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
-    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS)* 100}%`
+    progressCount.innerText = `Question ${questionCounter} of ${maxQuestions}`
+    progressBarFull.style.width = `${(questionCounter/maxQuestions)* 100}%`
 
     //Randomly select question from questionBank
     const questionPicker = Math.floor(Math.random() * availableQuestions.length);
@@ -203,7 +203,7 @@ answers.forEach(answer => {
         let classToApply = selectedAnswer == currentQuestion.correctAnswer ? "correct-answer" : "wrong-answer"
 
         if(classToApply === "correct-answer") {
-            increaseScore(CORRECT_SCORE)
+            increaseScore(correctScore)
         }
         selectedOption.parentElement.classList.add(classToApply)
         
