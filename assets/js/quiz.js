@@ -167,7 +167,7 @@ getNewQuestion = () => {
     if(availableQuestions === 0 || questionCounter >= maxQuestions) {
         localStorage.setItem('currentRoundScore', score);
 
-        return window.location.assign("/game-over.html");
+        return window.location.assign("./assets/js/game-over.html");
     }
     //Increase questionCounter by 1 for each iteration. 
     questionCounter ++
