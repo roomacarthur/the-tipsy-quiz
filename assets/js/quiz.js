@@ -164,7 +164,7 @@ function startQuiz() {
 };
 
 getNewQuestion = () => {
-    if(availableQuestions === 0 || questionCounter > MAX_QUESTIONS) {
+    if(availableQuestions === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('currentRoundScore', score);
 
         return window.location.assign("../../game-over.html");
