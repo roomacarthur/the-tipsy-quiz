@@ -15,8 +15,9 @@ username.addEventListener('keyup', () => {
 })
 
 logHighScore = e => {
+    
     e.preventDefault()
-
+    //
     const score = {
         score: totalScore,
         name: username.value
@@ -27,7 +28,7 @@ logHighScore = e => {
     })
 
     highScores.splice(5)
-
+    //save highScores to local storage
     localStorage.setItem("highScores", JSON.stringify(highScores))
     //return to index.html
     window.location.assign("/index.html")
