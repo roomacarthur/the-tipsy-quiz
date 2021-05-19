@@ -5,23 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/images/favicon/favicon-32x32.png"
-    />
-    <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="assets/images/favicon/favicon-16x16.png"
+      href="assets/images/favicon/icons8-beer-16.png"
     />
-    <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -44,7 +32,7 @@
     </header>
     <main>
       <div class="container">
-        <h2>Game Over!</h2>
+        <h2 id="gameover-tag">Game Over!</h2>
         <p id="end-score-tag">You Scored: <span id="end-score">0</span></p>
         <h3>Please enter your name to save your score:</h3>
         <input
@@ -53,7 +41,15 @@
           id="player-name"
           placeholder="Enter your name..."
         />
-        <button class="btn" id="submit-score" type="submit">Save Score</button>
+        <button
+          class="btn"
+          id="submit-score"
+          type="submit"
+          onclick="logHighScore(event)"
+          disabled
+        >
+          Save Score
+        </button>
         <a href="quiz.html" class="btn" id="startNewQuiz">Play Again</a>
         <a href="high-scores.html" class="btn hs-btn"
           >High Scores<i class="fas fa-trophy"></i

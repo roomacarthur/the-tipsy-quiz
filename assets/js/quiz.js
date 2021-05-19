@@ -150,7 +150,7 @@ let availableQuestions = []//equal to the number of objects in the questionBank 
 let acceptingAnswers = true
 
 //Set score for correct answer and max number of questions.
-const correctScore = 10 //10 points for a correct answer.
+const correctScore = 200 //10 points for a correct answer.
 const maxQuestions = 2 //This is only set to 2 for testing purposes.
 
 
@@ -167,7 +167,7 @@ getNewQuestion = () => {
     if(availableQuestions === 0 || questionCounter >= maxQuestions) {
         localStorage.setItem('currentRoundScore', score);
 
-        return window.location.assign("/the-tipsy-quiz/game-over.html");
+        return window.location.assign("/game-over.html");
     }
     //Increase questionCounter by 1 for each iteration. 
     questionCounter ++

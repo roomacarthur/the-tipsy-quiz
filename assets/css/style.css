@@ -147,7 +147,16 @@ nav > ul > li > a:hover {
 }
 /*high-scores.html styling*/
 #high-score-ranks {
+    list-style-type: style;
+    margin: 1rem auto;
+    width: 80%;
+}
+.high-scores-div > h2 {
+    text-align: center;
+}
 
+.high-score {
+    font-size: 1.5rem;
 }
 /*quiz.html styling.*/
 #quiz {
