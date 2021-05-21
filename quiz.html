@@ -4,24 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Favicon link-->
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
       href="assets/images/favicon/icons8-beer-16.png"
     />
+    <!--Font Awesome CDN import to allow for usage of icons.-->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
+    <!--Link to style.css-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <title>The Tipsy Quiz - Quiz</title>
   </head>
   <body>
+    <!--Header section.-->
     <header>
+      <!--Logo for site.-->
       <a class="logo" href="index.html"><h1>The Tipsy Quiz</h1></a>
+      <!--Header Navigation.-->
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -30,26 +36,34 @@
         </ul>
       </nav>
     </header>
+    <!--Main page content.-->
     <main>
+      <!--Container for page content.-->
       <div class="container">
+        <!--Quiz content.-->
         <div id="quiz">
+          <!--Quiz info, question Count and Score.-->
           <div id="quiz-top">
             <div class="quiz-item">
+              <!--Question counter display, will be adjusted via JS-->
               <h3 id="question-count">Question</h3>
               <div id="progress" class="w3-round">
                 <div id="progress-full" class="w3-round"></div>
               </div>
             </div>
+            <!--Score section, score will increase with correct answers via JS.-->
             <div class="quiz-item">
               <h3 id="score-tag">Score</h3>
               <h3 id="score-count">0</h3>
             </div>
           </div>
+          <!--Main Question, lorem for styling will be over written via JS.-->
           <h2 id="question">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At
             obcaecati qui accusantium dolore quasi aspernatur Lorem ipsum dolor
             sit amet.?
           </h2>
+          <!--Answer elements, container with answer number and answer text that will be populated via JS.-->
           <div class="answer-container">
             <p class="answer-num">1</p>
             <p class="answer-text" data-number="1">Answer 1</p>
@@ -69,8 +83,11 @@
         </div>
       </div>
     </main>
+    <!--Footer content.-->
     <footer>
+      <!--Link to help.html using ? icon.-->
       <a href="help.html"><i class="fas fa-question-circle"></i></a>
+      <!--Link to my personal GitHub.-->
       <a
         id="dev-link"
         href="https://github.com/roomacarthur"
@@ -81,6 +98,7 @@
         <i class="fab fa-github"></i>
       </a>
     </footer>
+    <!--JS Script link for quiz - quiz.js-->
     <script src="assets/js/quiz.js"></script>
   </body>
 </html>
