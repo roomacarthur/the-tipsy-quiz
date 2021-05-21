@@ -4,24 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Favicon link.-->
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
       href="assets/images/favicon/icons8-beer-16.png"
     />
+    <!--Font Awesome CDN import to allow usage of icons.-->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
+    <!--Link style.css to document.-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <title>The Tipsy Quiz - Help</title>
   </head>
   <body>
+    <!--Header section.-->
     <header>
+      <!--Logo for site.-->
       <a class="logo" href="index.html"><h1>The Tipsy Quiz</h1></a>
+      <!--Header Navigation.-->
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -30,10 +36,14 @@
         </ul>
       </nav>
     </header>
+    <!--Main content of page.-->
     <main>
+      <!--Page container.-->
       <div class="container">
+        <!--Sub container for help items.-->
         <div class="help-container">
           <h2>How to play</h2>
+          <!--Listed instructions on how to play with appropriate links.-->
           <ol>
             <li>Click <a id="startNewQuiz" href="quiz.html">play.</a></li>
             <li>Answer as many questions as possible correctly.</li>
@@ -42,9 +52,12 @@
               <a href="high-scores.html">high scores.</a>
             </li>
           </ol>
+          <!--Contact section.-->
           <h2>Need Help?</h2>
           <p>Need extra help or have a question? Contact us!</p>
+          <!--contact form. Name, Email and message.-->
           <form>
+            <!--Name input.-->
             <label for="nameinput">Name:</label>
             <input
               id="nameinput"
@@ -53,6 +66,7 @@
               placeholder="Your name..."
               required
             />
+            <!--Email input.-->
             <label for="emailinput">Email:</label>
             <input
               id="emailinput"
@@ -61,23 +75,29 @@
               placeholder="Your name..."
               required
             />
-
+            <!--Message text area.-->
             <label for="messageinput">message:</label>
             <textarea
               id="messageinput"
               placeholder="Write your message..."
               required
             ></textarea>
+            <!--Form buttons.-->
             <div class="form-btns-container">
+              <!--Send button.-->
               <input class="form-btn" type="submit" value="Send" />
+              <!--Clear form button.-->
               <input class="form-btn" type="reset" value="Clear Form" />
             </div>
           </form>
         </div>
       </div>
     </main>
+    <!--Footer content.-->
     <footer>
+      <!--Link to help.html using ? icon.-->
       <a href="help.html"><i class="fas fa-question-circle"></i></a>
+      <!--Link to my personal GitHub.-->
       <a
         id="dev-link"
         href="https://github.com/roomacarthur"
@@ -88,6 +108,7 @@
         <i class="fab fa-github"></i>
       </a>
     </footer>
+    <!--Link for page appropriate JS file/location.-->
     <script src="assets/js/app.js"></script>
   </body>
 </html>
