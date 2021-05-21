@@ -4,24 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Favicon link-->
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
       href="assets/images/favicon/icons8-beer-16.png"
     />
+    <!--Font Awesome CDN import to allow for usage of icons.-->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
+    <!--Link style.css to document.-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <title>The Tipsy Quiz - :(</title>
   </head>
   <body>
+    <!--Header section.-->
     <header>
+      <!--Logo for site.-->
       <a class="logo" href="index.html"><h1>The Tipsy Quiz</h1></a>
+      <!--Header Navigation.-->
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -30,17 +36,24 @@
         </ul>
       </nav>
     </header>
+    <!--Main content for game-over.html.-->
     <main>
+      <!--Main container for page.-->
       <div class="container">
+        <!--Game over warning!-->
         <h2 id="gameover-tag">Game Over!</h2>
+        <!--Prompt for total scores in this round.-->
         <p id="end-score-tag">You Scored: <span id="end-score">0</span></p>
+        <!--Prompt to enter a username.-->
         <h3>Please enter your name to save your score:</h3>
+        <!--Username input area. -->
         <input
           type="text"
           name="name"
           id="player-name"
           placeholder="Enter your name..."
         />
+        <!--Save score button, To be disabled if username field hasn't been populated-->
         <button
           class="btn"
           id="submit-score"
@@ -50,14 +63,18 @@
         >
           Save Score
         </button>
+        <!--Buttons to navigate. Option to Play again and visit high scores.-->
         <a href="quiz.html" class="btn" id="startNewQuiz">Play Again</a>
         <a href="high-scores.html" class="btn hs-btn"
           >High Scores<i class="fas fa-trophy"></i
         ></a>
       </div>
     </main>
+    <!--Footer content.-->
     <footer>
+      <!--Link to help.html using ? icon.-->
       <a href="help.html"><i class="fas fa-question-circle"></i></a>
+      <!--Link to my personal GitHub page.-->
       <a
         id="dev-link"
         href="https://github.com/roomacarthur"
@@ -68,6 +85,7 @@
         <i class="fab fa-github"></i>
       </a>
     </footer>
+    <!--JS Script link for this page. game-over.js -->
     <script src="assets/js/game-over.js"></script>
   </body>
 </html>
