@@ -4,22 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Favicon link-->
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
       href="assets/images/favicon/icons8-beer-16.png"
     />
+    <!--Font Awesome CDN import to allow usage of icons-->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
+    <!--Link style.css to document.-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <title>The Tipsy Quiz - High Scores</title>
   </head>
   <body>
+    <!-- Header section -->
     <header>
       <a class="logo" href="index.html"><h1>The Tipsy Quiz</h1></a>
       <nav>
@@ -30,6 +34,7 @@
         </ul>
       </nav>
     </header>
+    <!-- Main content of page  -->
     <main>
       <div class="container">
         <div class="high-scores-div">
@@ -39,18 +44,23 @@
         <a class="btn" id="startNewQuiz" href="quiz.html">Play</a>
       </div>
     </main>
+    <!-- Footer content  -->
     <footer>
+      <!--Link to help.html-->
       <a href="help.html"><i class="fas fa-question-circle"></i></a>
+      <!-- Link to my personal github  -->
       <a
         id="dev-link"
         href="https://github.com/roomacarthur"
         target="_blank"
+        rel="noopener"
         aria-label="Visit the site creators github (opens in a new tab)"
       >
         <h3>Site by Roo</h3>
         <i class="fab fa-github"></i>
       </a>
     </footer>
+    <!--JS link to the high scores js file.-->
     <script src="assets/js/high-scores.js"></script>
   </body>
 </html>
