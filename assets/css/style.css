@@ -15,7 +15,7 @@ Implement Media Queries for Table, Laptop and Desktop Viewing.
     --purple: #581b98;
     --dark: #312d2d;
 }
-/*Main styling.*/
+/*Core re-usable elements*/
 * {
     padding: 0;
     margin: 0;
@@ -36,7 +36,7 @@ h2 {
     margin-bottom: 2rem;
 }
 
-/*Styling - Main Navigation.*/
+/*Header styling.*/
 header {
     height: 14vh;
     min-height:10vh;
@@ -44,6 +44,7 @@ header {
     background: var(--dark);
     margin-bottom: 1rem;
 }
+/*Main logo for site in header.*/
 .logo {
     text-decoration: none;
     text-align: center;
@@ -54,10 +55,13 @@ header {
   letter-spacing: .1rem;
   font-size: 2rem;
 }
+/*Logo shake on hover. 'vibrate' can be found line 388 <<<<< THIS NEEDS TO BE CHECKED before submit! */
 .logo > h1:hover {
+    cursor: pointer;
     animation: vibrate 1s;
     animation-iteration-count: infinite;
 }
+/*Main navigation styling.*/
 nav{
     top: 1rem;
     margin: 0 auto;
@@ -86,10 +90,13 @@ nav > ul > li > a:hover {
     background-color: var(--pink);
     border-radius: .4rem;
     cursor: pointer;
-
+}
+/*Active nav highlight.*/
+.active-nav {
+    
 }
 
-/*Page content styling.*/
+/*Page container styling, Parent element for individual pages main content.*/
 .container {
     background: var(--dark);
     width: 90vw;
@@ -122,7 +129,6 @@ nav > ul > li > a:hover {
     cursor: pointer;
     box-shadow: 0 0.2rem 1rem 0 var(--lightgrey);
     animation: wobble .5s;
-    /* transform: scale(1.04); */
 }
 @keyframes wobble {
     0% {transform: rotate(2deg)}

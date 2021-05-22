@@ -172,7 +172,7 @@ getNewQuestion = () => {
     }
     //Increase questionCounter by 1 for each iteration. 
     questionCounter ++
-    //Code here for progress text and bar. 
+    //Code here for progress text and progress bar. 
     progressCount.innerText = `Question ${questionCounter} of ${maxQuestions}`
     progressBarFull.style.width = `${(questionCounter/maxQuestions)* 100}%`
 
@@ -180,7 +180,7 @@ getNewQuestion = () => {
     const questionPicker = Math.floor(Math.random() * availableQuestions.length);
     //set current question to the returned question from questionPicker.
     currentQuestion = availableQuestions[questionPicker];
-    //set the inner text of question to 
+    //set the inner text of question
     questionText.innerText = currentQuestion.question;
 
     answers.forEach(answer => {
