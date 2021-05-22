@@ -93,7 +93,9 @@ nav > ul > li > a:hover {
 }
 /*Active nav highlight.*/
 .active-nav {
-    
+    color: var(--dark);
+    background-color: var(--pink);
+    border-radius: .4rem;
 }
 
 /*Page container styling, Parent element for individual pages main content.*/
