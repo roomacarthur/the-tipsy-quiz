@@ -21,7 +21,7 @@
 
 ## Project Goals
 
-The Tipsy Quiz, is a fun interactive website where the user partakes in a pub like quiz, Questions covering multiple subjects including picture rounds. Take on the quiz solo or as a group and see how high you can score!
+The Tipsy Quiz, is a fun interactive website where the user partakes in a General Knowledge quiz. The quiz itself is themed around a pub quiz. Answer multiple choice questions to gain as high a score possible before the Quiz ends, Don't forget to enter a username and submit your score to rank on the high scores.
 
 ## User Experience
 
@@ -129,6 +129,7 @@ The initial plan was to use [Pangolin](https://fonts.google.com/specimen/Pangoli
 
 - Dark mode.
 - Random subject wheel.
+- Difficulty Mode.
 
 ## Technologies
 
@@ -208,4 +209,6 @@ To make a local clone of the project follow these steps:
 
 ## Credits
 
-1.
+1. [Brian Design](https://youtu.be/f4fB9Xg2JEY)
+
+- The
