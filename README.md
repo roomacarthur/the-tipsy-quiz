@@ -5,6 +5,7 @@
 ### Presentation of interactive data using a font-end site
 
 ![Example of the application on multiple devices.](/assets/images/...)
+
 <a href="https://roomacarthur.github.io/the-tipsy-quiz/" target="_blank">Click here to view Site.</a>
 
 [Click here to view Site.](https://roomacarthur.github.io/the-tipsy-quiz/)
