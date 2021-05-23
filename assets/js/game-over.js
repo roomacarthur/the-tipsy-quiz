@@ -31,5 +31,5 @@ logHighScore = e => {
     //save highScores to local storage
     localStorage.setItem("highScores", JSON.stringify(highScores))
     //return to index.html
-    window.location.assign("/index.html")
+    window.location.assign("./index.html")
 }
