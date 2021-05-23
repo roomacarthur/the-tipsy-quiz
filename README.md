@@ -210,5 +210,4 @@ To make a local clone of the project follow these steps:
 ## Credits
 
 1. [Brian Design](https://youtu.be/f4fB9Xg2JEY)
-
-- The
+   - Brian Design's YouTube tutorial for a vanilla JS quiz was followed, his code was used in a boilerplate fashion, the code has been edited significantly to reach the aimed objectives for the site.
