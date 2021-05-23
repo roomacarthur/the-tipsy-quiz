@@ -6,10 +6,9 @@
 
 ![Example of the application on multiple devices.](/assets/images/...)
 
-<a href="https://roomacarthur.github.io/the-tipsy-quiz/" target="_blank">Click here to view Site.</a>
-
 [Click here to view Site.](https://roomacarthur.github.io/the-tipsy-quiz/)
-[Click here to view Repository.]()
+
+[Click here to view Repository.](https://github.com/roomacarthur/the-tipsy-quiz)
 
 ## Table of Contents:
 
@@ -33,7 +32,6 @@ The Tipsy Quiz, is a fun interactive website where the user partakes in a Genera
 
   1. Enjoy their experience whilst active on the site.
   2. Enjoy their time partaking in the quiz.
-  3.
 
 - Returning User:
 
@@ -45,7 +43,6 @@ The Tipsy Quiz, is a fun interactive website where the user partakes in a Genera
   2. Ensure there are questions covering a wide variety of difficulties and subjects.
   3. Make sure the user enjoys their time using the application.
   4. Provide easy access to dev to submit questions.
-  5.
 
 ### Design
 
@@ -155,6 +152,11 @@ The initial plan was to use [Pangolin](https://fonts.google.com/specimen/Pangoli
   - Provided a Remote repository for the application. Allowing for my coding to be backed up online as I go.
 
 ## Testing
+
+### Bugs & Fixes
+
+1. README.md links to open in new tab.
+   - Some specific links to this README.md file would work better if they opened in a new tab when clicked but after some testing and then research I found out that this in fact is not possible. [Evidence.](https://stackoverflow.com/questions/50834937/open-readme-md-link-in-new-tab-github)
 
 ## Deployment
 
