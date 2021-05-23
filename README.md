@@ -6,7 +6,7 @@
 
 ![Example of the application on multiple devices.](/assets/images/...)
 
-[Click here to view Site.](https://roomacarthur.github.io/the-tipsy-quiz/)
+[Click here to view Site.](https://roomacarthur.github.io/the-tipsy-quiz/){:target="\_blank"}
 [Click here to view Repository.]()
 
 ## Table of Contents:
@@ -211,3 +211,7 @@ To make a local clone of the project follow these steps:
 
 1. [Brian Design](https://youtu.be/f4fB9Xg2JEY)
    - Brian Design's YouTube tutorial for a vanilla JS quiz was followed, his code was used in a boilerplate fashion, the code has been edited significantly to reach the aimed objectives for the site.
+2. [Shake Hover Effect](https://www.w3schools.com/howto/howto_css_shake_image.asp)
+   - W3Schools code for "shake effect" was used.
+3. [iCons8](https://icons8.com/icons/set/beer)
+   - icons8 was used for sourcing a Favicon.
