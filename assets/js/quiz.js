@@ -18,7 +18,7 @@ let questionBank = [
 
     },
     {
-        question:"Rio de Janeiro is a city in which South American country",
+        question:"Rio de Janeiro is a city in which South American country?",
         answer1:"Peru",
         answer2:"Brazil",
         answer3:"Argentina",
@@ -27,7 +27,7 @@ let questionBank = [
 
     },
     {
-        question:"Which Middle Eastern city is also the name of a type of artichoke",
+        question:"Which Middle Eastern city is also the name of a type of artichoke?",
         answer1:"Cyprus",
         answer2:"Yemen",
         answer3:"Jerusalem",
@@ -84,14 +84,14 @@ let questionBank = [
         question:"Who painted the ceiling of the Sistine Chapel?",
         answer1:"Michelangelo",
         answer2:"Leonardo da Vinci",
-        answer3:"Raphael",
+        answer3:"Joel Southgates",
         answer4:"Vincent Van Gogh",
         correctAnswer:"1",
 
     },
     {
         question:"Who was 'The Iron Lady'?",
-        answer1:"Elizabeth II",
+        answer1:"John Sullivan",
         answer2:"Margaret Thatcher",
         answer3:"Theresa May",
         answer4:"Cristina Kirchner",
@@ -152,8 +152,8 @@ let availableQuestions = [];//Empty Array for questions.
 let acceptingAnswers = true;
 
 //Set score for correct answer and max number of questions.
-const correctScore = 15 //15 points for a correct answer.
-const maxQuestions = 2 //This is only set to 2 for testing purposes.
+const correctScore = 25 //15 points for a correct answer.
+const maxQuestions = 10 //This is only set to 2 for testing purposes.
 
 const speak = (text) => {
     var msg = new SpeechSynthesisUtterance(text);
@@ -168,6 +168,7 @@ function startQuiz() {
     getNewQuestion()    //Run getNewQuestion function.
     console.log("Don't be trying to cheat now, I'm watching you.")  //I see you cheating. 
 };
+
 
 getNewQuestion = () => {
     //Code for finishing quiz.
@@ -191,7 +192,8 @@ getNewQuestion = () => {
     currentQuestion = availableQuestions[questionPicker];
     //set the inner text of question
     questionText.innerText = currentQuestion.question;
-    speak(`${currentQuestion.question}`)
+    
+    speak(`${currentQuestion.question}`)// <<<<<<<<<< to be replaced with onclick function of question.
 
     answers.forEach(answer => {
 
@@ -203,7 +205,7 @@ getNewQuestion = () => {
 
     acceptingAnswers = true;
 }
-            console.log(currentQuestion)
+
 answers.forEach(answer => {
     answer.addEventListener("click", e => {
         if(!acceptingAnswers) return

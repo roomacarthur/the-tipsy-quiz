@@ -12,7 +12,7 @@ const highScores = JSON.parse(localStorage.getItem("highScores")) || []
 //Set final score to that of Current Round Score. 
 finalScore.innerText = totalScore 
 
-
+//Look for data to be entered into the username text field before submit is allowed.
 username.addEventListener('keyup', () => {
     saveScore.disabled = !username.value
 })

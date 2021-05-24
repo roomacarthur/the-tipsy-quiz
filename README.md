@@ -232,6 +232,8 @@ To make a local clone of the project follow these steps:
    - W3Schools code for "shake effect" was used.
 3. [iCons8](https://icons8.com/icons/set/beer)
    - icons8 was used for sourcing a Favicon.
+4. [SpeechSynthesis](https://codingislove.com/speech-with-javascript/)
+   - Speech Synthesis for reading out questions and notifying if correct/incorrect.
 
 ---
 
