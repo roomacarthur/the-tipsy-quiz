@@ -156,21 +156,25 @@ const correctScore = 200 //10 points for a correct answer.
 const maxQuestions = 2 //This is only set to 2 for testing purposes.
 
 
-//Function to start quiz game. makes sure counter and score is set to 0.
+//Function to start quiz game.
 function startQuiz() {
-    questionCounter = 0
-    score = 0
-    availableQuestions = [...questionBank]
-    getNewQuestion()
-    console.log("Don't be trying to cheat now, I'm watching you.")
+    questionCounter = 0 //set questionCounter to zero.
+    score = 0   //Score always starts at zero.
+    availableQuestions = [...questionBank]  //available questions come from questionBank.
+    getNewQuestion()    //Run getNewQuestion function.
+    console.log("Don't be trying to cheat now, I'm watching you.")  //I see you cheating. 
 };
 
 getNewQuestion = () => {
+    //Code for finishing quiz.
     if(availableQuestions === 0 || questionCounter >= maxQuestions) {
+        //submit score to local storage.
         localStorage.setItem('currentRoundScore', score);
-
+        //return to game-over.html page. 
         return window.location.assign("./game-over.html");
     }
+    //if quiz isn't over do this: 
+
     //Increase questionCounter by 1 for each iteration. 
     questionCounter ++
     //Code here for progress text and progress bar. 
@@ -185,6 +189,7 @@ getNewQuestion = () => {
     questionText.innerText = currentQuestion.question;
 
     answers.forEach(answer => {
+
         const number = answer.dataset["number"];
         answer.innerText = currentQuestion['answer' + number];
     });
