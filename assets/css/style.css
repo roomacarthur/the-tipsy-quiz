@@ -479,6 +479,11 @@ footer {
         margin-top: 1rem;
     }
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+    header {
+        height: 25vh;
+    }
+}
 @media screen and (min-width: 768px){
     header {
         height: 13vh;
