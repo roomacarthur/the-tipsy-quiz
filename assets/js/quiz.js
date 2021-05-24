@@ -152,7 +152,7 @@ let availableQuestions = [];//Empty Array for questions.
 let acceptingAnswers = true;
 
 //Set score for correct answer and max number of questions.
-const correctScore = 200 //10 points for a correct answer.
+const correctScore = 15 //15 points for a correct answer.
 const maxQuestions = 2 //This is only set to 2 for testing purposes.
 
 
@@ -211,8 +211,10 @@ answers.forEach(answer => {
 
         if(classToApply === "correct-answer") {
             increaseScore(correctScore)
+            //speech synthesis for correct.
         }
         selectedOption.parentElement.classList.add(classToApply)
+        //speech synthesis for wrong + what was the correct answer.
         
         setTimeout(() => {
             selectedOption.parentElement.classList.remove(classToApply)
