@@ -38,7 +38,7 @@ h2 {
 
 /*Header styling.*/
 header {
-    height: 14vh;
+    height: 16vh;
     min-height:10vh;
     color: var(--lightgrey);
     background: var(--dark);
@@ -165,14 +165,22 @@ nav > ul > li > a:hover {
 }
 /*High Scores list.*/
 #high-score-ranks {
-    list-style-type: style;
+    /* list-style-type:upper-roman; */
     margin: 1rem auto;
-    width: 80%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    list-style-position: inside;
 }
 /*High score element styling - class from JS*/
 .high-score {
     font-size: 1.5rem;
 }
+/*Send the score to the right hand side.*/
+.score-count {
+    float: right;
+}
+
 /*quiz.html styling.*/
 #quiz {
     height: 100%;

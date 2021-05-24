@@ -1,3 +1,4 @@
+//Global Variables.
 const questionText = document.getElementById("question");
 const scoreCount = document.getElementById("score-count");
 //collect .answer-text and put them in an array.
@@ -5,7 +6,7 @@ const answers = Array.from(document.getElementsByClassName("answer-text"));
 const progressCount = document.getElementById("question-count");
 const progressBarFull = document.getElementById("progress-full");
 
-//Questions for the quiz.
+//Question and answers for the quiz.
 let questionBank = [
     {
         question:"What is the world’s largest land mammal?",
