@@ -1,4 +1,4 @@
-# The Tipsy Quiz❓ - Ruairidh MacArthur
+# The Tipsy Quiz🍺 - Ruairidh MacArthur
 
 ## Code Institute - Milestone Project 2
 
