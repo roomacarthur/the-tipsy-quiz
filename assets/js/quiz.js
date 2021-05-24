@@ -5,6 +5,7 @@ const scoreCount = document.getElementById("score-count");
 const answers = Array.from(document.getElementsByClassName("answer-text"));
 const progressCount = document.getElementById("question-count");
 const progressBarFull = document.getElementById("progress-full");
+const playQuestion = document.getElementsByClassName("play-question");
 
 //Question and answers for the quiz.
 let questionBank = [
@@ -143,6 +144,69 @@ let questionBank = [
         correctAnswer:"1",
 
     },
+    {
+        question:"What is an axolotl?",
+        answer1:"A nerve in the brain",
+        answer2:"A multi-axled vehicle",
+        answer3:"A type of mortice lock",
+        answer4:"A species of salamander",
+        correctAnswer:"4",
+
+    },
+    {
+        question:"The Plaka is the oldest quarter of which city?",
+        answer1:"Athens",
+        answer2:"Prague",
+        answer3:"Rome",
+        answer4:"Vienna",
+        correctAnswer:"1",
+
+    },
+    {
+        question:"The Panama Canal was officially opened by which US president?",
+        answer1:"Calvin Coolidge",
+        answer2:"Herbert Hoover",
+        answer3:"Theodore Roosevelt",
+        answer4:"Woodrow Wilson",
+        correctAnswer:"4",
+
+    },
+    {
+        question:"In which opera did Maria Callas make her last appearance at Covent Garden?",
+        answer1:"Carmen",
+        answer2:"Tosca",
+        answer3:"Madame Butterfly",
+        answer4:"La Boheme",
+        correctAnswer:"2",
+
+    },
+    {
+        question:"What is a Kudzu?",
+        answer1:"Antelope",
+        answer2:"Bird",
+        answer3:"Jewish settlement",
+        answer4:"Climbing plant",
+        correctAnswer:"1",
+
+    },
+    {
+        question:"From which country does tennis player Andres Gomez, winner of the 1990 French Championships, come from?",
+        answer1:"Ecuador",
+        answer2:"Peru",
+        answer3:"Portugal",
+        answer4:"Spain",
+        correctAnswer:"1",
+
+    },
+    {
+        question:"In which ocean is Madagascar?",
+        answer1:"Atlantic",
+        answer2:"Pacific",
+        answer3:"Indian",
+        answer4:"Arctic",
+        correctAnswer:"3",
+
+    },
 ];
 //
 let questionCounter = 0; //questionCounter always starts at 0.
@@ -155,11 +219,20 @@ let acceptingAnswers = true;
 const correctScore = 25 //15 points for a correct answer.
 const maxQuestions = 10 //This is only set to 2 for testing purposes.
 
+
+//Speech Synthesis to read out questions and announce if correct or not.
 const speak = (text) => {
     var msg = new SpeechSynthesisUtterance(text);
-    msg.voice = window.speechSynthesis.default;
+    msg.voice = window.speechSynthesis.getVoices[4];
     window.speechSynthesis.speak(msg);
 }
+
+//read out question function.
+function readQuestion() {
+    speak(`${currentQuestion.question}`)
+}
+
+
 //Function to start quiz game.
 function startQuiz() {
     questionCounter = 0 //set questionCounter to zero.
@@ -192,9 +265,12 @@ getNewQuestion = () => {
     currentQuestion = availableQuestions[questionPicker];
     //set the inner text of question
     questionText.innerText = currentQuestion.question;
-    
-    speak(`${currentQuestion.question}`)// <<<<<<<<<< to be replaced with onclick function of question.
+    //Read out current Question text.
+    // setTimeout(() => {
+    //     speak(`${currentQuestion.question}`)
+    // }, 200)
 
+    //Locate answers for currentQuestion and assign them to the correct location."using dataset"
     answers.forEach(answer => {
 
         const number = answer.dataset["number"];
@@ -218,16 +294,17 @@ answers.forEach(answer => {
 
         if(classToApply === "correct-answer") {
             increaseScore(correctScore)
-            //speech synthesis for correct.
+            //speech for correct.
             speak(`Correct!`)
         } else {
-            speak(`Incorrect`)
+            //speech for incorrect.
+            speak(`Incorrect!`)
         }
         selectedOption.parentElement.classList.add(classToApply)
         setTimeout(() => {
             selectedOption.parentElement.classList.remove(classToApply)
             getNewQuestion()
-        }, 1000)
+        }, 1500)
     })
 })
 

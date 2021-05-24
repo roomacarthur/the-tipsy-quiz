@@ -217,6 +217,20 @@ nav > ul > li > a:hover {
     top:0;
     left:0;
 }
+
+.play-question {
+    width: 8rem;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border: 1px solid var(--lightgrey);
+    border-radius: .2rem;
+    background-color: var(--lightblue);
+    color: var(--dark);
+}
+.play-question:hover {
+    cursor: pointer;
+}
 /*Question text styling.*/
 #question {
     font-family: 'poppins', sans-serif;
@@ -224,6 +238,7 @@ nav > ul > li > a:hover {
     font-weight:lighter;
     letter-spacing: normal;
     margin:1rem auto;
+    text-align: center;
     text-transform: none;
     margin-bottom: 1rem;
 }
