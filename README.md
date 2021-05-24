@@ -1,4 +1,4 @@
-# The Tipsy Quiz - Ruairidh MacArthur
+# The Tipsy Quiz❓ - Ruairidh MacArthur
 
 ## Code Institute - Milestone Project 2
 
@@ -12,7 +12,7 @@
 
 ## Table of Contents:
 
-1. [Project Goals](#project-goals)
+1. [The Why](#the-why)
 2. [User Experience](#user-experience)
 3. [Features](#features)
 4. [Technologies](#technologies)
@@ -20,7 +20,7 @@
 6. [Deployment](#deployment.)
 7. [Credits](#credits)
 
-## Project Goals
+## The Why
 
 The Tipsy Quiz, is a fun interactive website where the user partakes in a General Knowledge quiz. The quiz itself is themed around a pub quiz. Answer multiple choice questions to gain as high a score possible before the Quiz ends, Don't forget to enter a username and submit your score to rank on the high scores.
 
@@ -30,19 +30,22 @@ The Tipsy Quiz, is a fun interactive website where the user partakes in a Genera
 
 - First time user:
 
-  1. Enjoy their experience whilst active on the site.
-  2. Enjoy their time partaking in the quiz.
+  1. As a user I would like to partake in a fun quiz.
+  2. As a user I would like to be able to see how I rank on the High Scores.
+  3. As a user I want the application to be easy to navigate.
 
 - Returning User:
 
-  1. To know how to navigate the site well.
-  2. To want to take part in the quiz again.
+  1. I would want to be able to navigate the site with ease.
+  2. I would want to be able to quickly check the High Scores.
+  3. I would want to be able to remember how to use the application with ease.
 
 - As a site creator:
-  1. Make the site interactive and fun.
-  2. Ensure there are questions covering a wide variety of difficulties and subjects.
-  3. Make sure the user enjoys their time using the application.
-  4. Provide easy access to dev to submit questions.
+
+  1. I want to make the site interactive and fun.
+  2. I want to ensure there are questions covering a wide variety of difficulties and subjects.
+  3. I want to make sure the user enjoys their time using the application.
+  4. I want to provide easy access to the creator to submit questions.
 
 ### Design
 

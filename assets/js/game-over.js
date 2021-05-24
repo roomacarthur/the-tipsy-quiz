@@ -3,12 +3,15 @@ let totalScore = localStorage.getItem("currentRoundScore");
 let saveScore = document.getElementById("submit-score");
 let username = document.getElementById("player-name");
 
-
+//Maximum high scores to be displayed.
 const MAX_HIGH_SCORES = 5
 
+//Retrieve highScores from local storage.
 const highScores = JSON.parse(localStorage.getItem("highScores")) || []
 
+//Set final score to that of Current Round Score. 
 finalScore.innerText = totalScore 
+
 
 username.addEventListener('keyup', () => {
     saveScore.disabled = !username.value
