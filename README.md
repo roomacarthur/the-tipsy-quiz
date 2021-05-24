@@ -20,7 +20,7 @@
 6. [Deployment](#deployment.)
 7. [Credits](#credits)
 
-## The Why
+## The Why ⁉
 
 The Tipsy Quiz, is a fun interactive website where the user partakes in a General Knowledge quiz. The quiz itself is themed around a pub quiz. Answer multiple choice questions to gain as high a score possible before the Quiz ends, Don't forget to enter a username and submit your score to rank on the high scores.
 
@@ -49,6 +49,8 @@ The Tipsy Quiz, is a fun interactive website where the user partakes in a Genera
 
 ### Design
 
+The design of this application will
+
 #### Wireframes
 
 Desktop:
@@ -75,11 +77,15 @@ Mobile:
 - [High Scores](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/highscores-mobile.png)
 - [Help](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/home-mobile.png)
 
+---
+
 #### Colours
 
 The colours that will be used throughout the site for it's main styling as seen below,
 
 ![Colours used for The Tipsy Quiz](/assets/images/readme-images/colours.png)
+
+---
 
 #### Typography
 
@@ -89,7 +95,7 @@ The initial plan was to use [Pangolin](https://fonts.google.com/specimen/Pangoli
 
 1. [Schoolbell](https://fonts.google.com/specimen/Schoolbell?query=school) - A fun and stylish font that is easy to read and will be used for headings.
 2. [Poppins](https://fonts.google.com/specimen/Poppins?query=poppins) - A very stylish and easy to read font. Will be used for the bulk of text.
-3. [Oswald](https://fonts.google.com/specimen/Oswald?query=oswal) - This bold and block style font will be used for links and navigation.
+3. [Oswald](https://fonts.google.com/specimen/Oswald?query=oswal) - This bold and block style font will be used for navigation items.
 
 ## Features
 
@@ -127,6 +133,8 @@ The initial plan was to use [Pangolin](https://fonts.google.com/specimen/Pangoli
   - Small help button to link to the help page.
   - Dev link / socials.
 
+---
+
 ### Future Features:
 
 - Dark mode.
@@ -140,6 +148,8 @@ The initial plan was to use [Pangolin](https://fonts.google.com/specimen/Pangoli
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
 - [CSS3](https://en.wikipedia.org/wiki/CSS)
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+---
 
 ### Other Technologies
 
@@ -222,3 +232,7 @@ To make a local clone of the project follow these steps:
    - W3Schools code for "shake effect" was used.
 3. [iCons8](https://icons8.com/icons/set/beer)
    - icons8 was used for sourcing a Favicon.
+
+---
+
+[RETURN TO THE TOP](#the-tipsy-quiz)
