@@ -155,7 +155,11 @@ let acceptingAnswers = true;
 const correctScore = 15 //15 points for a correct answer.
 const maxQuestions = 2 //This is only set to 2 for testing purposes.
 
-
+const speak = (text) => {
+    var msg = new SpeechSynthesisUtterance(text);
+    msg.voice = window.speechSynthesis.default;
+    window.speechSynthesis.speak(msg);
+}
 //Function to start quiz game.
 function startQuiz() {
     questionCounter = 0 //set questionCounter to zero.
@@ -187,6 +191,7 @@ getNewQuestion = () => {
     currentQuestion = availableQuestions[questionPicker];
     //set the inner text of question
     questionText.innerText = currentQuestion.question;
+    speak(`${currentQuestion.question}`)
 
     answers.forEach(answer => {
 
@@ -198,7 +203,7 @@ getNewQuestion = () => {
 
     acceptingAnswers = true;
 }
-
+            console.log(currentQuestion)
 answers.forEach(answer => {
     answer.addEventListener("click", e => {
         if(!acceptingAnswers) return
@@ -212,10 +217,11 @@ answers.forEach(answer => {
         if(classToApply === "correct-answer") {
             increaseScore(correctScore)
             //speech synthesis for correct.
+            speak(`Correct!`)
+        } else {
+            speak(`Incorrect`)
         }
         selectedOption.parentElement.classList.add(classToApply)
-        //speech synthesis for wrong + what was the correct answer.
-        
         setTimeout(() => {
             selectedOption.parentElement.classList.remove(classToApply)
             getNewQuestion()
