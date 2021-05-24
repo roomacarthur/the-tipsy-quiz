@@ -4,7 +4,7 @@
 
 ### Presentation of interactive data using a font-end site
 
-![Example of the application on multiple devices.](/assets/images/...)
+![Example of the application on multiple devices.](/assets/images/readme-images/amiresponsive.png)
 
 [Click here to view Site.](https://roomacarthur.github.io/the-tipsy-quiz/)
 
