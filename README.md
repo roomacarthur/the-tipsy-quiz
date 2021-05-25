@@ -185,14 +185,14 @@ During the design phase there was no real need for images to be used but the spa
 
 ---
 
-### Other Technologies
+### Other Technologies, Frameworks & Libraries
 
 - [Google Fonts](https://fonts.google.com/)
   - Used for importing fonts, allowing for the fonts to be available for all users.
 - [Font Awesome](https://fontawesome.com/)
   - Font Awesome provides all the icons used for the site.
 - [Visual Studio Code](https://code.visualstudio.com/)
-  - My personal preference for IDE(Integrated Development Environment).
+  - My personal preference for IDE(Integrated Development Environment) used for this project.
 - [Git & GitBash](https://gitforwindows.org/)
   - Git for windows provides a BASH emulation which allows for git to be used straight from the command line.
 - [GitHub](https://github.com/)
@@ -201,13 +201,23 @@ During the design phase there was no real need for images to be used but the spa
   - Balsamic was used to design wireframes for the application.
 - [Coolors](https://coolors.co/)
   - For colour inspiration and pallet.
+- [iCons8](https://icons8.com/icons/set/beer)
+  - icons8 was used for sourcing a Favicon.
+- [Stack Overflow](https://stackoverflow.com/)
+  - For general Queries and reassurance.
 
 ## Testing
+
+### Validations
+
+###
 
 ### Bugs & Fixes
 
 1. README.md links to open in new tab.
    - Some specific links to this README.md file would work better if they opened in a new tab when clicked but after some testing and then research I found out that this in fact is not possible. [Evidence.](https://stackoverflow.com/questions/50834937/open-readme-md-link-in-new-tab-github)
+2. :is CSS pseudo-class
+   - This was used after watching [Kevin Powells](https://www.youtube.com/watch?v=McC4QkCvbaY&t=399s) video on simplifying CSS, unfortunately when passed through the [CSS Validator](https://jigsaw.w3.org/css-validator/) this showed errors, where I had used the :is class, Therefor I have removed and replaced with code that passes, this code is longer but passes the validation.
 
 ## Deployment
 
@@ -268,10 +278,8 @@ To make a local clone of the project follow these steps:
    - Brian Design's YouTube tutorial for a vanilla JS quiz was followed, his code was used in a boilerplate fashion, the code has been edited significantly to reach the aimed objectives for the site.
 2. [Shake Hover Effect](https://www.w3schools.com/howto/howto_css_shake_image.asp)
    - W3Schools code for "shake effect" was used.
-3. [iCons8](https://icons8.com/icons/set/beer)
-   - icons8 was used for sourcing a Favicon.
-4. [SpeechSynthesis](https://codingislove.com/speech-with-javascript/)
-   - Speech Synthesis for reading out questions and notifying if correct/incorrect.
+3. [SpeechSynthesis](https://codingislove.com/speech-with-javascript/)
+   - Assistance with implementing speech synthesis.
 
 ---
 

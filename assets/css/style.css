@@ -318,7 +318,8 @@ nav > ul > li > a:hover {
     justify-content: flex-start;
  }
  /*margin for h2 and ol within help container.*/
-.help-container :is(h2, ol) {
+.help-container h2,
+.help-container ol {
     margin: .5rem;
 }
 .help-container h2 {
@@ -330,7 +331,8 @@ nav > ul > li > a:hover {
     line-height: 1.4rem;
     margin-left: 1rem;
 }
-.help-container :is(p, li) {
+.help-container p,
+.help-container li {
     font-size: .8rem;
     padding-bottom: .2rem;
 
@@ -478,6 +480,8 @@ footer {
         margin-top: 1rem;
     }
 }
+
+/*Attempted fix for iphone 9 pro viewing.*/
 @media only screen and (-webkit-min-device-pixel-ratio: 3) {
     header {
         height: 25vh;
@@ -509,7 +513,8 @@ footer {
     .help-container h2 {
         font-size: 3rem;
     }
-    .help-container :is(p, li){
+    .help-container p,
+    .help-container li{
         font-size: 1rem;
         line-height: 2rem;
     }
