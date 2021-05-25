@@ -135,19 +135,19 @@ Mobile:
 - [High Scores](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/highscores-mobile.png)
 - [Help](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/home-mobile.png)
 
-### Design
+## Design
 
-## The design of this application will
+### Colours
 
-#### Colours
+The colours that will be used throughout the site for it's main styling are shown below, these colours have been picked to keep within the design brief of maintaining a simplified viewing pleasure.
 
-The colours that will be used throughout the site for it's main styling as seen below,
+![Colours used for The Tipsy Quiz](/assets/images/readme-images/tipsy-quiz-colours.png)
 
-![Colours used for The Tipsy Quiz](/assets/images/readme-images/colours.png)
+the colours will be used in specific ways that compliment one another.
 
 ---
 
-#### Typography
+### Typography
 
 With the design of 'The Tipsy Quiz' aiming to be fun and interactive, I have picked two fonts that will have a continual use case throughout the design of the site.
 

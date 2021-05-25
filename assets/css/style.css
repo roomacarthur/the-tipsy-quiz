@@ -426,7 +426,7 @@ footer {
     font-size: 2rem;
 }
 .fa-question-circle:hover {
-    color:#581b98;
+    color: var(--lightblue);
 }
 /*Styling for my github link.*/
 #dev-link{
