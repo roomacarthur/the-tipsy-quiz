@@ -5,7 +5,6 @@ const scoreCount = document.getElementById("score-count");
 const answers = Array.from(document.getElementsByClassName("answer-text"));
 const progressCount = document.getElementById("question-count");
 const progressBarFull = document.getElementById("progress-full");
-const playQuestion = document.getElementsByClassName("play-question");
 
 //Question and answers for the quiz.
 let questionBank = [
@@ -208,7 +207,7 @@ let questionBank = [
 
     },
 ];
-//
+
 let questionCounter = 0; //questionCounter always starts at 0.
 let score = 0; //Score always starts at 0.
 let currentQuestion = {}; //Empty object to be populated with data from questionBank.
@@ -216,8 +215,8 @@ let availableQuestions = [];//Empty Array for questions.
 let acceptingAnswers = true;
 
 //Set score for correct answer and max number of questions.
-const correctScore = 25 //15 points for a correct answer.
-const maxQuestions = 10 //This is only set to 2 for testing purposes.
+const correctScore = 25; //15 points for a correct answer.
+const maxQuestions = 10; //This is only set to 2 for testing purposes.
 
 
 //Speech Synthesis to read out questions and announce if correct or not.
@@ -225,22 +224,22 @@ const speak = (text) => {
     var msg = new SpeechSynthesisUtterance(text);
     msg.voice = window.speechSynthesis.getVoices[4];
     window.speechSynthesis.speak(msg);
-}
+};
 
 //read out question function.
 function readQuestion() {
-    speak(`${currentQuestion.question}`)
+    speak(`${currentQuestion.question}`);
 }
 
 
 //Function to start quiz game.
 function startQuiz() {
-    questionCounter = 0 //set questionCounter to zero.
-    score = 0   //Score always starts at zero.
-    availableQuestions = [...questionBank]  //available questions come from questionBank.
-    getNewQuestion()    //Run getNewQuestion function.
-    console.log("Don't be trying to cheat now, I'm watching you.")  //I see you cheating. 
-};
+    questionCounter = 0; //set questionCounter to zero.
+    score = 0;   //Score always starts at zero.
+    availableQuestions = [...questionBank];  //available questions come from questionBank.
+    getNewQuestion();    //Run getNewQuestion function.
+    console.log("Don't be trying to cheat now, I'm watching you.");  //I see you cheating. 
+}
 
 
 getNewQuestion = () => {
@@ -254,10 +253,10 @@ getNewQuestion = () => {
     //if quiz isn't over do this: 
 
     //Increase questionCounter by 1 for each iteration. 
-    questionCounter ++
+    questionCounter ++;
     //Code here for progress text and progress bar. 
-    progressCount.innerText = `Question ${questionCounter} of ${maxQuestions}`
-    progressBarFull.style.width = `${(questionCounter/maxQuestions)* 100}%`
+    progressCount.innerText = `Question ${questionCounter} of ${maxQuestions}`;
+    progressBarFull.style.width = `${(questionCounter/maxQuestions)* 100}%`;
 
     //Randomly select question from questionBank
     const questionPicker = Math.floor(Math.random() * availableQuestions.length);
@@ -280,40 +279,42 @@ getNewQuestion = () => {
     availableQuestions.splice(questionPicker, 1);
 
     acceptingAnswers = true;
-}
+};
 
 answers.forEach(answer => {
     answer.addEventListener("click", e => {
-        if(!acceptingAnswers) return
+        if(!acceptingAnswers) return;
 
-        acceptingAnswers = false
-        const selectedOption = e.target
-        const selectedAnswer = selectedOption.dataset["number"]
+        acceptingAnswers = false;
+        const selectedOption = e.target;
+        const selectedAnswer = selectedOption.dataset["number"];
 
-        let classToApply = selectedAnswer == currentQuestion.correctAnswer ? "correct-answer" : "wrong-answer"
+        let classToApply = selectedAnswer == currentQuestion.correctAnswer ? "correct-answer" : "wrong-answer";
 
         if(classToApply === "correct-answer") {
-            increaseScore(correctScore)
+            increaseScore(correctScore);
             //speech for correct.
-            speak(`Correct!`)
+            speak(`Correct!`);
         } else {
             //speech for incorrect.
-            speak(`Incorrect!`)
+            speak(`Incorrect!`);
         }
-        selectedOption.parentElement.classList.add(classToApply)
+        //Add correct/incorrect class to selected answer.
+        selectedOption.parentElement.classList.add(classToApply);
+        //Set timeout for quiz to remove correct/incorrect class and move to next question.
         setTimeout(() => {
-            selectedOption.parentElement.classList.remove(classToApply)
-            getNewQuestion()
-        }, 1500)
-    })
-})
-
+            selectedOption.parentElement.classList.remove(classToApply);
+            getNewQuestion();
+        }, 1500);
+    });
+});
+//Increase score and set score text to updated score.
 increaseScore = num => {
-    score += num
-    scoreCount.innerText = score
-}
+    score += num;
+    scoreCount.innerText = score;
+};
 
-startQuiz()
+startQuiz();
 
 
 
