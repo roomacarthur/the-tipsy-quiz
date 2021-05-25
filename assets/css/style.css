@@ -44,22 +44,27 @@ header {
     margin-bottom: 1rem;
 }
 /*Main logo for site in header.*/
-.logo {
+#logo {
     text-decoration: none;
     text-align: center;
     /* padding: .1rem; */
 }
-.logo > h1 {
+#logo > h1 {
   color: var(--lightgrey);
   letter-spacing: .1rem;
   font-size: 2rem;
 }
 /*Logo shake on hover. 'vibrate' can be found line 388 <<<<< THIS NEEDS TO BE CHECKED before submit! */
-.logo > h1:hover {
+.vibrate {
     cursor: pointer;
     animation: vibrate 1s;
     animation-iteration-count: infinite;
 }
+/* #logo > h1:hover {
+    cursor: pointer;
+    animation: vibrate 1s;
+    animation-iteration-count: infinite;
+} */
 /*Main navigation styling.*/
 nav{
     top: 1rem;
@@ -466,7 +471,7 @@ footer {
 
 /*Tablet Sizing media Queries./ */
 @media screen and (min-height: 600px) {
-    .logo > h1 {
+    #logo > h1 {
         font-size: 3rem;
     }
     .answer-container {
@@ -488,7 +493,7 @@ footer {
     header {
         height: 13vh;
     }
-    .logo > h1{
+    #logo > h1{
         font-size: 3.5rem;
     }
     nav {
@@ -537,7 +542,7 @@ footer {
         display: flex;
         justify-content: space-between;
     }
-    .logo {
+    #logo {
         margin-bottom: 0;
         padding-top: 0;
     }

@@ -238,6 +238,8 @@ During the design phase there was no real need for images to be used but the spa
    - Some specific links to this README.md file would work better if they opened in a new tab when clicked but after some testing and then research I found out that this in fact is not possible. [Evidence.](https://stackoverflow.com/questions/50834937/open-readme-md-link-in-new-tab-github)
 2. :is CSS pseudo-class
    - This was used after watching [Kevin Powells](https://www.youtube.com/watch?v=McC4QkCvbaY&t=399s) video on simplifying CSS, unfortunately when passed through the [CSS Validator](https://jigsaw.w3.org/css-validator/) this showed errors, where I had used the :is class, Therefor I have removed and replaced with code that passes, this code is longer but passes the validation.
+3. When using application on mobile the hover effect is still present on next question, also hover only works when clicked. [See here for evidence]().
+   - For this I have removed the pseudo class :hover and added JS event listeners for mouseover/mouse/leave and then for touch on mobile.
 
 # Deployment
 

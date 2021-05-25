@@ -6,3 +6,5 @@ highScoresList.innerHTML =
 highScores.map(score => {
     return `<li class="high-score">${score.name} <span class="score-count">${score.score}</span></li>`;
 }).join('');
+
+console.log(highScores)

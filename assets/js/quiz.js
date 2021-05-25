@@ -245,29 +245,20 @@ function startQuiz() {
 getNewQuestion = () => {
     //Code for finishing quiz.
     if(availableQuestions === 0 || questionCounter >= maxQuestions) {
-        //submit score to local storage.
         localStorage.setItem('currentRoundScore', score);
-        //return to game-over.html page. 
         return window.location.assign("./game-over.html");
     }
-    //if quiz isn't over do this: 
 
-    //Increase questionCounter by 1 for each iteration. 
     questionCounter ++;
-    //Code here for progress text and progress bar. 
+
     progressCount.innerText = `Question ${questionCounter} of ${maxQuestions}`;
     progressBarFull.style.width = `${(questionCounter/maxQuestions)* 100}%`;
 
-    //Randomly select question from questionBank
     const questionPicker = Math.floor(Math.random() * availableQuestions.length);
-    //set current question to the returned question from questionPicker.
+
     currentQuestion = availableQuestions[questionPicker];
-    //set the inner text of question
+
     questionText.innerText = currentQuestion.question;
-    //Read out current Question text.
-    // setTimeout(() => {
-    //     speak(`${currentQuestion.question}`)
-    // }, 200)
 
     //Locate answers for currentQuestion and assign them to the correct location."using dataset"
     answers.forEach(answer => {
