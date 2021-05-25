@@ -11,6 +11,7 @@ function wobbleHover(){
     }
 }
 wobbleHover()
+
 //nav links hover effect.
 function navHover(){
     let nav = document.getElementsByClassName("link-hover")
@@ -24,6 +25,7 @@ function navHover(){
     }
 }
 navHover()
+
 //.btn hover effect.
 function buttonHover(){
     let button = document.getElementsByClassName("btn")
