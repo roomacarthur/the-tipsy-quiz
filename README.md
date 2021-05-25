@@ -143,7 +143,7 @@ The colours that will be used throughout the site for it's main styling are show
 
 ![Colours used for The Tipsy Quiz](/assets/images/readme-images/tipsy-quiz-colours.png)
 
-the colours will be used in specific ways that compliment one another.
+The colours will be used in specific ways that compliment one another, maintaining good contrast levels.
 
 ---
 
@@ -158,6 +158,12 @@ The initial plan was to use [Pangolin](https://fonts.google.com/specimen/Pangoli
 3. [Oswald](https://fonts.google.com/specimen/Oswald?query=oswal) - This bold and block style font will be used for navigation items.
 
 ---
+
+### Images & Icons
+
+There will be multiple icons used throughout the application. [Font Awesome]() will be the main source for icons.
+
+During the design phase there was no real need for images to be used but the sparsity on the homepage after initial HTML and CSS was completed pushed me to include an image in the open space. The image I used was taken from a [Cocktail Party App](https://cocktailpartyapp.com/better-lychee-cocktails-alternatives-to-the-lychee-martini/) Blog post.
 
 ### Future Features:
 
