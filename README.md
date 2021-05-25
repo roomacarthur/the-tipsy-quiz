@@ -10,7 +10,11 @@
 
 [Click here to view Repository.](https://github.com/roomacarthur/the-tipsy-quiz)
 
-## Table of Contents:
+# Table of Contents:
+
+<details>
+
+  <summary>Click to expand table of contents</summary>
 
 1. [The Why](#the-why)
 2. [User Experience](#user-experience)
@@ -20,13 +24,15 @@
 6. [Deployment](#deployment.)
 7. [Credits](#credits)
 
-## The Why ⁉
+</details>
+
+# The Why
 
 The Tipsy Quiz, is a fun interactive website where the user partakes in a General Knowledge quiz. The quiz itself is themed around a pub quiz. Answer multiple choice questions to gain as high a score possible before the Quiz ends, Don't forget to enter a username and submit your score to rank on the high scores.
 
-## User Experience
+# User Experience (UX)
 
-### User Stories
+## User Stories
 
 - First time user:
 
@@ -47,57 +53,26 @@ The Tipsy Quiz, is a fun interactive website where the user partakes in a Genera
   3. I want to make sure the user enjoys their time using the application.
   4. I want to provide easy access to the creator to submit questions.
 
-### Design
+## Strategy
 
-The design of this application will
+Provide an application that the user can use in a fun and interactive way with clear and effective navigation.
 
-#### Wireframes
+### Project Goals
 
-Desktop:
+- To provide a fun and interactive application.
+- For the question bank to be regularly updated.
+- Allow for users to log scores.
+- Provide quiz audio for questions to be read out.
 
-- [Home](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/home-desktop.png)
-- [Quiz](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/quiz-desktop.png)
-- [Game Over](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/gameover-desktop.png)
-- [High Scores](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/highscores-desktop.png)
-- [Help](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/help-desktop.png)
+## Scope:
 
-Tablet:
+- Interactive application f
+- Mobile first, fully responsive design.
+- simplified contact form.
 
-- [Home](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/home-tablet.png)
-- [Quiz](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/quiz-tablet.png)
-- [Game Over](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/gameover-tablet.png)
-- [High Scores](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/highscores-tablet.png)
-- [Help](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/help-tablet.png)
+## Structure
 
-Mobile:
-
-- [Home](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/home-mobile.png)
-- [Quiz](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/quiz-mobile.png)
-- [Game Over](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/gameover-mobile.png)
-- [High Scores](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/highscores-mobile.png)
-- [Help](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/home-mobile.png)
-
----
-
-#### Colours
-
-The colours that will be used throughout the site for it's main styling as seen below,
-
-![Colours used for The Tipsy Quiz](/assets/images/readme-images/colours.png)
-
----
-
-#### Typography
-
-With the design of 'The Tipsy Quiz' aiming to be fun and interactive, I have picked two fonts that will have a continual use case throughout the design of the site.
-
-The initial plan was to use [Pangolin](https://fonts.google.com/specimen/Pangolin?preview.text=The%20Tipsy%20Quiz&preview.text_type=custom#standard-styles) and [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab?preview.text=The%20Tipsy%20Quiz&preview.text_type=custom&query=roboto+s). After initial coding and live site viewing with early deployment via GitPages, I soon realized that the font's chosen would not work, so new fonts where needed. I have settled on the following fonts:
-
-1. [Schoolbell](https://fonts.google.com/specimen/Schoolbell?query=school) - A fun and stylish font that is easy to read and will be used for headings.
-2. [Poppins](https://fonts.google.com/specimen/Poppins?query=poppins) - A very stylish and easy to read font. Will be used for the bulk of text.
-3. [Oswald](https://fonts.google.com/specimen/Oswald?query=oswal) - This bold and block style font will be used for navigation items.
-
-## Features
+The structure for the application has been thought out and designed to allow for the user to have a seamless and easy experience. A consistent minimalistic design will be implemented on all pages. The flow of the pages will should feel natural and allow for the user to feel right at home after only viewing one page.
 
 - Header
 
@@ -107,6 +82,7 @@ The initial plan was to use [Pangolin](https://fonts.google.com/specimen/Pangoli
 - Quiz
 
   - A counter to show what question you are on.
+  - A button to allow for speech synthesis to read out the question.
   - Your current score.
   - The Question itself.
   - 4 answers buttons of which only 1 is correct.
@@ -132,6 +108,54 @@ The initial plan was to use [Pangolin](https://fonts.google.com/specimen/Pangoli
 - Footer
   - Small help button to link to the help page.
   - Dev link / socials.
+
+## Wireframes
+
+Desktop:
+
+- [Home](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/home-desktop.png)
+- [Quiz](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/quiz-desktop.png)
+- [Game Over](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/gameover-desktop.png)
+- [High Scores](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/highscores-desktop.png)
+- [Help](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/help-desktop.png)
+
+Tablet:
+
+- [Home](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/home-tablet.png)
+- [Quiz](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/quiz-tablet.png)
+- [Game Over](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/gameover-tablet.png)
+- [High Scores](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/highscores-tablet.png)
+- [Help](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/help-tablet.png)
+
+Mobile:
+
+- [Home](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/home-mobile.png)
+- [Quiz](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/quiz-mobile.png)
+- [Game Over](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/gameover-mobile.png)
+- [High Scores](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/highscores-mobile.png)
+- [Help](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/home-mobile.png)
+
+### Design
+
+## The design of this application will
+
+#### Colours
+
+The colours that will be used throughout the site for it's main styling as seen below,
+
+![Colours used for The Tipsy Quiz](/assets/images/readme-images/colours.png)
+
+---
+
+#### Typography
+
+With the design of 'The Tipsy Quiz' aiming to be fun and interactive, I have picked two fonts that will have a continual use case throughout the design of the site.
+
+The initial plan was to use [Pangolin](https://fonts.google.com/specimen/Pangolin?preview.text=The%20Tipsy%20Quiz&preview.text_type=custom#standard-styles) and [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab?preview.text=The%20Tipsy%20Quiz&preview.text_type=custom&query=roboto+s). After initial coding and live site viewing with early deployment via GitPages, I soon realized that the font's chosen would not work, so new fonts where needed. I have settled on the following fonts:
+
+1. [Schoolbell](https://fonts.google.com/specimen/Schoolbell?query=school) - A fun and stylish font that is easy to read and will be used for headings.
+2. [Poppins](https://fonts.google.com/specimen/Poppins?query=poppins) - A very stylish and easy to read font. Will be used for the bulk of text.
+3. [Oswald](https://fonts.google.com/specimen/Oswald?query=oswal) - This bold and block style font will be used for navigation items.
 
 ---
 
@@ -165,8 +189,7 @@ The initial plan was to use [Pangolin](https://fonts.google.com/specimen/Pangoli
   - Provided a Remote repository for the application. Allowing for my coding to be backed up online as I go.
 - [Balsamic](https://balsamiq.com/)
   - Balsamic was used to design wireframes for the application.
-- []()
-  -
+- ## []()
 
 ## Testing
 
