@@ -84,7 +84,7 @@ nav > ul > li > a {
     margin: 1rem;
     padding: .2rem;
 }
-.nav-hover {
+.hover-effect {
     color: var(--dark);
     background-color: var(--pink);
     border-radius: .4rem;

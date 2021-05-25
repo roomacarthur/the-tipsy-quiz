@@ -1,38 +1,25 @@
-//remove hover effects from buttons on mobile devices
-
-//vibrate effects for header and footer elements
-let logo = document.getElementById("logo");
-let devLink = document.getElementById("dev-link");
-
-function addVibrate(el) {
-    el.classList.add("vibrate")
+//hover effect for logo and footer github link.
+function wobbleHover(){
+    let elements = document.getElementsByClassName("wobble")
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].onmouseover=function(){
+            elements[i].classList.add("vibrate")
+        }
+        elements[i].onmouseleave=function(){
+            elements[i].classList.remove("vibrate")
+        }
+    }
 }
-function removeVibrate(el) {
-    el.classList.remove("vibrate")
-}
-//logo mouse events
-logo.onmouseover=function(){
-    addVibrate(logo)
-}
-logo.onmouseleave=function() {
-    removeVibrate(logo)
-}
-//dev-links mouse events
-devLink.onmouseover=function(){
-    addVibrate(devLink)
-}
-devLink.onmouseleave=function() {
-    removeVibrate(devLink)
-}
+wobbleHover()
 //nav links hover effect.
 function navHover(){
-    let nav = document.getElementsByClassName("nav-item")
+    let nav = document.getElementsByClassName("link-hover")
     for (let i = 0; i < nav.length; i++) {
         nav[i].onmouseover=function(){
-            nav[i].classList.add("nav-hover")
+            nav[i].classList.add("hover-effect")
         }
         nav[i].onmouseleave=function(){
-            nav[i].classList.remove("nav-hover")
+            nav[i].classList.remove("hover-effect")
         }
     }
 }
