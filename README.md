@@ -189,11 +189,13 @@ During the design phase there was no real need for images to be used but the spa
 
 ## Current Features
 
+- Ability to have Question read out.
+- Correct and incorrect audio
+- Save score to a local High Scores table.
+
 ## Future Features
 
 - Dark mode.
-- Ability to have Questions Read Out.
-  - This feature has been added.
 - Random subject wheel.
 - Difficulty Mode.
 
