@@ -222,7 +222,7 @@ const maxQuestions = 10; //This is only set to 2 for testing purposes.
 //Speech Synthesis to read out questions and announce if correct or not.
 const speak = (text) => {
     var msg = new SpeechSynthesisUtterance(text);
-    msg.voice = window.speechSynthesis.getVoices[4];
+    msg.voice = window.speechSynthesis.default;
     window.speechSynthesis.speak(msg);
 };
 
