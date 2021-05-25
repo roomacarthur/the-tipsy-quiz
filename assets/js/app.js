@@ -10,9 +10,28 @@ function fixHover() {
 let logo = document.getElementById("logo");
 let devLink = document.getElementById("dev-link");
 
-logo.onmouseover=function(){
-    logo.classList.add("vibrate")
+function addVibrate(el) {
+    el.classList.add("vibrate")
 }
+function removeVibrate(el) {
+    el.classList.remove("vibrate")
+}
+//logo mouse events
+logo.onmouseover=function(){
+    addVibrate(logo)
+}
+logo.touchstart=function(){
+    addVibrate(logo)
+}
+//logo mobile events.
 logo.onmouseleave=function() {
-    logo.classList.remove("vibrate")
+    removeVibrate(logo)
+}
+
+//dev-links mouse events
+devLink.onmouseover=function(){
+    addVibrate(devLink)
+}
+devLink.onmouseleave=function() {
+    removeVibrate(devLink)
 }
