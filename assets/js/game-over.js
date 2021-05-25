@@ -3,36 +3,35 @@ let totalScore = localStorage.getItem("currentRoundScore");
 let saveScore = document.getElementById("submit-score");
 let username = document.getElementById("player-name");
 
-//Maximum high scores to be displayed.
-const MAX_HIGH_SCORES = 5
+
 
 //Retrieve highScores from local storage.
-const highScores = JSON.parse(localStorage.getItem("highScores")) || []
+const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
 //Set final score to that of Current Round Score. 
-finalScore.innerText = totalScore 
+finalScore.innerText = totalScore ;
 
 //Look for data to be entered into the username text field before submit is allowed.
 username.addEventListener('keyup', () => {
-    saveScore.disabled = !username.value
-})
+    saveScore.disabled = !username.value;
+});
 
-logHighScore = e => {
+let logHighScore = e => {
     
-    e.preventDefault()
-    //
+    e.preventDefault();
+    //create object for score. 
     const score = {
         score: totalScore,
         name: username.value
-    }
-    highScores.push(score)
+    };
+    highScores.push(score);
     highScores.sort((a,b) => {
-        return b.score - a.score
-    })
-
-    highScores.splice(5)
+        return b.score - a.score;
+    });
+    //allow for 5 high scores.
+    highScores.splice(5);
     //save highScores to local storage
-    localStorage.setItem("highScores", JSON.stringify(highScores))
+    localStorage.setItem("highScores", JSON.stringify(highScores));
     //return to index.html
-    window.location.assign("./index.html")
-}
+    window.location.assign("./index.html");
+};
