@@ -301,9 +301,6 @@ nav > ul > li > a:hover {
     width: 12rem;
     height: 2rem;
 }
-#submit-score {
-    cursor:default;
-}
 
 /*---------- help.html styling ----------*/
 
@@ -470,7 +467,7 @@ footer {
 /*Tablet Sizing media Queries./ */
 @media screen and (min-height: 600px) {
     .logo > h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
     .answer-container {
         margin: .7rem auto;

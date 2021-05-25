@@ -216,7 +216,7 @@ let acceptingAnswers = true;
 
 //Set score for correct answer and max number of questions.
 const correctScore = 25; //15 points for a correct answer.
-const maxQuestions = 10; //This is only set to 2 for testing purposes.
+const maxQuestions = 2; //This is only set to 2 for testing purposes.
 
 
 //Speech Synthesis to read out questions and announce if correct or not.

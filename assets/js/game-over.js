@@ -5,33 +5,32 @@ let username = document.getElementById("player-name");
 
 
 
-//Retrieve highScores from local storage.
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
 //Set final score to that of Current Round Score. 
 finalScore.innerText = totalScore ;
 
-//Look for data to be entered into the username text field before submit is allowed.
-username.addEventListener('keyup', () => {
+//allow user to save score only if username input has been populated.
+username.addEventListener('keyup', function allowSave(e) {
+    e.preventDefault();
     saveScore.disabled = !username.value;
 });
 
-let logHighScore = e => {
+//populate score object with name and score, push score object to highScores, sort highScores by ascending order of score, splice highScores max 5 indexes, store highScores in localStorage and return to homepage.
+function logHighScore(e) {
     
     e.preventDefault();
-    //create object for score. 
     const score = {
-        score: totalScore,
-        name: username.value
+        name: username.value,
+        score: totalScore
     };
+
     highScores.push(score);
-    highScores.sort((a,b) => {
-        return b.score - a.score;
-    });
-    //allow for 5 high scores.
+    //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+    highScores.sort(function compareScores(firstEl,secondEl){
+        return secondEl.score - firstEl.score;
+    })
     highScores.splice(5);
-    //save highScores to local storage
     localStorage.setItem("highScores", JSON.stringify(highScores));
-    //return to index.html
     window.location.assign("./index.html");
 };
