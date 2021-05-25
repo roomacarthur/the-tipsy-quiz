@@ -24,9 +24,9 @@
    4. [Structure](#structure)
    5. [Wireframes](#wireframes)
 3. [Design](#design)
-   1. [colours](#colours)
+   1. [Colours](#colours)
    2. [Typography](#typography)
-   3. [images & Icons](#images-&-icons)
+   3. [Images & Icons](#images-&-icons)
 4. [Features](#features)
    1. [Current Features](#current-features)
    2. [Future Features](#future-features)
@@ -299,4 +299,4 @@ To make a local clone of the project follow these steps:
 
 ---
 
-[RETURN TO THE TOP](#the-tipsy-quiz)
+[RETURN TO THE TOP](#The-Tipsy-Quiz🍺---Ruairidh-MacArthur)
