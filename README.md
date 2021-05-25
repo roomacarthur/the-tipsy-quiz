@@ -17,12 +17,28 @@
   <summary>Click to expand table of contents</summary>
 
 1. [The Why](#the-why)
-2. [User Experience](#user-experience)
-3. [Features](#features)
-4. [Technologies](#technologies)
-5. [Testing](#testing)
-6. [Deployment](#deployment.)
-7. [Credits](#credits)
+2. [User Experience(UX)](#user-experience-UX)
+   1. [User Stories](#user-stories)
+   2. [Strategy](#strategy)
+   3. [Scope](#scope)
+   4. [Structure](#structure)
+   5. [Wireframes](#wireframes)
+3. [Design](#design)
+   1. [colours](#colours)
+   2. [Typography](#typography)
+   3. [images & Icons](#images-&-icons)
+4. [Features](#features)
+   1. [Current Features](#current-features)
+   2. [Future Features](#future-features)
+5. [Technologies](#technologies)
+6. [Testing](#testing)
+   1. [Tests](#tests)
+   2. [Bugs & Fixes](#bugs-&-fixes)
+7. [Deployment](#deployment)
+   1. [GitHub Pages](#github-pages)
+   2. [Forking Repository](#forking-the-github-repository)
+   3. [Cloning the project](#cloning-the-project)
+8. [Credits](#credits)
 
 </details>
 
@@ -57,7 +73,7 @@ The Tipsy Quiz, is a fun interactive website where the user partakes in a Genera
 
 Provide an application that the user can use in a fun and interactive way with clear and effective navigation.
 
-### Project Goals
+## Project Goals
 
 - To provide a fun and interactive application.
 - For the question bank to be regularly updated.
@@ -137,7 +153,7 @@ Mobile:
 
 ## Design
 
-### Colours
+## Colours
 
 The colours that will be used throughout the site for it's main styling are shown below, these colours have been picked to keep within the design brief of maintaining a simplified viewing pleasure.
 
@@ -147,7 +163,7 @@ The colours will be used in specific ways that compliment one another, maintaini
 
 ---
 
-### Typography
+## Typography
 
 With the design of 'The Tipsy Quiz' aiming to be fun and interactive, I have picked two fonts that will have a continual use case throughout the design of the site.
 
@@ -159,7 +175,7 @@ The initial plan was to use [Pangolin](https://fonts.google.com/specimen/Pangoli
 
 ---
 
-### Images & Icons
+## Images & Icons
 
 There will be multiple icons used throughout the application. [Font Awesome]() will be the main source for icons.
 
@@ -167,7 +183,11 @@ During the design phase there was no real need for images to be used but the spa
 
 ---
 
-### Future Features:
+# Features
+
+## Current Features
+
+## Future Features
 
 - Dark mode.
 - Ability to have Questions Read Out.
@@ -175,17 +195,15 @@ During the design phase there was no real need for images to be used but the spa
 - Random subject wheel.
 - Difficulty Mode.
 
-## Technologies
+# Technologies
 
-### Languages
+## Languages
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
 - [CSS3](https://en.wikipedia.org/wiki/CSS)
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
----
-
-### Other Technologies, Frameworks & Libraries
+## Other Technologies, Frameworks & Libraries
 
 - [Google Fonts](https://fonts.google.com/)
   - Used for importing fonts, allowing for the fonts to be available for all users.
@@ -206,22 +224,20 @@ During the design phase there was no real need for images to be used but the spa
 - [Stack Overflow](https://stackoverflow.com/)
   - For general Queries and reassurance.
 
-## Testing
+# Testing
 
-### Validations
+## Tests
 
-###
-
-### Bugs & Fixes
+## Bugs & Fixes
 
 1. README.md links to open in new tab.
    - Some specific links to this README.md file would work better if they opened in a new tab when clicked but after some testing and then research I found out that this in fact is not possible. [Evidence.](https://stackoverflow.com/questions/50834937/open-readme-md-link-in-new-tab-github)
 2. :is CSS pseudo-class
    - This was used after watching [Kevin Powells](https://www.youtube.com/watch?v=McC4QkCvbaY&t=399s) video on simplifying CSS, unfortunately when passed through the [CSS Validator](https://jigsaw.w3.org/css-validator/) this showed errors, where I had used the :is class, Therefor I have removed and replaced with code that passes, this code is longer but passes the validation.
 
-## Deployment
+# Deployment
 
-### GitHub pages
+## GitHub pages
 
 For a live preview of the site, the code has been deployed via GitHub pages, this has been done at the start of the project to implement device testing as the build progresses.
 
@@ -241,7 +257,7 @@ When the above steps have been completed, it can sometimes take a little while f
 
 ---
 
-### Forking The GitHub Repository
+## Forking The GitHub Repository
 
 To use this code and make changes without effecting the original code you can do what is called 'Forking the repository'. By forking this repository you are given a copy of the code at that moment in time that you can use freely. To fork this repository you need to follow the following few steps:
 
@@ -254,7 +270,7 @@ You will now have a copy of the code available to clone and work on without effe
 
 ---
 
-### Cloning the Project.
+## Cloning the Project.
 
 To make a local clone of the project follow these steps:
 
@@ -272,7 +288,7 @@ To make a local clone of the project follow these steps:
 
 ---
 
-## Credits
+# Credits
 
 1. [Brian Design](https://youtu.be/f4fB9Xg2JEY)
    - Brian Design's YouTube tutorial for a vanilla JS quiz was followed, his code was used in a boilerplate fashion, the code has been edited significantly to reach the aimed objectives for the site.
