@@ -165,9 +165,13 @@ There will be multiple icons used throughout the application. [Font Awesome]() w
 
 During the design phase there was no real need for images to be used but the sparsity on the homepage after initial HTML and CSS was completed pushed me to include an image in the open space. The image I used was taken from a [Cocktail Party App](https://cocktailpartyapp.com/better-lychee-cocktails-alternatives-to-the-lychee-martini/) Blog post.
 
+---
+
 ### Future Features:
 
 - Dark mode.
+- Ability to have Questions Read Out.
+  - This feature has been added.
 - Random subject wheel.
 - Difficulty Mode.
 
