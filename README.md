@@ -1,4 +1,6 @@
-# The Tipsy Quiz🍺 - Ruairidh MacArthur
+# The Tipsy Quiz
+
+## By Ruairidh MacArthur
 
 ## Code Institute - Milestone Project 2
 
@@ -299,4 +301,4 @@ To make a local clone of the project follow these steps:
 
 ---
 
-[RETURN TO THE TOP](#The-Tipsy-Quiz🍺---Ruairidh-MacArthur)
+[RETURN TO THE TOP](#The-Tipsy-Quiz)
