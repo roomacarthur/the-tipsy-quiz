@@ -199,7 +199,8 @@ During the design phase there was no real need for images to be used but the spa
   - Provided a Remote repository for the application. Allowing for my coding to be backed up online as I go.
 - [Balsamic](https://balsamiq.com/)
   - Balsamic was used to design wireframes for the application.
-- ## []()
+- [Coolors](https://coolors.co/)
+  - For colour inspiration and pallet.
 
 ## Testing
 
