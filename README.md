@@ -239,7 +239,7 @@ During the design phase there was no real need for images to be used but the spa
 2. :is CSS pseudo-class
    - This was used after watching [Kevin Powells](https://www.youtube.com/watch?v=McC4QkCvbaY&t=399s) video on simplifying CSS, unfortunately when passed through the [CSS Validator](https://jigsaw.w3.org/css-validator/) this showed errors, where I had used the :is class, Therefor I have removed and replaced with code that passes, this code is longer but passes the validation.
 3. When using application on mobile the hover effect is still present on next question, also hover only works when clicked. [See here for evidence](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/images/bugs/hover-issue-on-mobile.png).
-   - For this I have removed the pseudo class :hover and added JS event listeners for mouseover/mouse/leave and then for touch on mobile.
+   - For this I have removed the pseudo class :hover and added JS event listeners for mouseover/mouseleave and then for touch on mobile.
 
 # Deployment
 
