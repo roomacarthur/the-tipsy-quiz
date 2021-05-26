@@ -49,12 +49,6 @@ function questionHover(e) {
         qButton[i].onmouseleave=function() {
             qButton[i].classList.remove("answer-hover")
         }
-        qButton[i].touchstart=function(){
-            qButton[i].classList.add("answer-hover")
-        }
-        qButton[i].touchend=function(){
-            qButton[i].classList.remove("answer-hover")
-        }
     }
 
 }

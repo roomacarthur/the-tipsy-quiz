@@ -74,9 +74,11 @@ answers.forEach(answer => {
         }
         //Add correct/incorrect class to selected answer.
         selectedOption.parentElement.classList.add(classToApply);
+        selectedOption.parentElement.classList.add("answer-hover");
         //Set timeout for quiz to remove correct/incorrect class and move to next question.
         setTimeout(() => {
             selectedOption.parentElement.classList.remove(classToApply);
+            selectedOption.parentElement.classList.remove("answer-hover");
             getNewQuestion();
         }, 1500);
     });
