@@ -1,15 +1,14 @@
-//Global Variables.
+
 const questionText = document.getElementById("question");
 const scoreCount = document.getElementById("score-count");
-//collect .answer-text and put them in an array.
 const answers = Array.from(document.getElementsByClassName("answer-text"));
 const progressCount = document.getElementById("question-count");
 const progressBarFull = document.getElementById("progress-full");
 
-let questionCounter = 0; //questionCounter always starts at 0.
-let score = 0; //Score always starts at 0.
-let currentQuestion = {}; //Empty object to be populated with data from questionBank.
-let availableQuestions = [];//Empty Array for questions. 
+let questionCounter = 0;
+let score = 0;
+let currentQuestion = {};
+let availableQuestions = [];
 let acceptingAnswers = true;
 
 //Set score for correct answer and max number of questions.

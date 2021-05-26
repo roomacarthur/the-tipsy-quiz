@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Favicon link-->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon/icons8-beer-16.png"
+    />
+    <!--Font Awesome CDN import to allow for usage of icons.-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <!--Link to style.css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>The Tipsy Quiz - Quiz</title>
+  </head>
+  <body>
+    <!--Header section.-->
+    <header>
+      <!--Logo for site.-->
+      <a class="wobble" id="logo" href="index.html"><h1>The Tipsy Quiz</h1></a>
+      <!--Header Navigation.-->
+      <nav>
+        <ul>
+          <li><a class="link-hover" href="index.html">Home</a></li>
+          <li><a class="link-hover" href="high-scores.html">High Scores</a></li>
+          <li><a class="link-hover" href="help.html">Help</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--Main page content.-->
+    <main>
+      <!--Container for page content.-->
+      <div class="container">
+        <!--Quiz content.-->
+        <div id="quiz">
+          <!--Quiz info, question Count and Score.-->
+          <div id="quiz-top">
+            <div class="quiz-item">
+              <!--Question counter display, will be adjusted via JS-->
+              <h3 id="question-count">Question</h3>
+              <div id="progress">
+                <div id="progress-full"></div>
+              </div>
+            </div>
+
+            <!--Score section, score will increase with correct answers via JS.-->
+            <div class="quiz-item">
+              <h3 id="score-tag">Score</h3>
+              <h3 id="score-count">0</h3>
+            </div>
+          </div>
+          <div class="quiz-item">
+            <h3 id="play-question" onclick="readQuestion()">
+              <i class="far fa-play-circle"></i>
+            </h3>
+          </div>
+          <!--Main Question, lorem for styling will be over written via JS.-->
+          <h2 id="question">Error: Question not loading.</h2>
+          <!--Answer elements, container with answer number and answer text that will be populated via JS.-->
+          <div class="answer-container">
+            <p class="answer-num">1</p>
+            <p class="answer-text" data-number="1">Answer 1</p>
+          </div>
+          <div class="answer-container">
+            <p class="answer-num">2</p>
+            <p class="answer-text" data-number="2">Answer 2</p>
+          </div>
+          <div class="answer-container">
+            <p class="answer-num">3</p>
+            <p class="answer-text" data-number="3">Answer 3</p>
+          </div>
+          <div class="answer-container">
+            <p class="answer-num">4</p>
+            <p class="answer-text" data-number="4">Answer 4</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--Footer content.-->
+    <footer>
+      <!--Link to help.html using ? icon.-->
+      <a href="help.html"><i class="fas fa-question-circle"></i></a>
+      <!--Link to my personal GitHub.-->
+      <a
+        class="wobble"
+        id="dev-link"
+        href="https://github.com/roomacarthur"
+        target="_blank"
+        aria-label="Visit the site creators github (opens in a new tab)"
+      >
+        <h3>Site by Roo</h3>
+        <i class="fab fa-github"></i>
+      </a>
+    </footer>
+    <!--JS Script link for quiz - quiz.js-->
+    <script src="assets/js/test.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
