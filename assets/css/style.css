@@ -42,17 +42,21 @@ header {
     color: var(--lightgrey);
     background: var(--dark);
     margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
 }
 /*Main logo for site in header.*/
 #logo {
     text-decoration: none;
     text-align: center;
-    /* padding: .1rem; */
 }
 #logo > h1 {
   color: var(--lightgrey);
   letter-spacing: .1rem;
-  font-size: 2rem;
+  font-size: 350%;
+  padding: .2rem;
 }
 /*vibrate hover class, added to #logo & #dev-links via app.js 'vibrate' can be found line 388 <<<<< THIS NEEDS TO BE CHECKED before submit! */
 .vibrate {
@@ -220,13 +224,14 @@ nav > ul > li > a {
     left:0;
 }
 
-.play-question {
+#play-question {
     font-size: 3rem;
     margin: 0 auto;
     color: var(--lightblue);
 }
-.play-question:hover {
+.fa-play-circle:hover {
     cursor: pointer;
+    color: var(--lightgrey);
 }
 /*Question text styling.*/
 #question {
@@ -453,9 +458,7 @@ footer {
 
 /*Tablet Sizing media Queries./ */
 @media screen and (min-height: 600px) {
-    #logo > h1 {
-        font-size: 3rem;
-    }
+
     .answer-container {
         margin: .7rem auto;
     }
@@ -468,18 +471,30 @@ footer {
 /*Attempted fix for iphone 9 pro viewing.*/
 @media only screen and (-webkit-min-device-pixel-ratio: 3) {
     header {
-        height: 25vh;
+        height: 16vh;
+    }
+
+}
+@media screen and (min-width: 540px) {
+    header {
+
+    }
+    nav {
+        top:0;
+        margin-top: 1rem;
     }
 }
 @media screen and (min-width: 768px){
     header {
-        height: 13vh;
+        height: 16vh;
+        align-items: center;
+        justify-content: space-between;
     }
     #logo > h1{
         font-size: 3.5rem;
     }
     nav {
-        margin-top: .5rem
+        margin: 1rem;
     }
     #quiz {
         width: 70%;
@@ -519,7 +534,6 @@ footer {
 }
 @media screen and (min-width: 900px) {
     header {
-        height: 7rem;
         padding: 1rem;
         display: flex;
         justify-content: space-between;

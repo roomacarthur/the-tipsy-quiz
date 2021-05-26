@@ -207,7 +207,7 @@ let questionBank = [
 
   },
   {
-      question:"In India, the train Lifeline Express is a?",
+      question:"In India, the train Lifeline Express is a...?",
       answer1:"Bank",
       answer2:"Hospital",
       answer3:"Pharmacy",
