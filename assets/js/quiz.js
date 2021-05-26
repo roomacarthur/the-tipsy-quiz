@@ -242,13 +242,13 @@ function startQuiz() {
 }
 
 
-getNewQuestion = () => {
-    //Code for finishing quiz.
+function getNewQuestion(){
+    //Code completion of quiz.
     if(availableQuestions === 0 || questionCounter >= maxQuestions) {
         localStorage.setItem('currentRoundScore', score);
         return window.location.assign("./game-over.html");
     }
-
+    //code to cycle through for next question.
     questionCounter ++;
 
     progressCount.innerText = `Question ${questionCounter} of ${maxQuestions}`;
@@ -300,7 +300,7 @@ answers.forEach(answer => {
     });
 });
 //Increase score and set score text to updated score.
-increaseScore = num => {
+function increaseScore(num){
     score += num;
     scoreCount.innerText = score;
 };
