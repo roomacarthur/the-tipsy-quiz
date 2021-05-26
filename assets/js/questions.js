@@ -197,4 +197,49 @@ let questionBank = [
       correctAnswer:"3",
 
   },
+  {
+      question:"The name of which spice comes from the French word for 'nail'?",
+      answer1:"Cardamom",
+      answer2:"Cinnamon",
+      answer3:"Clove",
+      answer4:"Cumin",
+      correctAnswer:"3",
+
+  },
+  {
+      question:"In India, the train Lifeline Express is a?",
+      answer1:"Bank",
+      answer2:"Hospital",
+      answer3:"Pharmacy",
+      answer4:"School",
+      correctAnswer:"2",
+
+  },
+  {
+      question:"Which asian mountain is also known as the Savage Mountain due to the extreme difficulty of ascent?",
+      answer1:"Everest",
+      answer2:"K2",
+      answer3:"Lhotse",
+      answer4:"Kanchenjunga",
+      correctAnswer:"2",
+
+  },
+  {
+      question:"In Alice's Adventures in Wonderland, which game was played by the Queen of Hearts using hedgehogs as balls?",
+      answer1:"Cricket",
+      answer2:"Quintet",
+      answer3:"Croquet",
+      answer4:"Quidditch",
+      correctAnswer:"3",
+
+  },
+  {
+      question:"Where in the Human body is the stapedius muscle situated?",
+      answer1:"Heart",
+      answer2:"Nose",
+      answer3:"Leg",
+      answer4:"Ears",
+      correctAnswer:"4",
+
+  },
 ];
