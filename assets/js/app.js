@@ -39,3 +39,23 @@ function buttonHover(){
     }
 }
 buttonHover()
+
+function questionHover(e) {
+    let qButton = document.getElementsByClassName("answer-container")
+    for (let i = 0; i < qButton.length; i++) {
+        qButton[i].onmouseover=function() {
+            qButton[i].classList.add("answer-hover")
+        }
+        qButton[i].onmouseleave=function() {
+            qButton[i].classList.remove("answer-hover")
+        }
+        qButton[i].touchstart=function(){
+            qButton[i].classList.add("answer-hover")
+        }
+        qButton[i].touchend=function(){
+            qButton[i].classList.remove("answer-hover")
+        }
+    }
+
+}
+questionHover()

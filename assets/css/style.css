@@ -261,7 +261,7 @@ nav > ul > li > a {
     
 }
 /*Answer container hover styling.*/
-.answer-container:hover {
+.answer-hover {
     cursor: pointer;
     transform: scale(1.05);
     transition: transform .5s;
