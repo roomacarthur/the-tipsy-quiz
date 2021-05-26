@@ -250,16 +250,11 @@ function getNewQuestion(){
     }
     //code to cycle through for next question.
     questionCounter ++;
-
     progressCount.innerText = `Question ${questionCounter} of ${maxQuestions}`;
     progressBarFull.style.width = `${(questionCounter/maxQuestions)* 100}%`;
-
     const questionPicker = Math.floor(Math.random() * availableQuestions.length);
-
     currentQuestion = availableQuestions[questionPicker];
-
     questionText.innerText = currentQuestion.question;
-
     //Locate answers for currentQuestion and assign them to the correct location."using dataset"
     answers.forEach(answer => {
 
