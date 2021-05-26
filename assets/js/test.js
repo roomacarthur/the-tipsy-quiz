@@ -1,45 +1,113 @@
-
+//Global Variables.
 const questionText = document.getElementById("question");
 const scoreCount = document.getElementById("score-count");
+//collect .answer-text and put them in an array.
 const answers = Array.from(document.getElementsByClassName("answer-text"));
 const progressCount = document.getElementById("question-count");
 const progressBarFull = document.getElementById("progress-full");
 
-let data = null;
 let questionCounter = 0;
 let score = 0;
 let currentQuestion = {};
-let questionBank = [];
 let acceptingAnswers = true;
 
-function loadJSON(callback) {
-    //retrieve data from server without full page refresh
-    let xobj = new XMLHttpRequest();
+//Set score for correct answer and max number of questions.
+const correctScore = 25;
+const maxQuestions = 2;
 
-        xobj.overrideMimeType("application/json");
-    xobj.open("GET", "./assets/js/questions.json", true);
-    xobj.onreadystatechange = function () {
-        if (xobj.readyState == 4 && xobj.status == "200") {
-            callback(xobj.responseText);
-        }
-    };
-    xobj.send(null);
+
+//Speech Synthesis to read out questions and announce if correct or not.
+const speak = (text) => {
+    var msg = new SpeechSynthesisUtterance(text);
+    msg.voice = window.speechSynthesis.default;
+    window.speechSynthesis.speak(msg);
+};
+
+//read out question function. called via onclick on quiz.html
+function readQuestion() {
+    speak(`${currentQuestion.question}`);
 }
 
-loadJSON(function(response) {
-    data = JSON.parse(response);
+
+const xhr = new XMLHttpRequest();
+
+xhr.onreadystatechange = function () {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+        let questions = JSON.parse(xhr.responseText);
+        getNewQuestion(questions)
+        questionCounter = 0;
+        score = 0;
+        console.log("Don't be trying to cheat now, I'm watching you.");
+        } 
+        
+        if (xhr.status == 404) {
+        console.log("Error: file not found");
+    }
+};
+xhr.open("GET", "./assets/js/questions.json", true);
+
+xhr.send();
+ 
+
+function getNewQuestion(questions){
+
+    if(questions === 0 || questionCounter >= maxQuestions) {
+        localStorage.setItem('currentRoundScore', score);
+        return window.location.assign("./game-over.html");
+    }
+    console.log(questions)
+
+    questionCounter ++;
+    progressCount.innerText = `Question ${questionCounter} of ${maxQuestions}`;
+    progressBarFull.style.width = `${(questionCounter/maxQuestions)* 100}%`;
+    const questionPicker = Math.floor(Math.random() * questions.length);
+    currentQuestion = questions[questionPicker];
+    questionText.innerText = currentQuestion.question;
+ 
+    answers.forEach(answer => {
+
+        const number = answer.dataset["number"];
+        answer.innerText = currentQuestion['answer' + number];
+    });
+
+    questions.splice(questionPicker, 1);
+
+    acceptingAnswers = true;
+};
+
+answers.forEach(answer => {
+    answer.addEventListener("click", e => {
+        if(!acceptingAnswers) return;
+
+        acceptingAnswers = false;
+        const selectedOption = e.target;
+        const selectedAnswer = selectedOption.dataset["number"];
+
+        let classToApply = selectedAnswer == currentQuestion.correctAnswer ? "correct-answer" : "wrong-answer";
+
+        if(classToApply === "correct-answer") {
+            increaseScore(correctScore);
+            //speech for correct.
+            speak(``);
+        } else {
+            //speech for incorrect.
+            speak(``);
+        }
+        e.preventDefault();
+        //Add correct/incorrect class to selected answer.
+        selectedOption.parentElement.classList.add(classToApply);
+        selectedOption.parentElement.classList.add("answer-hover");
+        //Set timeout for quiz to remove correct/incorrect class and move to next question.
+        setTimeout(() => {
+            selectedOption.parentElement.classList.remove(classToApply);
+            selectedOption.parentElement.classList.remove("answer-hover");
+            getNewQuestion();
+        }, 1500);
+    });
 });
-console.log(data) // prints null
 
-
-setTimeout(function() {
-    questionText.innerText = data.questionBank[1].question
-    questionBank = data.questionBank
-    console.log(questionBank[1])
-    //pick random question from 
-    const questionPicker = Math.floor(Math.random() * questionBank.length);
-    currentQuestion = questionBank[questionPicker];
-    console.log(currentQuestion)
-}, 100);
-
-console.log(currentQuestion) //prints []
+//Increase score and set score text to updated score.
+function increaseScore(num){
+    score += num;
+    scoreCount.innerText = score;
+};
