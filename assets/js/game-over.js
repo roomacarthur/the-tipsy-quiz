@@ -2,10 +2,6 @@ let endScore  = document.getElementById("end-score");
 let currentRoundScore = localStorage.getItem("currentRoundScore");
 let saveScore = document.getElementById("submit-score");
 let playerName = document.getElementById("player-name");
-
-
-
-//Set highScores to an 
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
 //Set final score to that of Current Round Score. 
@@ -17,7 +13,7 @@ playerName.addEventListener('keyup', function allowSave(e) {
     saveScore.disabled = !playerName.value;
 });
 
-//populate score object with name and score, push score object to highScores, sort highScores by ascending order of score, splice highscores, store highScores in localStorage and return to homepage.
+//populate score object with name and score, push score object to highScores, sort highScores by ascending order of score, splice highscores, store highScores in localStorage and return to homepage. This function is called onlick in game-over.html
 function logHighScore(e) {
     
     e.preventDefault();
