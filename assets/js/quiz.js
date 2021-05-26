@@ -72,6 +72,7 @@ answers.forEach(answer => {
             //speech for incorrect.
             speak(`Incorrect!`);
         }
+        e.preventDefault();
         //Add correct/incorrect class to selected answer.
         selectedOption.parentElement.classList.add(classToApply);
         selectedOption.parentElement.classList.add("answer-hover");

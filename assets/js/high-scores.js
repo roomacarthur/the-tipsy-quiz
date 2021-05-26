@@ -6,3 +6,12 @@ highScoresList.innerHTML =
 highScores.map(function setScore(score){
     return `<li class="high-score">${score.name} <span class="score-count">${score.score}</span></li>`;
 }).join('');
+
+function clearScores() {
+    if(confirm("Are you sure you want to clear the high scores?") == true) {
+        localStorage.clear();
+        return window.location.assign("./high-scores.html")
+    } else {
+        return
+    }
+}

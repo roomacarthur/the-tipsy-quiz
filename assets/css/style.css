@@ -221,14 +221,9 @@ nav > ul > li > a {
 }
 
 .play-question {
-    width: 8rem;
-    height: auto;
+    font-size: 3rem;
     margin: 0 auto;
-    margin-top: 1rem;
-    border: 1px solid var(--lightgrey);
-    border-radius: .2rem;
-    background-color: var(--lightblue);
-    color: var(--dark);
+    color: var(--lightblue);
 }
 .play-question:hover {
     cursor: pointer;
@@ -239,7 +234,7 @@ nav > ul > li > a {
     font-size: 1rem;
     font-weight:lighter;
     letter-spacing: normal;
-    margin:1rem auto;
+    margin:0 auto;
     text-align: center;
     text-transform: none;
     margin-bottom: 1rem;
