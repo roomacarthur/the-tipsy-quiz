@@ -302,6 +302,8 @@ To make a local clone of the project follow these steps:
    - W3Schools code for "shake effect" was used.
 3. [SpeechSynthesis](https://codingislove.com/speech-with-javascript/)
    - Assistance with implementing speech synthesis.
+4. [AllowSave Function](https://stackoverflow.com/questions/44107807/addeventlistener-on-keyup-javascript-once#44107848)
+   - Help will "Keyup" event listener to only allow save if input field has had data entered into it.
 
 ---
 
