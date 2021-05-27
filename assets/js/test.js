@@ -1,14 +1,13 @@
-//Global Variables.
+
 const questionText = document.getElementById("question");
 const scoreCount = document.getElementById("score-count");
-//collect .answer-text and put them in an array.
 const answers = Array.from(document.getElementsByClassName("answer-text"));
 const progressCount = document.getElementById("question-count");
 const progressBarFull = document.getElementById("progress-full");
 
 let questionCounter = 0;
 let score = 0;
-let currentQuestion = {};
+let availableQuestions = [];
 let acceptingAnswers = true;
 
 //Set score for correct answer and max number of questions.
@@ -28,49 +27,41 @@ function readQuestion() {
     speak(`${currentQuestion.question}`);
 }
 
-
-const xhr = new XMLHttpRequest();
-
-xhr.onreadystatechange = function () {
+function getNewQuestion(){
+    const xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
-        let questions = JSON.parse(xhr.responseText);
-        getNewQuestion(questions)
-        questionCounter = 0;
-        score = 0;
-        console.log("Don't be trying to cheat now, I'm watching you.");
+        let availableQuestions = JSON.parse(xhr.responseText);
         } 
         
         if (xhr.status == 404) {
         console.log("Error: file not found");
     }
 };
-xhr.open("GET", "./assets/js/questions.json", true);
+    xhr.open("GET", "./assets/js/questions.json", true);
 
-xhr.send();
- 
-
-function getNewQuestion(questions){
-
-    if(questions === 0 || questionCounter >= maxQuestions) {
+    xhr.send();
+    let currentQuestion = {};
+    //Code completion of quiz.
+    if(availableQuestions === 0 || questionCounter >= maxQuestions) {
         localStorage.setItem('currentRoundScore', score);
         return window.location.assign("./game-over.html");
     }
-    console.log(questions)
-
+    //code to cycle through for next question.
     questionCounter ++;
     progressCount.innerText = `Question ${questionCounter} of ${maxQuestions}`;
     progressBarFull.style.width = `${(questionCounter/maxQuestions)* 100}%`;
-    const questionPicker = Math.floor(Math.random() * questions.length);
-    currentQuestion = questions[questionPicker];
+    const questionPicker = Math.floor(Math.random() * availableQuestions.length);
+    currentQuestion = availableQuestions[questionPicker];
     questionText.innerText = currentQuestion.question;
- 
+    //Locate answers for currentQuestion and assign them to the correct location."using dataset"
     answers.forEach(answer => {
 
         const number = answer.dataset["number"];
         answer.innerText = currentQuestion['answer' + number];
     });
 
-    questions.splice(questionPicker, 1);
+    availableQuestions.splice(questionPicker, 1);
 
     acceptingAnswers = true;
 };
@@ -88,10 +79,10 @@ answers.forEach(answer => {
         if(classToApply === "correct-answer") {
             increaseScore(correctScore);
             //speech for correct.
-            speak(``);
+            speak(`Correct!`);
         } else {
             //speech for incorrect.
-            speak(``);
+            speak(`Incorrect!`);
         }
         e.preventDefault();
         //Add correct/incorrect class to selected answer.
@@ -106,8 +97,20 @@ answers.forEach(answer => {
     });
 });
 
+//Function to start quiz game, set starting values to 0, run getNewQuestion function.
+function startQuiz() {
+    questionCounter = 0;
+    score = 0;
+    getNewQuestion();
+    console.log("Don't be trying to cheat now, I'm watching you.");
+}
 //Increase score and set score text to updated score.
 function increaseScore(num){
     score += num;
     scoreCount.innerText = score;
 };
+
+startQuiz();
+
+
+
