@@ -13,24 +13,12 @@ let acceptingAnswers = true;
 
 //Set score for correct answer and max number of questions.
 const correctScore = 25;
-const maxQuestions = 2;
+const maxQuestions = 10;
 
-
-//Speech Synthesis to read out questions and announce if correct or not.
-const speak = (text) => {
-    var msg = new SpeechSynthesisUtterance(text);
-    msg.voice = window.speechSynthesis.default;
-    window.speechSynthesis.speak(msg);
-};
-
-//read out question function. called via onclick on quiz.html
-function readQuestion() {
-    speak(`${currentQuestion.question}`);
-}
 
 function getNewQuestion(){
     //Code completion of quiz.
-    if(availableQuestions === 0 || questionCounter >= maxQuestions) {
+    if(questionCounter >= maxQuestions) {
         localStorage.setItem('currentRoundScore', score);
         return window.location.assign("./game-over.html");
     }
@@ -51,24 +39,27 @@ function getNewQuestion(){
     availableQuestions.splice(questionPicker, 1);
 
     acceptingAnswers = true;
-};
+}
+//function to increase score count and change the HTML.
+function increaseScore(num){
+    score += num;
+    scoreCount.innerText = score;
+}
 
 answers.forEach(answer => {
-    answer.addEventListener("click", e => {
+    answer.addEventListener("click", obj => {
         if(!acceptingAnswers) return;
 
         acceptingAnswers = false;
-        const selectedOption = e.target;
+        const selectedOption = obj.target;
         const selectedAnswer = selectedOption.dataset["number"];
 
         let classToApply = selectedAnswer == currentQuestion.correctAnswer ? "correct-answer" : "wrong-answer";
 
         if(classToApply === "correct-answer") {
             increaseScore(correctScore);
-            //speech for correct.
             speak(`Correct!`);
         } else {
-            //speech for incorrect.
             speak(`Incorrect!`);
         }
         e.preventDefault();
@@ -93,10 +84,19 @@ function startQuiz() {
     console.log("Don't be trying to cheat now, I'm watching you.");
 }
 //Increase score and set score text to updated score.
-function increaseScore(num){
-    score += num;
-    scoreCount.innerText = score;
+
+
+//Speech Synthesis to read out questions and announce if correct or not.
+const speak = (text) => {
+    var msg = new SpeechSynthesisUtterance(text);
+    msg.voice = window.speechSynthesis.default;
+    window.speechSynthesis.speak(msg);
 };
+
+//read out question function. called via onclick on quiz.html
+function readQuestion() {
+    speak(`${currentQuestion.question}`);
+}
 
 startQuiz();
 
