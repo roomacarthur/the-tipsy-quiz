@@ -15,6 +15,12 @@ let acceptingAnswers = true;
 const correctScore = 25;
 const maxQuestions = 10;
 
+//Speech Synthesis to read out questions and announce if correct or not.
+const speak = (text) => {
+    var msg = new SpeechSynthesisUtterance(text);
+    msg.voice = window.speechSynthesis.default;
+    window.speechSynthesis.speak(msg);
+};
 
 function getNewQuestion(){
     //Code completion of quiz.
@@ -82,16 +88,9 @@ function startQuiz() {
     availableQuestions = [...questionBank];
     getNewQuestion();
     console.log("Don't be trying to cheat now, I'm watching you.");
+
+
 }
-//Increase score and set score text to updated score.
-
-
-//Speech Synthesis to read out questions and announce if correct or not.
-const speak = (text) => {
-    var msg = new SpeechSynthesisUtterance(text);
-    msg.voice = window.speechSynthesis.default;
-    window.speechSynthesis.speak(msg);
-};
 
 //read out question function. called via onclick on quiz.html
 function readQuestion() {
