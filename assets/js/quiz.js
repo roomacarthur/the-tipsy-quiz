@@ -18,7 +18,7 @@ const maxQuestions = 10;
 
 function getNewQuestion(){
     //Code completion of quiz.
-    if(questionCounter >= maxQuestions) {
+    if(availableQuestions === 0 || questionCounter >= maxQuestions) {
         localStorage.setItem('currentRoundScore', score);
         return window.location.assign("./game-over.html");
     }
@@ -47,11 +47,11 @@ function increaseScore(num){
 }
 
 answers.forEach(answer => {
-    answer.addEventListener("click", obj => {
+    answer.addEventListener("click", e => {
         if(!acceptingAnswers) return;
 
         acceptingAnswers = false;
-        const selectedOption = obj.target;
+        const selectedOption = e.target;
         const selectedAnswer = selectedOption.dataset["number"];
 
         let classToApply = selectedAnswer == currentQuestion.correctAnswer ? "correct-answer" : "wrong-answer";
