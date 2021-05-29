@@ -78,6 +78,7 @@ answers.forEach(answer => {
             selectedOption.parentElement.classList.remove(classToApply);
             selectedOption.parentElement.classList.remove("answer-hover");
             getNewQuestion();
+       
         }, 1200);
     });
 });
