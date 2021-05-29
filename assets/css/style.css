@@ -107,7 +107,7 @@ nav > ul > li > a {
     width: 90vw;
     /* min-height: 80vh; */
     margin: 0 auto;
-    padding: 2rem;
+    padding: 3rem;
     display: flex;
     margin-bottom: 1rem;
     flex-direction: column;
@@ -540,6 +540,10 @@ footer {
         padding: 1rem;
         display: flex;
         justify-content: space-between;
+    }
+    .container {
+        min-height: 80vh;
+        padding: 1rem;
     }
     #logo {
         margin-bottom: 0;
