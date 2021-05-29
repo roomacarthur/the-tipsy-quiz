@@ -105,9 +105,9 @@ nav > ul > li > a {
 .container {
     background: var(--dark);
     width: 90vw;
-    height: 85vh;
+    /* min-height: 80vh; */
     margin: 0 auto;
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
     margin-bottom: 1rem;
     flex-direction: column;
@@ -467,7 +467,7 @@ footer {
         margin-top: 1rem;
     }
     .container {
-        height: 95vh;
+        /* height: 95vh; */
     }
 }
 
