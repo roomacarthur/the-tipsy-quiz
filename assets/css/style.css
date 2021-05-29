@@ -105,7 +105,7 @@ nav > ul > li > a {
 .container {
     background: var(--dark);
     width: 90vw;
-    height: 80vh;
+    height: 85vh;
     margin: 0 auto;
     padding: 1rem;
     display: flex;
@@ -465,6 +465,9 @@ footer {
     .help-container h2 {
         margin-bottom: 1rem;
         margin-top: 1rem;
+    }
+    .container {
+        height: 95vh;
     }
 }
 
