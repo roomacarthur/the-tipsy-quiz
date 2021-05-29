@@ -375,7 +375,7 @@ textarea{
 }
 /*container for send and clear buttons.*/
 .form-btns-container {
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-column-end: 3;
     width: 4rem;
     text-align: center;
