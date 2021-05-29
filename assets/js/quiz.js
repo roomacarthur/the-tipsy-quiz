@@ -30,14 +30,15 @@ function getNewQuestion(){
     }
     //code to cycle through for next question.
     questionCounter ++;
+    
     progressCount.innerText = `Question ${questionCounter} of ${maxQuestions}`;
     progressBarFull.style.width = `${(questionCounter/maxQuestions)* 100}%`;
+    
     const questionPicker = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionPicker];
     questionText.innerText = currentQuestion.question;
-    //Locate answers for currentQuestion and assign them to the correct location."using dataset"
-    answers.forEach(answer => {
 
+    answers.forEach(answer => {
         const number = answer.dataset["number"];
         answer.innerText = currentQuestion['answer' + number];
     });
@@ -77,7 +78,7 @@ answers.forEach(answer => {
             selectedOption.parentElement.classList.remove(classToApply);
             selectedOption.parentElement.classList.remove("answer-hover");
             getNewQuestion();
-        }, 1500);
+        }, 1200);
     });
 });
 
