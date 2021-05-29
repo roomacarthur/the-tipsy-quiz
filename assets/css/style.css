@@ -392,7 +392,9 @@ textarea{
     color: var(--dark);
     background-color: var(--pink);
     border: 2px solid var(--lightgrey);
-    border-radius: .4rem;   
+    border-radius: .4rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 .form-btn:hover {
     cursor: pointer;
