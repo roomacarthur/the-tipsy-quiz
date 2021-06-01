@@ -2,11 +2,9 @@
 
 ## By Ruairidh MacArthur
 
-## Code Institute - Milestone Project 2
-
-### Presentation of interactive data using a font-end site
-
 ![Example of the application on multiple devices.](/assets/images/readme-images/amiresponsive.png)
+
+### This project was developed for my Interactive Front-End Development module as part of my Full Stack Development Course with Code Institute
 
 [Click here to view Site.](https://roomacarthur.github.io/the-tipsy-quiz/)
 
