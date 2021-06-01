@@ -5,11 +5,13 @@ let playerName = document.getElementById("player-name");
 
 //Look for data to be entered into the playerName text field before submit is allowed.
 //Credit for help with this section of code has been noted as #4 in Credits of README.md
-playerName.addEventListener('keyup', function allowSave(e) {
-    e.preventDefault();
-    saveScore.disabled = !playerName.value;
-});
-//end credit.
+
+
+    playerName.addEventListener('keyup', function allowSave(e) {
+        e.preventDefault();
+        saveScore.disabled = !playerName.value;
+        saveScore.setAttribute("title", "Click to save!")
+    });
 
 //Set final score to that of Current Round Score. 
 endScore.innerText = currentRoundScore;
