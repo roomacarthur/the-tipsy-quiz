@@ -11,8 +11,8 @@ highScoresRank.innerHTML = highScores.map(function setScore(score){
 function clearScores() {
     if(confirm("Are you sure you want to clear the high scores?") == true) {
         localStorage.clear();
-        return window.location.assign("./high-scores.html")
+        return window.location.assign("./high-scores.html");
     } else {
-        return
+        return;
     }
 }

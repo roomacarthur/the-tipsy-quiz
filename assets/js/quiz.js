@@ -17,7 +17,7 @@ const maxQuestions = 1;
 const speak = (text) => {
     var msg = new SpeechSynthesisUtterance(text);
     msg.voice = window.speechSynthesis.default;
-    msg.rate = .9;
+    msg.rate = 0.9;
     window.speechSynthesis.speak(msg);
 };
 

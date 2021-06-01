@@ -232,6 +232,19 @@ During the design phase there was no real need for images to be used but the spa
 
 ## Tests
 
+### [HTML Validator](https://validator.w3.org/)
+
+All HTML pages have been tested with the w3c validator and passed with no errors.
+
+### [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/validator)
+
+style.css has been passed through the CSS validator and passed with no errors.
+The test does show some warnings, but after some [research](https://stackoverflow.com/questions/30607832/w3c-css-validation-error-using-calc-and-vendor-extensions) They are nothing to be worried about.
+
+### [JS HINT](https://jshint.com/)
+
+All .js files have been passed through JSHint and do not show any errors. Along with this, after serious use of the site there has been no errors showing in the console also.
+
 ## Bugs & Fixes
 
 1. README.md links to open in new tab.
