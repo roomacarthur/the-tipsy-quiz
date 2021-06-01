@@ -17,7 +17,7 @@ const maxQuestions = 10;
 const speak = (text) => {
     var msg = new SpeechSynthesisUtterance(text);
     msg.voice = window.speechSynthesis.default;
-    msg.rate = .9
+    msg.rate = .9;
     window.speechSynthesis.speak(msg);
 };
 
@@ -46,15 +46,17 @@ function getNewQuestion(){
 
     acceptingAnswers = true;
 }
-//function to increase score count and change the HTML.
+
+//function to increase score count and change the HTML. The "num" parameter will be populated during the foreach iteration of answers with "currentScore". 
 function increaseScore(num){
     score += num;
     scoreCount.innerText = score;
 }
 
+//loop through the array answers, return if acceptingAnswers = false, but if acceptingAnswers = true continue through the function 
 answers.forEach(answer => {
     answer.addEventListener("click", e => {
-        if(!acceptingAnswers) return;
+        if(!acceptingAnswers) return; //if not accepting answers, end the function.
 
         acceptingAnswers = false;
         const selectedOption = e.target;
