@@ -20,7 +20,7 @@ const speak = (text) => {
     msg.rate = 0.9;
     window.speechSynthesis.speak(msg);
 };
-
+//Function to generate new random question from the available questions, will update progress text and bar and splice in question. if you have completed all questions it will save score and take user to the game over page. This function is from Brian Design and has been edited to suit this application (Credit #1 in README.md)
 function getNewQuestion(){
     //Code completion of quiz.
     if(questionCounter >= maxQuestions) {
@@ -48,14 +48,14 @@ function getNewQuestion(){
 }
 
 //function to increase score count and change the HTML. The "num" parameter will be populated during the foreach iteration of answers with "currentScore". 
-function increaseScore(num){
-    score += num;
+function increaseScore(total){
+    score += total;
     scoreCount.innerText = score;
 }
 
 //loop through the array answers, return if acceptingAnswers = false, but if acceptingAnswers = true continue through the function 
 answers.forEach(answer => {
-    answer.addEventListener("click", e => {
+    answer.addEventListener("click", function sortAnswer(e){
         if(!acceptingAnswers) return; //if not accepting answers, end the function.
 
         acceptingAnswers = false;
@@ -63,7 +63,7 @@ answers.forEach(answer => {
         const selectedAnswer = selectedOption.dataset.number;
 
         let classToApply = selectedAnswer == currentQuestion.correctAnswer ? "correct-answer" : "wrong-answer";
-
+        
         if(classToApply === "correct-answer") {
             increaseScore(correctScore);
             speak(`Correct!`);
