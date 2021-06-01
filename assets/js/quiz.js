@@ -10,8 +10,6 @@ let score = 0;
 let currentQuestion = {};
 let availableQuestions = [];
 let acceptingAnswers = true;
-
-//Set score for correct answer and max number of questions.
 const correctScore = 25;
 const maxQuestions = 10;
 
@@ -19,6 +17,7 @@ const maxQuestions = 10;
 const speak = (text) => {
     var msg = new SpeechSynthesisUtterance(text);
     msg.voice = window.speechSynthesis.default;
+    msg.rate = .9
     window.speechSynthesis.speak(msg);
 };
 

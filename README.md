@@ -240,6 +240,8 @@ During the design phase there was no real need for images to be used but the spa
    - This was used after watching [Kevin Powells](https://www.youtube.com/watch?v=McC4QkCvbaY&t=399s) video on simplifying CSS, unfortunately when passed through the [CSS Validator](https://jigsaw.w3.org/css-validator/) this showed errors, where I had used the :is class, Therefor I have removed and replaced with code that passes, this code is longer but passes the validation.
 3. When using application on mobile the hover effect is still present on next question, also hover only works when clicked. [See here for evidence](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/images/bugs/hover-issue-on-mobile.png).
    - For this I have removed the pseudo class :hover and added JS event listeners for mouseover/mouseleave and then for touch on mobile.
+4. When using the play button to read the question out via Speech Synthesis, the speed that the question was read out at was too fast.
+   - To resolve this issue I lowered the speaking rate to 0.9(Default = 1.). This now means the question is read out slower, but still maintains a natural speaking speed.
 
 # Deployment
 
