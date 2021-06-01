@@ -11,7 +11,7 @@ let currentQuestion = {};
 let availableQuestions = [];
 let acceptingAnswers = true;
 const correctScore = 25;
-const maxQuestions = 10;
+const maxQuestions = 1;
 
 //Speech Synthesis to read out questions and announce if correct or not.
 const speak = (text) => {
