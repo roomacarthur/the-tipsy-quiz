@@ -3,7 +3,7 @@ let currentRoundScore = localStorage.getItem("currentRoundScore");
 let saveScore = document.getElementById("submit-score");
 let playerName = document.getElementById("player-name");
 
-//Look for data to be entered into the playerName text field before submit is allowed and change the buttons title once input has been made.
+//Look for data to be entered into the playerName text field before submit is allowed and change the buttons title once input has been made. The implementation of keyup to enable the button is thanks to https://www.youtube.com/watch?v=f4fB9Xg2JEY
 playerName.addEventListener('keyup', function allowSave(e) {
     e.preventDefault();
     saveScore.disabled = !playerName.value;
@@ -14,7 +14,7 @@ playerName.addEventListener('keyup', function allowSave(e) {
 endScore.innerText = currentRoundScore;
 
 //populate score object with name and score, push score object to highScores, sort highScores by ascending order of score, splice highScores, store highScores in localStorage and return to homepage. This function is called onclick in game-over.html
-function logHighScore() {
+function submitHighScore() {
     const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
     const score = {
         name: playerName.value,

@@ -30,7 +30,7 @@ function getNewQuestion(){
     //code to cycle through for next question.
     questionCounter ++;
     
-    progressCount.innerText = `Question ${questionCounter} of ${maxQuestions}`;
+    progressCount.innerText = `Question ${questionCounter} / ${maxQuestions}`;
     progressBarFull.style.width = `${(questionCounter/maxQuestions)* 100}%`;
     
     const questionPicker = Math.floor(Math.random() * availableQuestions.length);
