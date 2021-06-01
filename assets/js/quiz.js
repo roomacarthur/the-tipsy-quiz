@@ -11,7 +11,7 @@ let currentQuestion = {};
 let availableQuestions = [];
 let acceptingAnswers = true;
 const correctScore = 25;
-const maxQuestions = 1;
+const maxQuestions = 3;
 
 //Speech Synthesis to read out questions and announce if correct or not.
 const speak = (text) => {
@@ -38,7 +38,7 @@ function getNewQuestion(){
     questionText.innerText = currentQuestion.question;
 
     answers.forEach(answer => {
-        const number = answer.dataset["number"];
+        const number = answer.dataset.number;
         answer.innerText = currentQuestion['answer' + number];
     });
 
@@ -60,7 +60,7 @@ answers.forEach(answer => {
 
         acceptingAnswers = false;
         const selectedOption = e.target;
-        const selectedAnswer = selectedOption.dataset["number"];
+        const selectedAnswer = selectedOption.dataset.number;
 
         let classToApply = selectedAnswer == currentQuestion.correctAnswer ? "correct-answer" : "wrong-answer";
 
