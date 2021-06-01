@@ -105,7 +105,6 @@ nav > ul > li > a {
 .container {
     background: var(--dark);
     width: 90vw;
-    /* min-height: 80vh; */
     margin: 0 auto;
     padding: 3rem;
     display: flex;
@@ -470,13 +469,7 @@ footer {
     }
 }
 
-/*Attempted fix for iphone 9 pro viewing.*/
-@media only screen and (-webkit-min-device-pixel-ratio: 3) {
-    header {
-        height: 16vh;
-    }
 
-}
 @media screen and (min-width: 540px) {
     header {
 
