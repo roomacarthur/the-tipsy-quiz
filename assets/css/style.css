@@ -247,7 +247,7 @@ nav > ul > li > a {
 
 /*Answer container. for each answer.*/
 .answer-container {
-    width: 80%;
+    width: 95%;
     max-width: 30rem;
     background-color: var(--pink);
     border: 3px solid var(--lightgrey);

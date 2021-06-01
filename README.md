@@ -299,7 +299,7 @@ To make a local clone of the project follow these steps:
 # Credits
 
 1. [Brian Design](https://youtu.be/f4fB9Xg2JEY)
-   - Brian Design's YouTube tutorial for a vanilla JS quiz was followed, his code was used in a boilerplate fashion, the code has been edited significantly to reach the aimed objectives for the site.
+   - Brian Design's YouTube video for a JS quiz was used as inspiration, some of his code has been used and referenced.
 2. [Shake Hover Effect](https://www.w3schools.com/howto/howto_css_shake_image.asp)
    - W3Schools code for "shake effect" was used.
 3. [SpeechSynthesis](https://codingislove.com/speech-with-javascript/)
