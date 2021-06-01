@@ -3,15 +3,12 @@ let currentRoundScore = localStorage.getItem("currentRoundScore");
 let saveScore = document.getElementById("submit-score");
 let playerName = document.getElementById("player-name");
 
-//Look for data to be entered into the playerName text field before submit is allowed.
-//Credit for help with this section of code has been noted as #4 in Credits of README.md
-
-
-    playerName.addEventListener('keyup', function allowSave(e) {
-        e.preventDefault();
-        saveScore.disabled = !playerName.value;
-        saveScore.setAttribute("title", "Click to save!")
-    });
+//Look for data to be entered into the playerName text field before submit is allowed and change the buttons title once input has been made.
+playerName.addEventListener('keyup', function allowSave(e) {
+    e.preventDefault();
+    saveScore.disabled = !playerName.value;
+    saveScore.setAttribute("title", "Click to save!")
+});
 
 //Set final score to that of Current Round Score. 
 endScore.innerText = currentRoundScore;
