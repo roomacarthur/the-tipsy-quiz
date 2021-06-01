@@ -10,6 +10,10 @@ playerName.addEventListener('keyup', function allowSave(e) {
     saveScore.setAttribute("title", "Click to save!")
 });
 
+if (saveScore.disabled = false && window.event.keyCode == 13) {
+    submitHighScore()
+}
+
 //Set final score to that of Current Round Score. 
 endScore.innerText = currentRoundScore;
 

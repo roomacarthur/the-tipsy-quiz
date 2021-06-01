@@ -106,7 +106,7 @@ nav > ul > li > a {
     background: var(--dark);
     width: 90vw;
     margin: 0 auto;
-    padding: 3rem;
+    padding: 2rem;
     display: flex;
     margin-bottom: 1rem;
     flex-direction: column;
@@ -257,7 +257,6 @@ nav > ul > li > a {
     font-weight: bold;
     font-size: 1rem;
     display: flex;
-    
 }
 /*Answer container hover styling.*/
 .answer-hover {
@@ -303,6 +302,10 @@ nav > ul > li > a {
 #submit-score > input[disabled] {
     cursor: not-allowed;
 }
+.user-prompt {
+    text-align: center;
+}
+
 /*---------- help.html styling ----------*/
 
 /*help page container.*/
