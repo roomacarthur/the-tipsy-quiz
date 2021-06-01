@@ -23,7 +23,7 @@ const speak = (text) => {
 
 function getNewQuestion(){
     //Code completion of quiz.
-    if( questionCounter >= maxQuestions) {
+    if(questionCounter >= maxQuestions) {
         localStorage.setItem('currentRoundScore', score);
         return window.location.assign("./game-over.html");
     }
