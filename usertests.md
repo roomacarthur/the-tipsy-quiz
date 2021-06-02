@@ -2,13 +2,13 @@
 
 ## User Stories Overview
 
-### [As a First time user:](#first-time-user)
+### [As a First Time User:](#first-time-users)
 
 1. As a user I would like to partake in a fun quiz.
 2. As a user I would like to be able to see how I rank on the High Scores.
 3. As a user I want the application to be easy to navigate.
 
-### [As a Returning User:](#returning-user)
+### [As a Returning User:](#returning-users)
 
 1. I would want to be able to navigate the site with ease.
 2. I would want to be able to quickly check the High Scores.
@@ -21,7 +21,7 @@
 3. I want to make sure the user enjoys their time using the application.
 4. I want to provide easy access to the creator to submit questions.
 
-## First Time users:
+## First Time Users:
 
 ### 1. As a user I would like to partake in a fun quiz.
 
@@ -53,7 +53,7 @@ help.html also has two links within the data shown along with the header navigat
 
 ![Photo of help links](/assets/images/usertests-images/help-links.png)
 
-## Returning user:
+## Returning Users:
 
 ### 1. I would want to be able to navigate the site with ease.
 
@@ -61,7 +61,7 @@ help.html also has two links within the data shown along with the header navigat
 
 ### 3. I would want to be able to remember how to use the application with ease.
 
-## Site creator/owner:
+## Site Creator/Owner:
 
 ### 1. I want to make the site interactive and fun.
 
