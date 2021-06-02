@@ -14,7 +14,7 @@
 2. I would want to be able to quickly check the High Scores.
 3. I would want to be able to remember how to use the application with ease.
 
-### [As a site creator/owner:](#site-creator-owner)
+### [As a site creator:](#site-creator)
 
 1. I want to make the site interactive and fun.
 2. I want to ensure there are enough questions to prevent the user becoming bored.
@@ -61,7 +61,7 @@ help.html also has two links within the data shown along with the header navigat
 
 ### 3. I would want to be able to remember how to use the application with ease.
 
-## Site Creator/Owner:
+## Site Creator:
 
 ### 1. I want to make the site interactive and fun.
 
