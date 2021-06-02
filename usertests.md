@@ -25,5 +25,10 @@
 
 1. As a user I would like to partake in a fun quiz.
 
-On page load of any HTML page within the application there is the option the start the quiz.
-![Evidence]()
+When the live site is loaded the homepage has a nice welcoming feeling that asks if you would like to play and directly below is a CTA button to launch the quiz. On all other pages of the site there is at least one link to prompt the user to launch the quiz.
+![Evidence](/assets/images/usertests-images/play-onload.png)
+
+2. I would want to be able to quickly check the High Scores.
+
+No matter what page you are on in the header there is a link to the high-scores.
+![Photo of highscores link. ](/assets/images/usertests-images/high-scores-story.png)
