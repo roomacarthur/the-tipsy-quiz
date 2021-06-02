@@ -8,26 +8,26 @@ const progressBarFull = document.getElementById("progress-full");
 let questionCounter = 0;
 let score = 0;
 let currentQuestion = {};
-let availableQuestions = [];
+let availableQuestions = questionBank;
 let acceptingAnswers = true;
 const correctScore = 25;
 const maxQuestions = 3;
 
 //Speech Synthesis to read out questions and announce if correct or not.
-const speak = (text) => {
+const speak = function textToSpeech(text) {
     var msg = new SpeechSynthesisUtterance(text);
     msg.voice = window.speechSynthesis.default;
     msg.rate = 0.9;
     window.speechSynthesis.speak(msg);
 };
-//Function to generate new random question from the available questions, will update progress text and bar and splice in question. if you have completed all questions it will save score and take user to the game over page. This function is from Brian Design and has been edited to suit this application (Credit #1 in README.md)
+//Function to generate new random question from the available questions, will update progress text and bar and splice in question. if you have completed all questions it will save score and take user to the game over page. This function is with help from Brian Design and has been edited to suit this application (Credit #1 in README.md)
 function getNewQuestion(){
-    //Code completion of quiz.
+    //If questions exceed the max amount of questions save score to local storage and take the user to the game over page. 
     if(questionCounter >= maxQuestions) {
         localStorage.setItem('currentRoundScore', score);
         return window.location.assign("./game-over.html");
     }
-    //code to cycle through for next question.
+    //if questions haven't reached max questions run the below code
     questionCounter ++;
     
     progressCount.innerText = `Question ${questionCounter} / ${maxQuestions}`;
@@ -58,7 +58,7 @@ answers.forEach(answer => {
     answer.addEventListener("click", function sortAnswer(e){
         if(!acceptingAnswers) return; //if not accepting answers, end the function.
 
-        acceptingAnswers = false;
+        acceptingAnswers = false; // set accepting answers to false once an answer has been selected.
         const selectedOption = e.target;
         const selectedAnswer = selectedOption.dataset.number;
 
@@ -74,7 +74,7 @@ answers.forEach(answer => {
         //Add correct/incorrect class to selected answer.
         selectedOption.parentElement.classList.add(classToApply);
         selectedOption.parentElement.classList.add("answer-hover");
-        //Set timeout for quiz to remove correct/incorrect class and move to next question.
+        //Set timeout for quiz to sort classToApply and give speech synthesis time to talk. 
         setTimeout(() => {
             selectedOption.parentElement.classList.remove(classToApply);
             selectedOption.parentElement.classList.remove("answer-hover");
@@ -88,11 +88,8 @@ answers.forEach(answer => {
 function startQuiz() {
     questionCounter = 0;
     score = 0;
-    availableQuestions = [...questionBank];
     getNewQuestion();
     console.log("Don't be trying to cheat now, I'm watching you.");
-
-
 }
 
 //read out question function. called via onclick on quiz.html
