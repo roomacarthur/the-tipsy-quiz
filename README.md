@@ -18,27 +18,29 @@
 
 1. [The Why](#the-why)
 2. [User Experience(UX)](#user-experience-UX)
-   1. [User Stories](#user-stories)
-   2. [Strategy](#strategy)
-   3. [Scope](#scope)
-   4. [Structure](#structure)
-   5. [Wireframes](#wireframes)
-3. [Design](#design)
-   1. [Colours](#colours)
-   2. [Typography](#typography)
-   3. [Images & Icons](#images-&-icons)
-4. [Features](#features)
+   1. [Target Audience](#target-audience)
+   2. [User Stories](#user-stories)
+   3. [Strategy](#strategy)
+   4. [Scope](#scope)
+   5. [Structure](#structure)
+   6. [Skeleton](#skeleton)
+      1. [Wireframes](#wireframes)
+   7. [Surface](#surface)
+      1. [Colours](#colours)
+      2. [Typography](#typography)
+      3. [Images & Icons](#images-&-icons)
+3. [Features](#features)
    1. [Current Features](#current-features)
    2. [Future Features](#future-features)
-5. [Technologies](#technologies)
-6. [Testing](#testing)
+4. [Technologies](#technologies)
+5. [Testing](#testing)
    1. [Tests](#tests)
    2. [Bugs & Fixes](#bugs-&-fixes)
-7. [Deployment](#deployment)
+6. [Deployment](#deployment)
    1. [GitHub Pages](#github-pages)
    2. [Forking Repository](#forking-the-github-repository)
    3. [Cloning the project](#cloning-the-project)
-8. [Credits](#credits)
+7. [Credits](#credits)
 
 </details>
 
@@ -47,6 +49,13 @@
 The Tipsy Quiz, is a fun interactive website where the user partakes in a General Knowledge quiz. The quiz itself is themed around a pub quiz. Answer multiple choice questions to gain as high a score possible before the Quiz ends, Don't forget to enter a username and submit your score to rank on the high scores.
 
 # User Experience (UX)
+
+## Target Audience
+
+- Quiz enthusiasts.
+- People who enjoy a pub quiz.
+- People wanting a quick and stylish quiz application.
+- People of all ages.
 
 ## User Stories
 
@@ -65,15 +74,15 @@ The Tipsy Quiz, is a fun interactive website where the user partakes in a Genera
 - As a site creator:
 
   1. I want to make the site interactive and fun.
-  2. I want to ensure there are questions covering a wide variety of difficulties and subjects.
+  2. I want to ensure there are enough questions to prevent the user becoming bored.
   3. I want to make sure the user enjoys their time using the application.
   4. I want to provide easy access to the creator to submit questions.
 
 ## Strategy
 
-Provide an application that the user can use in a fun and interactive way with clear and effective navigation.
+Create an interactive quiz which displays all data in a clear and easy to read way. Provide consistent styling across all pages using a mobile first approach and ensure that the application runs flawlessly across all devices. Create code that allows for ease when implementing future updates and features.
 
-## Project Goals
+### Project Goals
 
 - To provide a fun and interactive application.
 - For the question bank to be regularly updated.
@@ -82,9 +91,23 @@ Provide an application that the user can use in a fun and interactive way with c
 
 ## Scope:
 
-- Interactive application f
+The scope of The Tipsy Quiz in its first release is defined by the following features:
+
+- Functioning Quiz Application.
+- Ability to submit scores to a High-Scores table(local storage).
 - Mobile first, fully responsive design.
 - simplified contact form.
+- easy to navigate and responsive navigation bar.
+- Footer with Dev links.
+- Favicon relative to the application.
+- Help page to assist in how to use the application.
+- All links are functioning
+
+Features that are to be considered for future releases:
+
+- Dark mode.
+- Random subject wheel.
+- Difficulty Mode.
 
 ## Structure
 
@@ -125,7 +148,9 @@ The structure for the application has been thought out and designed to allow for
   - Small help button to link to the help page.
   - Dev link / socials.
 
-## Wireframes
+## Skeleton
+
+### Wireframes
 
 Desktop:
 
@@ -151,9 +176,9 @@ Mobile:
 - [High Scores](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/highscores-mobile.png)
 - [Help](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/wireframes/home-mobile.png)
 
-## Design
+## Surface
 
-## Colours
+### Colours
 
 The colours that will be used throughout the site for it's main styling are shown below, these colours have been picked to keep within the design brief of maintaining a simplified viewing pleasure.
 
@@ -163,7 +188,7 @@ The colours will be used in specific ways that compliment one another, maintaini
 
 ---
 
-## Typography
+### Typography
 
 With the design of 'The Tipsy Quiz' aiming to be fun and interactive, I have picked two fonts that will have a continual use case throughout the design of the site.
 
@@ -175,7 +200,7 @@ The initial plan was to use [Pangolin](https://fonts.google.com/specimen/Pangoli
 
 ---
 
-## Images & Icons
+### Images & Icons
 
 There will be multiple icons used throughout the application. [Font Awesome]() will be the main source for icons.
 
@@ -196,6 +221,7 @@ During the design phase there was no real need for images to be used but the spa
 - Dark mode.
 - Random subject wheel.
 - Difficulty Mode.
+- Randomly organize answers each time a new question is loaded.
 
 # Technologies
 

@@ -1,102 +1,142 @@
+let questions = [
+    {
+        question:"What is the world’s largest land mammal?",
+        answer1:"Colossal Squid",
+        answer2:"Blue Whale",
+        answer3:"Elephant",
+        answer4:"Hippopotamus",
+        correctAnswer:"3",
+  
+    },
+    {
+        question:"Rio de Janeiro is a city in which South American country?",
+        answer1:"Peru",
+        answer2:"Brazil",
+        answer3:"Argentina",
+        answer4:"Colombia",
+        correctAnswer:"2",
+  
+    },
+    {
+        question:"Which Middle Eastern city is also the name of a type of artichoke?",
+        answer1:"Cyprus",
+        answer2:"Yemen",
+        answer3:"Jerusalem",
+        answer4:"Qatar",
+        correctAnswer:"3",
+  
+    },
+    {
+        question:"Nostradamus was famous for making what?",
+        answer1:"Predictions",
+        answer2:"Candles",
+        answer3:"Poems",
+        answer4:"Boats",
+        correctAnswer:"1",
+  
+    },
+    {
+        question:"In mythology, romulus and Remus were brought up by which animal?",
+        answer1:"Bear",
+        answer2:"Dog",
+        answer3:"Wolf",
+        answer4:"Ape",
+        correctAnswer:"3",
+  
+    },
+    {
+        question:"What is the main source of vitamin C?",
+        answer1:"Fruit",
+        answer2:"Sun Light",
+        answer3:"Vegetables",
+        answer4:"Coffee",
+        correctAnswer:"1",
+  
+    },
+]
 
-const questionText = document.getElementById("question");
-const scoreCount = document.getElementById("score-count");
+const question = document.getElementById("question");
+const scoreText = document.getElementById("score-count");
 const answers = Array.from(document.getElementsByClassName("answer-text"));
-const progressCount = document.getElementById("question-count");
-const progressBarFull = document.getElementById("progress-full");
+const questionCountText = document.getElementById("question-count");
 
-let questionCounter = 0;
-let score = 0;
-let currentQuestion = {};
-let availableQuestions = questionBank;
-let acceptingAnswers = true;
-const correctScore = 25;
-const maxQuestions = 3;
 
-//Speech Synthesis to read out questions and announce if correct or not.
-const speak = function textToSpeech(text) {
-    var msg = new SpeechSynthesisUtterance(text);
-    msg.voice = window.speechSynthesis.default;
-    msg.rate = 0.9;
-    window.speechSynthesis.speak(msg);
-};
-//Function to generate new random question from the available questions, will update progress text and bar and splice in question. if you have completed all questions it will save score and take user to the game over page. This function is from Brian Design and has been edited to suit this application (Credit #1 in README.md)
+let questionCounter;
+let score;
+const correctScore = 5;
+const MAX_QUESTIONS = 3;
+console.log(questions)
+let acceptingAnswers;
+
+function getRandomQuestions(arr, n) {
+    let len = arr.length;
+    if (n > len){
+        throw new RangeError("getRandomQuestions: more elements taken than available");//
+    }
+
+    const shuffled = [...arr].sort(() => 0.5 - Math.random());
+
+    return (selected = shuffled.slice(0, n));
+}
 function getNewQuestion(){
-    //Code completion of quiz.
-    if(questionCounter >= maxQuestions) {
-        localStorage.setItem('currentRoundScore', score);
+    if(availableQuestions === 0){
         return window.location.assign("./game-over.html");
     }
-    //code to cycle through for next question.
-    questionCounter ++;
+    questionCounter++;
+    questionCountText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
     
-    progressCount.innerText = `Question ${questionCounter} / ${maxQuestions}`;
-    progressBarFull.style.width = `${(questionCounter/maxQuestions)* 100}%`;
+    let currentQuestion = availableQuestions[0];
+    console.log(currentQuestion)
+    question.innerText = currentQuestion.question;
     
-    const questionPicker = Math.floor(Math.random() * availableQuestions.length);
-    currentQuestion = availableQuestions[questionPicker];
-    questionText.innerText = currentQuestion.question;
-
-    answers.forEach(answer => {
+    answers.forEach((answer) => {
         const number = answer.dataset.number;
-        answer.innerText = currentQuestion['answer' + number];
-    });
-    acceptingAnswers = true;
-}
+        answer.innerText = currentQuestion["answer" + number];
+    })
+    //randomization of answers showing. 
 
-//function to increase score count and change the HTML. The "num" parameter will be populated during the foreach iteration of answers with "currentScore". 
-function increaseScore(total){
-    score += total;
-    scoreCount.innerText = score;
-}
+    answers.forEach((answer)=> {
+        answer.addEventListener("click", e=> {
+            if(!acceptingAnswers)return;
 
-//loop through the array answers, return if acceptingAnswers = false, but if acceptingAnswers = true continue through the function 
-    answers.forEach(answer => {
-        answer.addEventListener("click", function sortAnswer(e){
-            if(!acceptingAnswers) return; //if not accepting answers, end the function.
-    
-            acceptingAnswers = false; // set accepting answers to false once an answer has been selected.
-            const selectedOption = e.target;
-            const selectedAnswer = selectedOption.dataset.number;
-    
-            let classToApply = selectedAnswer == currentQuestion.correctAnswer ? "correct-answer" : "wrong-answer";
-            
-            if(classToApply === "correct-answer") {
-                increaseScore(correctScore);
-                speak(`Correct!`);
-            } else {
-                speak(`Incorrect!`);
+            acceptingAnswers = false;
+            const clickedAnswer = e.target;
+            const selectedAnswer = clickedAnswer.dataset.number;
+            let classToApply = "wrong-answer"
+            if(selectedAnswer === currentQuestion.correctAnswer){
+                score += correctScore
+                scoreText.innerText = score;
+                classToApply = "correct-answer"
+                console.log("correct")   
             }
-            e.preventDefault();
-            //Add correct/incorrect class to selected answer.
-            selectedOption.parentElement.classList.add(classToApply);
-            selectedOption.parentElement.classList.add("answer-hover");
-            //Set timeout for quiz to sort classToApply and give speech synthesis time to talk. 
-            setTimeout(() => {
-                selectedOption.parentElement.classList.remove(classToApply);
-                selectedOption.parentElement.classList.remove("answer-hover");
+
+            clickedAnswer.parentElement.classList.add(classToApply)
+
+            setTimeout(() =>{
+                clickedAnswer.parentElement.classList.remove(classToApply)
                 getNewQuestion();
-           
-            }, 1200);
-        });
-    });
+                acceptingAnswers = true;
+            }, 1000)
+        })
+    })
+    availableQuestions.shift();
+
+};
 
 
 
-//Function to start quiz game, set starting values to 0, run getNewQuestion function.
-function startQuiz() {
+
+
+
+
+
+function startGame(){
     questionCounter = 0;
     score = 0;
+    acceptingAnswers = true;
+    availableQuestions = getRandomQuestions(questions, MAX_QUESTIONS);
+    console.log(availableQuestions);
     getNewQuestion();
-    console.log("Don't be trying to cheat now, I'm watching you.");
-}
+};
 
-//read out question function. called via onclick on quiz.html
-function readQuestion() {
-    speak(`${currentQuestion.question}`);
-}
-
-startQuiz();
-
-
-
+startGame();
