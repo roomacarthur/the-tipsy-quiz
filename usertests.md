@@ -37,7 +37,7 @@ No matter what page you are on in the header there is a link to the high-scores.
 
 There is a clear navigation in the header of all pages, as well as CTA buttons that alow the user to easily move around the application no matter what page they are on.
 
-the home page also offers three large call to action buttons to help the user navigate with ease.
+The home page also offers three large call to action buttons to help the user navigate with ease.
 
 ![index.html CTA buttons](/assets/images/usertests-images/index-nav.png)
 
@@ -52,3 +52,21 @@ Game-over.html Offers three large CTA buttons along with the header navigation t
 help.html also has two links within the data shown along with the header navigation links.
 
 ![Photo of help links](/assets/images/usertests-images/help-links.png)
+
+## Returning user:
+
+### 1. I would want to be able to navigate the site with ease.
+
+### 2. I would want to be able to quickly check the High Scores.
+
+### 3. I would want to be able to remember how to use the application with ease.
+
+## Site creator/owner:
+
+### 1. I want to make the site interactive and fun.
+
+### 2. I want to ensure there are enough questions to prevent the user becoming bored.
+
+### 3. I want to make sure the user enjoys their time using the application.
+
+### 4. I want to provide easy access to the creator to submit questions.
