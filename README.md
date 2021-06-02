@@ -212,9 +212,10 @@ During the design phase there was no real need for images to be used but the spa
 
 ## Current Features
 
-- Ability to have Question read out.
+- Speech Synthesis for reading out the question when needed.
 - Correct and incorrect audio
 - Save score to a local High Scores table.
+- Submit a question to the creator.
 
 ## Future Features
 
@@ -254,6 +255,8 @@ During the design phase there was no real need for images to be used but the spa
 
 # Testing
 
+For testing I will use multiple resources, HTML and CSS validators, Chrome Dev Tools Lighthouse tests as well as thorough user testing. Any errors and bugs found during the testing stage will be noted in the [Bugs & Fixes](#bugs-&-fixes) section.
+
 ## Tests
 
 ### [HTML Validator](https://validator.w3.org/)
@@ -268,6 +271,28 @@ The test does show some warnings, but after some [research](https://stackoverflo
 ### [JS HINT](https://jshint.com/)
 
 All .js files have been passed through JSHint and do not show any errors. Along with this, after serious use of the site there has been no errors showing in the console also.
+
+### [Testing Sheet]()
+
+In-depth user testing has been carried out across multiple devices and the results can be found in the above link.
+
+### [Chrome Dev Tools - Lighthouse](https://developers.google.com/web/tools/lighthouse/)
+
+- Index.html
+  - [Desktop]()
+  - [Mobile]()
+- quiz.html
+  - [Desktop]()
+  - [Mobile]()
+- game-over.html
+  - [Desktop]()
+  - [Mobile]()
+- high-scores.html
+  - [Desktop]()
+  - [Mobile]()
+- help.html
+  - [Desktop]()
+  - [Mobile]()
 
 ## Bugs & Fixes
 
