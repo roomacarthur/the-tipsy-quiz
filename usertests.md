@@ -38,13 +38,17 @@ No matter what page you are on in the header there is a link to the high-scores.
 There is a clear navigation in the header of all pages, as well as CTA buttons that alow the user to easily move around the application no matter what page they are on.
 
 the home page also offers three large call to action buttons to help the user navigate with ease.
+
 ![index.html CTA buttons](/assets/images/usertests-images/index-nav.png)
 
 High-scores.html also offer two large CTA buttons to allow the user to play again or to clear the high-scores table.
+
 ![Photo of highscores CTA buttons](/assets/images/usertests-images/high-scores-nav.png)
 
 Game-over.html Offers three large CTA buttons along with the header navigation to help the user navigate with ease.
+
 ![Photo of game-over CTA buttons](/assets/images/usertests-images/game-over-nav.png)
 
 help.html also has two links within the data shown along with the header navigation links.
+
 ![Photo of help links](/assets/images/usertests-images/help-links.png)
