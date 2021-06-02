@@ -346,9 +346,12 @@ nav > ul > li > a {
     color: var(--pink);
     font-weight: bold;
 }
-/*Links within container hover styling.*/
-.help-container a:hover {
+.help-container .hover-effect {
+    color: var(--dark);
+    background-color: var(--pink);
+    border-radius: .4rem;
     cursor: pointer;
+    padding: .2rem;
 }
 /*help page form styling.*/
 form{
