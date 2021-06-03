@@ -302,7 +302,7 @@ In-depth user testing has been carried out across multiple devices and the resul
   - [Desktop]()
   - [Mobile]()
 
-### Testing user Stories
+### Testing User Stories
 
 Using the user stories I came up with during the pre-design phase of this application, I tested them out to see if I have achieved them, I also had other people test the site and asked them the user stories as a question to see if they came true.
 

@@ -4,8 +4,8 @@ self.addEventListener('install', function(event) {
       caches.open('sw-cache').then(function(cache) {
         // cache any static files that make up the application shell
         return cache.add([
-          "index.html",
-          "./assets/"
+          "/index.html",
+          "/assets/"
         ]);
       })
     );
