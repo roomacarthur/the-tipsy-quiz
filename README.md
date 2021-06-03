@@ -226,6 +226,7 @@ The PWA icon image was taken from [iconpacks](https://www.iconpacks.net/free-ico
 - Random subject wheel.
 - Difficulty Mode.
 - Randomly organize answers each time a new question is loaded.
+- Add more questions either by current method or API.
 
 # Technologies
 
