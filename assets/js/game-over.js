@@ -3,7 +3,7 @@ let currentRoundScore = localStorage.getItem("currentRoundScore");
 let saveScore = document.getElementById("submit-score");
 let playerName = document.getElementById("player-name");
 
-//Look for data to be entered into the playerName text field before submit is allowed and change the buttons title once input has been made. The implementation of keyup to enable the button is thanks to https://www.youtube.com/watch?v=f4fB9Xg2JEY
+//Look for data to be entered into the playerName text field before submit is allowed and change the buttons title once input has been made. The implementation of keyup for enabling save button is thanks to https://youtu.be/f4fB9Xg2JEY
 playerName.addEventListener('keyup', function allowSave(e) {
     e.preventDefault();
     saveScore.disabled = !playerName.value;
