@@ -11,7 +11,7 @@ let currentQuestion = {};
 let availableQuestions = questionBank;
 let acceptingAnswers = true;
 const correctScore = 25;
-const maxQuestions = 3;
+const maxQuestions = 5;
 
 //Speech Synthesis to read out questions and announce if correct or not.
 const speak = function textToSpeech(text) {
