@@ -15,13 +15,13 @@
     />
     <!--PWA data-->
     <meta name="theme-color" content="#e7b3b3" />
-    <link rel="manifest" href="assets/pwa/manifest.json" />
+    <link rel="manifest" href="/assets/pwa/manifest.json" />
     <!--Favicon Link-->
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="assets/images/favicon/icons8-beer-16.png"
+      href="assets/images/favicon/icons8-beercolor-16.png"
     />
     <!--Font Awesome CDN import to allow usage of icons-->
     <link
@@ -96,7 +96,7 @@
     <script>
       //if browser support service worker
       if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("assets/pwa/sw.js");
+        navigator.serviceWorker.register("/assets/pwa/sw.js");
       }
     </script>
   </body>
