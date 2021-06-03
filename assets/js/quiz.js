@@ -32,14 +32,14 @@ function getNewQuestion(){
     
     progressCount.innerText = `Question ${questionCounter} / ${maxQuestions}`;
     progressBarFull.style.width = `${(questionCounter/maxQuestions)* 100}%`;
-    
+    //randomly select a new question from the available questions. 
     const questionPicker = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionPicker];
     questionText.innerText = currentQuestion.question;
-
+    //sort answers by the dataset within html
     answers.forEach(answer => {
         const number = answer.dataset.number;
-        answer.innerText = currentQuestion['answer' + number];
+        answer.innerText = currentQuestion[number];
     });
 
     availableQuestions.splice(questionPicker, 1);
@@ -71,10 +71,10 @@ answers.forEach(answer => {
             speak(`Incorrect!`);
         }
         e.preventDefault();
-        //Add correct/incorrect class to selected answer.
+        //Add correct/incorrect and hover class.
         selectedOption.parentElement.classList.add(classToApply);
         selectedOption.parentElement.classList.add("answer-hover");
-        //Set timeout for quiz to sort classToApply and give speech synthesis time to talk. 
+        //Set timeout for quiz to remove classToApply and give speech synthesis time to talk. 
         setTimeout(() => {
             selectedOption.parentElement.classList.remove(classToApply);
             selectedOption.parentElement.classList.remove("answer-hover");
