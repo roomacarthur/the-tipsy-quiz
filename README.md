@@ -296,6 +296,10 @@ In-depth user testing has been carried out across multiple devices and the resul
 
 ### Testing user Stories
 
+Using the user stories I came up with during the pre design phase of this application, I tested them out to see if I have achieved them, I also had other people to test the site and asked them the user stories as a question to see if they came true.
+
+The results of this test can be found here: [User Story Test Results](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/usertests.md)
+
 ## Bugs & Fixes
 
 1. README.md links to open in new tab.
