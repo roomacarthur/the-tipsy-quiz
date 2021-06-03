@@ -221,7 +221,7 @@ The PWA icon image was taken from [iconpacks](https://www.iconpacks.net/free-ico
 
 ## Future Features
 
-- Implement PWA, to allow users to install the application to device.
+- Implement PWA, to allow users to install the application to their own device.
 - Dark mode.
 - Random subject wheel.
 - Difficulty Mode.
@@ -258,6 +258,8 @@ The PWA icon image was taken from [iconpacks](https://www.iconpacks.net/free-ico
   - For general Queries and reassurance.
 - [Squoosh](https://squoosh.app/)
   - For compressing images.
+- [Auto Prefixer](https://autoprefixer.github.io/)
+  - Automatically prefixes the neccaserry webkits to the CSS.
 
 # Testing
 
