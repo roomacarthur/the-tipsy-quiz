@@ -1,0 +1,16 @@
+{
+  "short_name": "TTQ",
+  "name": "The Tipsy Quiz",
+  "icons": [
+    {
+      "src": "pwa-icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "./index.html",
+  "background_color": "#000000",
+  "display": "standalone",
+  "theme_color": "#e7b3b3",
+  "prefer_related_applications": true
+}

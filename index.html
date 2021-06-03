@@ -13,6 +13,9 @@
       name="keywords"
       content="Quiz, Pub Quiz, Game, Multiple-choice, questions and answers, High-scores, The Tipsy Quiz"
     />
+    <!--PWA data-->
+    <meta name="theme-color" content="#e7b3b3" />
+    <link rel="manifest" href="assets/pwa/manifest.json" />
     <!--Favicon Link-->
     <link
       rel="icon"
@@ -89,5 +92,12 @@
     </footer>
     <!--Link to page relative JS.-->
     <script src="assets/js/app.js"></script>
+    <!--PWA script-->
+    <script>
+      //if browser support service worker
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("assets/pwa/sw.js");
+      }
+    </script>
   </body>
 </html>

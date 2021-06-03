@@ -206,6 +206,8 @@ There will be multiple icons used throughout the application. [Font Awesome]() w
 
 During the design phase, there was no real need for images to be used but the sparsity on the homepage after initial HTML and CSS was completed pushed me to include an image in the open space. The image I used was taken from a [Cocktail Party App](https://cocktailpartyapp.com/better-lychee-cocktails-alternatives-to-the-lychee-martini/) Blog post.
 
+The PWA icon image was taken from [iconpacks](https://www.iconpacks.net/free-icon/beer-1786.html)
+
 ---
 
 # Features
@@ -219,6 +221,7 @@ During the design phase, there was no real need for images to be used but the sp
 
 ## Future Features
 
+- Implement PWA, to allow users to install the application to device.
 - Dark mode.
 - Random subject wheel.
 - Difficulty Mode.
@@ -252,6 +255,8 @@ During the design phase, there was no real need for images to be used but the sp
   - icons8 was used for sourcing a Favicon.
 - [Stack Overflow](https://stackoverflow.com/)
   - For general Queries and reassurance.
+- [Squoosh](https://squoosh.app/)
+  - For compressing images.
 
 # Testing
 
