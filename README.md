@@ -313,14 +313,16 @@ The results of this test can be found here: [User Story Test Results](https://gi
 
 ## Bugs & Fixes
 
-1. README.md links to open in new tab.
+1. RESOLVED -- README.md links to open in new tab.
    - Some specific links to this README.md file would work better if they opened in a new tab when clicked but after some testing and then research I found out that this is not possible. [Evidence.](https://stackoverflow.com/questions/50834937/open-readme-md-link-in-new-tab-github)
-2. :is CSS pseudo-class
+2. FIXED -- :is CSS pseudo-class
    - This was used after watching [Kevin Powells](https://www.youtube.com/watch?v=McC4QkCvbaY&t=399s) video on simplifying CSS, unfortunately, when passed through the [CSS Validator](https://jigsaw.w3.org/css-validator/) this showed errors, where I had used the :is class, Therefor I have removed and replaced with code that passes, this code is longer but passes the validation.
 3. When using the application on mobile the hover effect is still present on the next question, also hover only works when clicked. [See here for evidence](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/images/bugs/hover-issue-on-mobile.png).
    - For this, I have removed the pseudo-class :hover and added JS event listeners for mouseover/mouseleave and then for touch on mobile.
-4. When using the play button to read the question out via Speech Synthesis, the speed that the question was read out at was too fast.
+4. FIXED -- When using the play button to read the question out via Speech Synthesis, the speed that the question was read out at was too fast.
    - To resolve this issue I lowered the speaking rate to 0.9(Default = 1.). This now means the question is read out slower, but still maintains a natural speaking speed.
+5. After you complete the quiz you are taken to game-over.html and the "save score" button is disabled until you enter data into the input field. For some reason the default "disabled" cursor will not show when over the button.
+   - After a lot of time researching this issue, It was made clear that the simple fixes i had seen on stack-overflow weren't working. So this issue is still open and currently just shows a standard cursor whilst the button is disabled and then changes to a pointer cursor when the button is enabled.
 
 # Deployment
 
