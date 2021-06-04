@@ -289,20 +289,21 @@ In-depth user testing has been carried out across multiple devices and the resul
 For running the lighthouse tests, I used an incognito window to avoid any errors and issues that could be caused by any of my Chrome extensions.
 
 - Index.html
-  - [Desktop]()
-  - [Mobile]()
+  - [Desktop](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/images/lighthouse-results/index-desktop.png)
+  - [Mobile](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/images/lighthouse-results/index-mobile.png)
+    - Warning "Properly sized images": The image on the home page has already been compressed, It has a transparent background and If i take the compression any further this causes the quality to drop significantly.
 - quiz.html
-  - [Desktop]()
-  - [Mobile]()
+  - [Desktop](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/images/lighthouse-results/quiz-desktop.png)
+  - [Mobile](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/images/lighthouse-results/quiz-mobile.png)
 - game-over.html
-  - [Desktop]()
-  - [Mobile]()
+  - [Desktop](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/images/lighthouse-results/game-over-desktop.png)
+  - [Mobile](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/images/lighthouse-results/game-over-mobile.png)
 - high-scores.html
-  - [Desktop]()
-  - [Mobile]()
+  - [Desktop](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/images/lighthouse-results/high-scores-desktop.png)
+  - [Mobile](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/images/lighthouse-results/high-scores-mobile.png)
 - help.html
-  - [Desktop]()
-  - [Mobile]()
+  - [Desktop](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/images/lighthouse-results/help-desktop.png)
+  - [Mobile](https://github.com/roomacarthur/the-tipsy-quiz/blob/main/assets/images/lighthouse-results/help-mobile.png)
 
 ### Testing User Stories
 
