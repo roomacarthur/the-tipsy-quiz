@@ -12,10 +12,6 @@
 
 # Table of Contents:
 
-<details>
-
-  <summary>Click to expand table of contents</summary>
-
 1. [The Why](#the-why)
 2. [User Experience(UX)](#user-experience-UX)
    1. [Target Audience](#target-audience)
@@ -41,8 +37,6 @@
    2. [Forking Repository](#forking-the-github-repository)
    3. [Cloning the project](#cloning-the-project)
 7. [Credits](#credits)
-
-</details>
 
 # The Why
 
