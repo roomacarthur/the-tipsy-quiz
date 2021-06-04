@@ -200,8 +200,6 @@ There will be multiple icons used throughout the application. [Font Awesome]() w
 
 During the design phase, there was no real need for images to be used but the sparsity on the homepage after initial HTML and CSS was completed pushed me to include an image in the open space. The image I used was taken from a [Cocktail Party App](https://cocktailpartyapp.com/better-lychee-cocktails-alternatives-to-the-lychee-martini/) Blog post.
 
-The PWA icon image was taken from [iconpacks](https://www.iconpacks.net/free-icon/beer-1786.html)
-
 ---
 
 # Features
@@ -215,7 +213,7 @@ The PWA icon image was taken from [iconpacks](https://www.iconpacks.net/free-ico
 
 ## Future Features
 
-- Implement PWA, to allow users to install the application to their own device.
+- Implement PWA, to allow users to install the application on their own device.
 - Dark mode.
 - Random subject wheel.
 - Difficulty Mode.
@@ -253,7 +251,7 @@ The PWA icon image was taken from [iconpacks](https://www.iconpacks.net/free-ico
 - [Squoosh](https://squoosh.app/)
   - For compressing images.
 - [Auto Prefixer](https://autoprefixer.github.io/)
-  - Automatically prefixes the neccaserry webkits to the CSS.
+  - Automatically prefixes the necessary webkits to the CSS.
 
 # Testing
 
