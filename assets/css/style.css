@@ -280,7 +280,6 @@ nav > ul > li > a {
     top:0;
     left:0;
 }
-
 #play-question {
     font-size: 3rem;
     margin: 0 auto;
@@ -624,8 +623,7 @@ footer {
         margin-top: 1rem;
     }
 }
-
-
+/*Small mobile device fix for navigation links. */
 @media screen and (min-width: 500px) {
 
     nav {
@@ -633,6 +631,7 @@ footer {
         margin-top: 1rem;
     }
 }
+/*CSS for devices with a screen size wider than 768px */
 @media screen and (min-width: 768px){
     header {
         height: 16vh;
@@ -686,6 +685,7 @@ footer {
         font-size: 1rem;
     }
 }
+/*CSS for devices with a screen size wider than 900px*/
 @media screen and (min-width: 900px) {
     header {
         padding: 1rem;
