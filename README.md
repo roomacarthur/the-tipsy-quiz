@@ -286,6 +286,8 @@ In-depth user testing has been carried out across multiple devices and the resul
 
 ### [Chrome Dev Tools - Lighthouse](https://developers.google.com/web/tools/lighthouse/)
 
+For running the lighthouse tests, I used an incognito window to avoid any errors and issues that could be caused by any of my Chrome extensions.
+
 - Index.html
   - [Desktop]()
   - [Mobile]()
