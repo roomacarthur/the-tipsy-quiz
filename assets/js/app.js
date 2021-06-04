@@ -1,5 +1,5 @@
 /*
-    When using the application on a mobile device, the hover effects arent needed,a dn in some cases would cause an error, like the hover effects to the answers when playing the quiz, the hover would still bhe visible after you submit your answer on the next question, so to get round this, I have moved the hover effects from CSS to JS and use the "onmouseover" and "onmouseleave" event listeners. 
+    When using the application on a mobile device, the hover effects aren't needed, and in some cases would cause an error, like the hover effects to the answers when playing the quiz, the hover would still be visible after you submit your answer on the next question, so to get around this, I have moved the hover effects from CSS to JS and use the "onmouseover" and "onmouseleave" event listeners. 
 */
 
 //hover effect for logo and footer github link.
