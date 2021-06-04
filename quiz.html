@@ -68,12 +68,18 @@
             </div>
           </div>
           <div class="quiz-item">
-            <div id="play-question" onclick="readQuestion()">
+            <div
+              id="play-question"
+              onclick="readQuestion()"
+              title="Click to hear the question"
+            >
               <i class="far fa-play-circle"></i>
             </div>
           </div>
           <!--Main Question, lorem for styling will be over written via JS.-->
-          <h2 id="question">Error: Question not loading.</h2>
+          <h2 id="question" title="Click the play button to hear question">
+            Error: Question not loading.
+          </h2>
           <!--Answer elements, container with answer number and answer text that will be populated via JS.-->
           <div class="answer-container">
             <p class="answer-num">A.</p>
