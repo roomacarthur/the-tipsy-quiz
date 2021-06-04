@@ -43,7 +43,7 @@ function buttonHover(){
     }
 }
 buttonHover();
-
+//hover effect for answers during the quiz.
 function questionHover(e) {
     let qButton = document.getElementsByClassName("answer-container");
     for (let i = 0; i < qButton.length; i++) {
