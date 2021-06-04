@@ -372,7 +372,7 @@ To make a local clone of the project follow these steps:
 # Credits
 
 1. [Brian Design](https://youtu.be/f4fB9Xg2JEY)
-   - Brian's YouTube video for a JS quiz was used as inspiration, and a stepping stone for this application. In some cases this video was referred to for a lot of help.
+   - Brian's YouTube video for a JS quiz was used as inspiration and a stepping stone for this application. Code used form Brian's video has been credited within comments. In some cases this video was referred to for a lot of help so for that I owe a great deal of thanks.
 2. [Shake Hover Effect](https://www.w3schools.com/howto/howto_css_shake_image.asp)
    - W3Schools code for "shake effect" was used.
 3. [SpeechSynthesis](https://codingislove.com/speech-with-javascript/)
