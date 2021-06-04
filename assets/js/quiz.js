@@ -29,7 +29,7 @@ function getNewQuestion(){
     }
     //if questions haven't reached max questions run the below code
     questionCounter ++;
-    
+    //Update progress counter and width element of progress bar.
     progressCount.innerText = `Question ${questionCounter} / ${maxQuestions}`;
     progressBarFull.style.width = `${(questionCounter/maxQuestions)* 100}%`;
     //randomly select a new question from the available questions. 
